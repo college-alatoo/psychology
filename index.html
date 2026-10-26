@@ -48,7 +48,8 @@ const $=id=>document.getElementById(id);
 let students=[];
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function note(text,type){$('message').textContent=text;$('message').className='message '+type}
-function updateAdmin(){const total=students.length,done=students.filter(s=>s.consent_received).length,left=total-done,pct=total?Math.round(done/total*100):0;$('adminTotal').textContent=total;$('adminChecked').textContent=done;$('adminRemaining').textContent=left;$('adminProgress').style.width=pct+'%';$('adminPercent').textContent=pct+'% выполнено';}\nfunction updateStats(){
+function updateAdmin(){const total=students.length,done=students.filter(s=>s.consent_received).length,left=total-done,pct=total?Math.round(done/total*100):0;$('adminTotal').textContent=total;$('adminChecked').textContent=done;$('adminRemaining').textContent=left;$('adminProgress').style.width=pct+'%';$('adminPercent').textContent=pct+'% выполнено';}
+function updateStats(){
  const group=$('groupFilter').value, q=$('search').value.trim().toLocaleLowerCase('ru');
  const pool=students.filter(s=>!group||s.student_group===group);
  const complete=pool.filter(s=>s.consent_received).length, total=pool.length, left=total-complete, pct=total?Math.round(complete/total*100):0;
@@ -57,7 +58,10 @@ function updateAdmin(){const total=students.length,done=students.filter(s=>s.con
  updateAdmin();$('shown').textContent=shown.length+' из '+total;
  $('studentsList').innerHTML=shown.length?shown.map(s=>'<label class="student"><div class="student-info"><div class="student-name">'+esc(s.full_name)+'</div><div class="student-group">'+esc(s.student_group||'')+'</div></div><input class="toggle" type="checkbox" data-id="'+esc(s.id)+'" '+(s.consent_received?'checked':'')+' aria-label="Согласие для '+esc(s.full_name)+'"></label>').join(''):'<div class="empty">Студенты не найдены</div>';
 }
-$('groupFilter').addEventListener('change',updateStats);$('search').addEventListener('input',updateStats);\n$('adminButton').addEventListener('click',()=>{if($('adminPanel').classList.contains('open')){$('adminPanel').classList.remove('open');return;}const password=prompt('Введите пароль администратора:');if(password==='123'){$('adminPanel').classList.add('open');updateAdmin();$('adminPanel').scrollIntoView({behavior:'smooth',block:'start'});}else if(password!==null)alert('Неверный пароль');});\n$('hideAdmin').addEventListener('click',()=>$('adminPanel').classList.remove('open'));\n$('exportButton').addEventListener('click',()=>{if(!students.length){alert('Сначала загрузите список студентов');return;}const rows=[['ФИО','Группа','Курс','Куратор','Согласие','Дата'] ,...students.map(s=>[s.full_name,s.student_group,s.course,s.curator,s.consent_received?'Получено':'Не получено',s.consent_date||''])];const csv='\uFEFF'+rows.map(r=>r.map(v=>'"'+String(v??'').replace(/"/g,'""')+'"').join(';')).join('\\r
+$('groupFilter').addEventListener('change',updateStats);$('search').addEventListener('input',updateStats);
+$('adminButton').addEventListener('click',()=>{if($('adminPanel').classList.contains('open')){$('adminPanel').classList.remove('open');return;}const password=prompt('Введите пароль администратора:');if(password==='123'){$('adminPanel').classList.add('open');updateAdmin();$('adminPanel').scrollIntoView({behavior:'smooth',block:'start'});}else if(password!==null)alert('Неверный пароль');});
+$('hideAdmin').addEventListener('click',()=>$('adminPanel').classList.remove('open'));
+$('exportButton').addEventListener('click',()=>{if(!students.length){alert('Сначала загрузите список студентов');return;}const rows=[['ФИО','Группа','Курс','Куратор','Согласие','Дата'] ,...students.map(s=>[s.full_name,s.student_group,s.course,s.curator,s.consent_received?'Получено':'Не получено',s.consent_date||''])];const csv='\uFEFF'+rows.map(r=>r.map(v=>'"'+String(v??'').replace(/"/g,'""')+'"').join(';')).join('\\r
 ');const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8;'}));a.download='consent-report.csv';a.click();URL.revokeObjectURL(a.href);});
 $('loadButton').addEventListener('click',async()=>{
  const b=$('loadButton');b.disabled=true;b.textContent='Загрузка…';$('studentsList').innerHTML='<div class="empty">Получаем данные…</div>';note('','');
