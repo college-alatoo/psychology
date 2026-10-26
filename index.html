@@ -4,9 +4,9 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#123b73">
 <title>Учёт согласий | IT & Business College</title>
 <style>
-:root{--navy:#123b73;--blue:#2563eb;--ink:#17263c;--muted:#64748b;--line:#e2e8f0;--bg:#f3f6fb;--green:#15803d}
+:root{--navy:#4338ca;--blue:#4f46e5;--ink:#17263c;--muted:#64748b;--line:#e2e8f0;--bg:#f8fafc;--green:#15803d}
 *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink)}
-header{background:#fff;padding:18px 16px;border-bottom:1px solid var(--line)}.head{max-width:980px;margin:auto}.brand{font-size:11px;font-weight:800;letter-spacing:1.5px;color:var(--blue)}h1{font-size:21px;margin:6px 0;color:var(--navy)}header p{margin:0;color:var(--muted);font-size:13px}
+header{background:#4338ca;color:#fff;padding:16px;border-bottom:1px solid #3730a3;box-shadow:0 3px 12px #312e811f}.head{max-width:980px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{font-size:11px;font-weight:800;letter-spacing:1.5px;color:#c7d2fe}h1{font-size:21px;margin:6px 0;color:#fff}header p{margin:0;color:#e0e7ff;font-size:13px}.admin-btn{width:auto;white-space:nowrap;background:#3730a3;border:1px solid #6366f1;padding:10px 13px;font-size:13px}.admin-panel{display:none}.admin-panel.open{display:block}.admin-panel h3{margin:0 0 12px}.admin-actions{display:flex;gap:10px;flex-wrap:wrap}.admin-actions button{width:auto;font-size:13px;padding:10px 13px}.admin-actions .secondary{background:#eef2ff;color:#3730a3}
 main{max-width:980px;margin:20px auto;padding:0 14px 30px}.intro{margin-bottom:16px}.intro h2{font-size:22px;margin:0 0 5px}.intro p{font-size:14px;color:var(--muted);margin:0}
 .panel{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px;margin-bottom:14px;box-shadow:0 4px 16px #15345a08}
 button,select,input{font:inherit}select,input[type=search]{width:100%;padding:13px 12px;border:1px solid #cbd5e1;border-radius:11px;background:#fff;color:var(--ink);font-size:16px}
@@ -19,11 +19,11 @@ button,select,input{font:inherit}select,input[type=search]{width:100%;padding:13
 .empty{text-align:center;color:var(--muted);padding:28px 10px}.message{padding:11px 12px;border-radius:10px;margin-top:10px;font-size:13px;display:none;overflow-wrap:anywhere}.message.error{display:block;background:#fff1f2;color:#9f1239}.message.success{display:block;background:#f0fdf4;color:#166534}
 button{border:0;background:var(--blue);color:#fff;padding:13px 15px;border-radius:11px;font-weight:700;width:100%;cursor:pointer}button:disabled{opacity:.55}.hidden{display:none!important}.load{margin-top:14px}
 footer{text-align:center;padding:18px;color:#8290a4;font-size:11px}
-@media(max-width:560px){header{padding:15px 14px}h1{font-size:19px}main{margin:14px auto;padding:0 10px 22px}.panel{padding:13px;border-radius:14px}.controls{grid-template-columns:1fr}.stat{padding:10px 8px}.stat strong{font-size:21px}.stat span{font-size:10px}.intro h2{font-size:20px}}
+@media(max-width:560px){header{padding:15px 14px}.head{align-items:flex-start}h1{font-size:19px}main{margin:14px auto;padding:0 10px 22px}.panel{padding:13px;border-radius:14px}.controls{grid-template-columns:1fr}.stat{padding:10px 8px}.stat strong{font-size:21px}.stat span{font-size:10px}.intro h2{font-size:20px}}
 </style>
 </head>
 <body>
-<header><div class="head"><div class="brand">IT &amp; BUSINESS COLLEGE</div><h1>Международный университет «Ала-Тоо»</h1><p>Учёт согласий родителей на психологическое сопровождение</p></div></header>
+<header><div class="head"><div><div class="brand">IT &amp; BUSINESS COLLEGE</div><h1>Учёт согласий 2026</h1><p>Психологическое сопровождение студентов</p></div><button class="admin-btn" id="adminButton" type="button">♙ Админ</button></div></header>
 <main>
 <section class="intro"><h2>Панель куратора</h2><p>Выберите учебную группу и отмечайте согласия прямо с телефона.</p></section>
 <section class="panel">
@@ -38,7 +38,7 @@ footer{text-align:center;padding:18px;color:#8290a4;font-size:11px}
 </section>
 <section class="panel"><div class="list-head"><h3>Студенты</h3><small id="shown">Список не загружен</small></div><div id="studentsList"><div class="empty">Нажмите «Загрузить список студентов»</div></div></section>
 </main>
-<footer>© 2026 IT &amp; Business College · Международный университет «Ала-Тоо»</footer>
+<section class="panel admin-panel" id="adminPanel"><h3>Общая статистика</h3><div class="stats"><div class="stat"><strong id="adminTotal">—</strong><span>Всего студентов</span></div><div class="stat"><strong id="adminChecked">—</strong><span>Согласия получены</span></div><div class="stat"><strong id="adminRemaining">—</strong><span>Осталось</span></div></div><div class="progress"><div id="adminProgress"></div></div><div id="adminPercent" style="font-size:12px;color:var(--muted);text-align:right">0%</div><div class="admin-actions" style="margin-top:14px"><button id="exportButton" type="button">Экспорт CSV</button><button id="hideAdmin" class="secondary" type="button">Скрыть панель</button></div></section><footer>© 2026 IT &amp; Business College · Международный университет «Ала-Тоо»</footer>
 <script type="module">
 import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
 const URL='https://sjydvsyazfzzovexuyr.supabase.co';
@@ -48,16 +48,16 @@ const $=id=>document.getElementById(id);
 let students=[];
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function note(text,type){$('message').textContent=text;$('message').className='message '+type}
-function updateStats(){
+function updateAdmin(){const total=students.length,done=students.filter(s=>s.consent_received).length,left=total-done,pct=total?Math.round(done/total*100):0;$('adminTotal').textContent=total;$('adminChecked').textContent=done;$('adminRemaining').textContent=left;$('adminProgress').style.width=pct+'%';$('adminPercent').textContent=pct+'% выполнено';}\nfunction updateStats(){
  const group=$('groupFilter').value, q=$('search').value.trim().toLocaleLowerCase('ru');
  const pool=students.filter(s=>!group||s.student_group===group);
  const complete=pool.filter(s=>s.consent_received).length, total=pool.length, left=total-complete, pct=total?Math.round(complete/total*100):0;
  $('total').textContent=total;$('checked').textContent=complete;$('remaining').textContent=left;$('percent').textContent=pct+'%';$('progressBar').style.width=pct+'%';
  const shown=pool.filter(s=>String(s.full_name||'').toLocaleLowerCase('ru').includes(q));
- $('shown').textContent=shown.length+' из '+total;
+ updateAdmin();$('shown').textContent=shown.length+' из '+total;
  $('studentsList').innerHTML=shown.length?shown.map(s=>'<label class="student"><div class="student-info"><div class="student-name">'+esc(s.full_name)+'</div><div class="student-group">'+esc(s.student_group||'')+'</div></div><input class="toggle" type="checkbox" data-id="'+esc(s.id)+'" '+(s.consent_received?'checked':'')+' aria-label="Согласие для '+esc(s.full_name)+'"></label>').join(''):'<div class="empty">Студенты не найдены</div>';
 }
-$('groupFilter').addEventListener('change',updateStats);$('search').addEventListener('input',updateStats);
+$('groupFilter').addEventListener('change',updateStats);$('search').addEventListener('input',updateStats);\n$('adminButton').addEventListener('click',()=>{if($('adminPanel').classList.contains('open')){$('adminPanel').classList.remove('open');return;}const password=prompt('Введите пароль администратора:');if(password==='123'){$('adminPanel').classList.add('open');updateAdmin();$('adminPanel').scrollIntoView({behavior:'smooth',block:'start'});}else if(password!==null)alert('Неверный пароль');});\n$('hideAdmin').addEventListener('click',()=>$('adminPanel').classList.remove('open'));\n$('exportButton').addEventListener('click',()=>{if(!students.length){alert('Сначала загрузите список студентов');return;}const rows=[['ФИО','Группа','Курс','Куратор','Согласие','Дата'] ,...students.map(s=>[s.full_name,s.student_group,s.course,s.curator,s.consent_received?'Получено':'Не получено',s.consent_date||''])];const csv='\\uFEFF'+rows.map(r=>r.map(v=>'"'+String(v??'').replace(/"/g,'""')+'"').join(';')).join('\\r\\n');const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8;'}));a.download='consent-report.csv';a.click();URL.revokeObjectURL(a.href);});
 $('loadButton').addEventListener('click',async()=>{
  const b=$('loadButton');b.disabled=true;b.textContent='Загрузка…';$('studentsList').innerHTML='<div class="empty">Получаем данные…</div>';note('','');
  try{
