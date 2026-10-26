@@ -65,13 +65,11 @@
     </section>
     <section class="card login-card" id="loginPanel">
       <h3>Вход в систему</h3>
-      <p>Используйте выданные вам учётные данные колледжа.</p>
+      <p>Введите свою почту колледжа. Мы отправим вам безопасную ссылку для входа — пароль не нужен.</p>
       <form id="loginForm">
         <label for="email">Электронная почта</label>
         <input id="email" name="email" type="email" autocomplete="username" placeholder="name@alatoo.edu.kg" required>
-        <label for="password">Пароль</label>
-        <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Введите пароль" required>
-        <button id="loginButton" type="submit">Войти</button>
+        <button id="loginButton" type="submit">Получить ссылку для входа</button>
         <div id="loginMessage" class="message" role="status" aria-live="polite"></div>
       </form>
     </section>
@@ -105,35 +103,31 @@
     message.className = 'message';
     message.textContent = '';
     button.disabled = true;
-    button.textContent = 'Выполняется вход…';
+    button.textContent = 'Отправляем ссылку…';
 
     const email = document.getElementById('email').value.trim();
-    const password = document.getElementById('password').value;
 
     try {
-      const { data, error } = await supabase.auth.signInWithPassword({ email, password });
+      const { error } = await supabase.auth.signInWithOtp({ email, options: { emailRedirectTo: window.location.href } });
       if (error) {
-        showMessage('Не удалось войти. Проверьте электронную почту и пароль. Если ошибка повторяется, обратитесь к администратору.');
+        showMessage('Не удалось отправить ссылку. Проверьте email и настройки почты Supabase.');
         console.error('Supabase sign-in error:', error.message);
         return;
       }
 
-      // Until database row-level access policies are enabled and verified,
-      // do not fetch or display any student records here.
-      showMessage('Вход выполнен. Учётная запись подтверждена, но рабочая панель откроется после завершения настройки прав доступа к данным. Обратитесь к администратору.', 'success');
-      console.info('Authenticated user:', data.user?.id);
+      showMessage('Письмо со ссылкой для входа отправлено. Проверьте входящие и папку «Спам».', 'success');
     } catch (err) {
       console.error('Unexpected sign-in error:', err);
       showMessage('Не удалось связаться с сервером. Проверьте интернет-соединение и попробуйте ещё раз.');
     } finally {
       button.disabled = false;
-      button.textContent = 'Войти';
+      button.textContent = 'Получить ссылку для входа';
     }
   });
 
   supabase.auth.getSession().then(({ data, error }) => {
     if (!error && data.session) {
-      showMessage('Вы уже вошли в систему. Рабочая панель будет доступна после завершения настройки прав доступа.', 'success');
+      showMessage('Вы уже авторизованы. Панель управления ещё настраивается.', 'success');
     }
   });
 </script>
