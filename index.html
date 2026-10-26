@@ -148,7 +148,7 @@
         input.disabled = false;
       });
     } catch (error) {
-      message.textContent = 'Не удалось загрузить список. Возможно, Supabase пока запрещает публичный доступ к таблице students.';
+      message.textContent = 'Ошибка Supabase: ' + (error?.message || String(error)) + (error?.code ? ' (код: ' + error.code + ')' : '');
       message.className = 'message error';
       console.error(error);
     } finally {
