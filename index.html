@@ -1,161 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#123b73">
-  <title>Согласие родителей | IT & Business College</title>
-  <style>
-    :root{--navy:#123b73;--blue:#2563eb;--ink:#17263c;--muted:#66758b;--line:#e3eaf3;--bg:#f3f6fb;--white:#fff}
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:Arial,sans-serif;background:var(--bg);color:var(--ink);min-height:100vh;display:flex;flex-direction:column}
-    header{background:var(--white);text-align:center;padding:26px 18px;border-bottom:1px solid var(--line)}
-    .logo{font-size:12px;font-weight:800;letter-spacing:2px;color:var(--blue);margin-bottom:12px}
-    header h1{font-size:clamp(20px,3vw,27px);color:var(--navy);margin-bottom:9px}
-    header p{font-size:14px;color:var(--muted)}
-    main{width:min(1060px,100%);margin:42px auto;padding:0 20px;flex:1}
-    .welcome{text-align:center;margin-bottom:28px}
-    .welcome h2{font-size:clamp(25px,4vw,32px);margin-bottom:10px;color:var(--ink)}
-    .welcome p{color:var(--muted);line-height:1.6}
-    .layout{display:grid;grid-template-columns:1.15fr .85fr;gap:22px;align-items:stretch}
-    .card{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:30px;box-shadow:0 12px 35px rgba(15,42,80,.06)}
-    .card h3{font-size:21px;margin-bottom:12px}
-    .card>p{font-size:14px;color:var(--muted);line-height:1.75}
-    .login-card{max-width:100%}
-    form{margin-top:20px}
-    label{display:block;font-size:13px;font-weight:700;margin:14px 0 7px}
-    input{display:block;width:100%;padding:13px 14px;border:1px solid #ccd7e5;border-radius:10px;font-size:15px;background:#fff;color:var(--ink)}
-    input:focus{outline:3px solid rgba(37,99,235,.14);border-color:var(--blue)}
-    button{border:0;border-radius:10px;background:var(--blue);color:#fff;padding:14px 18px;font-size:15px;font-weight:700;cursor:pointer;width:100%;margin-top:18px;transition:background .18s}
-    button:hover{background:#1d4ed8}button:disabled{opacity:.6;cursor:wait}
-    .message{margin-top:14px;padding:12px;border-radius:10px;font-size:13px;line-height:1.5;display:none}
-    .message.error{display:block;background:#fff1f2;color:#9f1239;border:1px solid #fecdd3}
-    .message.success{display:block;background:#f0fdf4;color:#166534;border:1px solid #bbf7d0}
-    .info{background:#f7faff;border:1px solid var(--line);border-radius:14px;padding:22px;margin-top:18px}
-    .info h4{font-size:15px;margin-bottom:9px;color:var(--navy)}
-    .info p{font-size:13px;line-height:1.65;color:var(--muted)}
-    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
-    .feature{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:22px;text-align:center}
-    .feature .icon{font-size:29px;margin-bottom:10px}
-    .feature h4{margin-bottom:8px;font-size:15px}
-    .feature p{font-size:13px;color:var(--muted);line-height:1.6}
-    footer{text-align:center;padding:24px 18px;color:#8492a6;font-size:12px}
-    @media(max-width:760px){main{margin:26px auto}.layout{grid-template-columns:1fr}.features{grid-template-columns:1fr}.card{padding:24px}}
-  </style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#123b73">
+<title>Учёт согласий | IT & Business College</title>
+<style>
+:root{--navy:#123b73;--blue:#2563eb;--ink:#17263c;--muted:#64748b;--line:#e2e8f0;--bg:#f3f6fb;--green:#15803d}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink)}
+header{background:#fff;padding:18px 16px;border-bottom:1px solid var(--line)}.head{max-width:980px;margin:auto}.brand{font-size:11px;font-weight:800;letter-spacing:1.5px;color:var(--blue)}h1{font-size:21px;margin:6px 0;color:var(--navy)}header p{margin:0;color:var(--muted);font-size:13px}
+main{max-width:980px;margin:20px auto;padding:0 14px 30px}.intro{margin-bottom:16px}.intro h2{font-size:22px;margin:0 0 5px}.intro p{font-size:14px;color:var(--muted);margin:0}
+.panel{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px;margin-bottom:14px;box-shadow:0 4px 16px #15345a08}
+button,select,input{font:inherit}select,input[type=search]{width:100%;padding:13px 12px;border:1px solid #cbd5e1;border-radius:11px;background:#fff;color:var(--ink);font-size:16px}
+.controls{display:grid;grid-template-columns:1fr 1fr;gap:10px}.field label{display:block;font-size:12px;font-weight:700;color:var(--muted);margin:0 0 6px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin:14px 0}.stat{background:#f8fafc;border:1px solid var(--line);border-radius:12px;padding:12px}.stat strong{display:block;font-size:23px}.stat span{font-size:11px;color:var(--muted)}
+.progress{height:8px;background:#e8eef7;border-radius:99px;overflow:hidden;margin:10px 0 3px}.progress div{height:100%;background:var(--green);width:0;transition:width .2s}
+.list-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:8px 0 12px}.list-head h3{margin:0;font-size:17px}.list-head small{color:var(--muted)}
+.student{display:flex;align-items:center;gap:12px;padding:13px 2px;border-top:1px solid var(--line);min-height:62px}.student:first-child{border-top:0}.student-info{flex:1;min-width:0}.student-name{font-weight:650;font-size:14px;overflow-wrap:anywhere}.student-group{font-size:12px;color:var(--muted);margin-top:3px}
+.toggle{width:28px;height:28px;flex:0 0 28px;accent-color:var(--green)}.student:has(.toggle:checked) .student-name{color:#166534}
+.empty{text-align:center;color:var(--muted);padding:28px 10px}.message{padding:11px 12px;border-radius:10px;margin-top:10px;font-size:13px;display:none;overflow-wrap:anywhere}.message.error{display:block;background:#fff1f2;color:#9f1239}.message.success{display:block;background:#f0fdf4;color:#166534}
+button{border:0;background:var(--blue);color:#fff;padding:13px 15px;border-radius:11px;font-weight:700;width:100%;cursor:pointer}button:disabled{opacity:.55}.hidden{display:none!important}.load{margin-top:14px}
+footer{text-align:center;padding:18px;color:#8290a4;font-size:11px}
+@media(max-width:560px){header{padding:15px 14px}h1{font-size:19px}main{margin:14px auto;padding:0 10px 22px}.panel{padding:13px;border-radius:14px}.controls{grid-template-columns:1fr}.stat{padding:10px 8px}.stat strong{font-size:21px}.stat span{font-size:10px}.intro h2{font-size:20px}}
+</style>
 </head>
 <body>
-<header>
-  <div class="logo">IT &amp; BUSINESS COLLEGE</div>
-  <h1>Международный университет «Ала-Тоо»</h1>
-  <p>Система учёта согласий родителей</p>
-</header>
+<header><div class="head"><div class="brand">IT &amp; BUSINESS COLLEGE</div><h1>Международный университет «Ала-Тоо»</h1><p>Учёт согласий родителей на психологическое сопровождение</p></div></header>
 <main>
-  <section class="welcome">
-    <h2>Согласие родителей</h2>
-    <p>На психологическое сопровождение студентов</p>
-  </section>
-  <div class="layout">
-    <section class="card">
-      <h3>Добро пожаловать!</h3>
-      <p>Электронная система учёта согласий родителей (законных представителей) на психологическое сопровождение студентов IT &amp; Business College.</p>
-      <div class="info">
-        <h4>Для чего нужна система?</h4>
-        <p>Куратор открывает список студентов и отмечает получение согласия на психологическое сопровождение.</p>
-      </div>
-    </section>
-    <section class="card login-card" id="loginPanel">
-      <h3>Панель куратора</h3>
-      <p>Нажмите кнопку, чтобы открыть список студентов и отмечать получение согласий.</p>
-      <button id="enterButton" type="button">Войти как куратор</button>
-      <div id="loginMessage" class="message" role="status" aria-live="polite"></div>
-    </section>
-  </div>
-  <section class="features" aria-label="Возможности системы">
-    <div class="feature"><div class="icon">👨‍🎓</div><h4>Студенты</h4><p>Список студентов по курсам и учебным группам.</p></div>
-    <div class="feature"><div class="icon">📋</div><h4>Согласия</h4><p>Учёт получения согласий родителей и контроль статусов.</p></div>
-    <div class="feature"><div class="icon">📊</div><h4>Отчёты</h4><p>Сводная информация для администрации колледжа.</p></div>
-  </section>
+<section class="intro"><h2>Панель куратора</h2><p>Выберите учебную группу и отмечайте согласия прямо с телефона.</p></section>
+<section class="panel">
+<div class="controls">
+<div class="field"><label for="groupFilter">Учебная группа</label><select id="groupFilter" disabled><option value="">Загрузка групп…</option></select></div>
+<div class="field"><label for="search">Поиск студента</label><input id="search" type="search" placeholder="Введите фамилию или имя" disabled></div>
+</div>
+<div class="stats"><div class="stat"><strong id="total">—</strong><span>Всего в группе</span></div><div class="stat"><strong id="checked">—</strong><span>Согласия получены</span></div><div class="stat"><strong id="remaining">—</strong><span>Осталось</span></div></div>
+<div class="progress"><div id="progressBar"></div></div><div style="font-size:12px;color:var(--muted);text-align:right" id="percent">0%</div>
+<div id="message" class="message" role="status" aria-live="polite"></div>
+<button id="loadButton" class="load" type="button">Загрузить список студентов</button>
+</section>
+<section class="panel"><div class="list-head"><h3>Студенты</h3><small id="shown">Список не загружен</small></div><div id="studentsList"><div class="empty">Нажмите «Загрузить список студентов»</div></div></section>
 </main>
-<footer>© 2026 IT &amp; Business College при Международном университете «Ала-Тоо»</footer>
+<footer>© 2026 IT &amp; Business College · Международный университет «Ала-Тоо»</footer>
 <script type="module">
-  import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
-  const SUPABASE_URL = 'https://sjydvsyazfzzovexuyr.supabase.co';
-  const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_-festeUT3kAEXR0x_nJ02Q_YaxYmnxx';
-  const supabase = createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
-  const enterButton = document.getElementById('enterButton');
-  const message = document.getElementById('loginMessage');
-
-  enterButton.addEventListener('click', async () => {
-    enterButton.disabled = true;
-    enterButton.textContent = 'Загружаем студентов…';
-    message.className = 'message';
-    try {
-      const { data, error } = await supabase.from('students')
-        .select('id, full_name, student_group, course, curator, consent_received, consent_date')
-        .order('student_group').order('full_name');
-      if (error) throw error;
-      document.getElementById('loginPanel').innerHTML = `
-        <h3>Управление студентами</h3>
-        <p>Всего записей: ${data.length}</p>
-        <label for="groupFilter">Учебная группа</label>
-        <select id="groupFilter" style="width:100%;padding:12px;border:1px solid #ccd7e5;border-radius:10px;margin:6px 0 16px">
-          <option value="">Все группы</option>
-          ${[...new Set(data.map(s => s.student_group))].map(g => `<option value="${g}">${g}</option>`).join('')}
-        </select>
-        <div style="overflow:auto;max-height:65vh">
-          <table style="width:100%;border-collapse:collapse;font-size:13px">
-            <thead><tr><th style="text-align:left;padding:9px">Студент</th><th style="text-align:left;padding:9px">Группа</th><th style="text-align:left;padding:9px">Согласие</th></tr></thead>
-            <tbody id="studentsRows"></tbody>
-          </table>
-        </div>
-        <div id="dashboardMessage" class="message" role="status"></div>
-      `;
-      const rows = document.getElementById('studentsRows');
-      const filter = document.getElementById('groupFilter');
-      function render() {
-        const shown = data.filter(s => !filter.value || s.student_group === filter.value);
-        rows.innerHTML = shown.map(s => `<tr style="border-top:1px solid #e3eaf3">
-          <td style="padding:9px">${escapeHtml(s.full_name)}</td>
-          <td style="padding:9px">${escapeHtml(s.student_group)}</td>
-          <td style="padding:9px"><input type="checkbox" data-id="${s.id}" ${s.consent_received ? 'checked' : ''} aria-label="Согласие: ${escapeHtml(s.full_name)}" style="width:20px;height:20px"></td>
-        </tr>`).join('');
-      }
-      function escapeHtml(value) {
-        return String(value ?? '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
-      }
-      render();
-      filter.addEventListener('change', render);
-      rows.addEventListener('change', async event => {
-        const input = event.target;
-        if (!input.matches('input[type="checkbox"][data-id]')) return;
-        input.disabled = true;
-        const checked = input.checked;
-        const { error } = await supabase.from('students').update({
-          consent_received: checked,
-          consent_date: checked ? new Date().toISOString() : null
-        }).eq('id', input.dataset.id);
-        const note = document.getElementById('dashboardMessage');
-        if (error) {
-          input.checked = !checked;
-          note.textContent = 'Не удалось сохранить. Проверьте права доступа к таблице Supabase.';
-          note.className = 'message error';
-        } else {
-          const student = data.find(s => String(s.id) === input.dataset.id);
-          if (student) { student.consent_received = checked; student.consent_date = checked ? new Date().toISOString() : null; }
-          note.textContent = 'Изменение сохранено.';
-          note.className = 'message success';
-        }
-        input.disabled = false;
-      });
-    } catch (error) {
-      message.textContent = 'Ошибка Supabase: ' + (error?.message || String(error)) + (error?.code ? ' (код: ' + error.code + ')' : '');
-      message.className = 'message error';
-      console.error(error);
-    } finally {
-      enterButton.disabled = false;
-      enterButton.textContent = 'Войти как куратор';
-    }
-  });
-</script>
-</body>
-</html>
+import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
+const URL='https://sjydvsyazfzzovexuyr.supabase.co';
+const KEY='sb_publishable_-festeUT3kAEXR0x_nJ02Q_YaxYmnxx';
+const db=createClient(URL,KEY);
+const $=id=>document.getElementById(id);
+let students=[];
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function note(text,type){$('message').textContent=text;$('message').className='message '+type}
+function updateStats(){
+ const group=$('groupFilter').value, q=$('search').value.trim().toLocaleLowerCase('ru');
+ const pool=students.filter(s=>!group||s.student_group===group);
+ const complete=pool.filter(s=>s.consent_received).length, total=pool.length, left=total-complete, pct=total?Math.round(complete/total*100):0;
+ $('total').textContent=total;$('checked').textContent=complete;$('remaining').textContent=left;$('percent').textContent=pct+'%';$('progressBar').style.width=pct+'%';
+ const shown=pool.filter(s=>String(s.full_name||'').toLocaleLowerCase('ru').includes(q));
+ $('shown').textContent=shown.length+' из '+total;
+ $('studentsList').innerHTML=shown.length?shown.map(s=>'<label class="student"><div class="student-info"><div class="student-name">'+esc(s.full_name)+'</div><div class="student-group">'+esc(s.student_group||'')+'</div></div><input class="toggle" type="checkbox" data-id="'+esc(s.id)+'" '+(s.consent_received?'checked':'')+' aria-label="Согласие для '+esc(s.full_name)+'"></label>').join(''):'<div class="empty">Студенты не найдены</div>';
+}
+$('groupFilter').addEventListener('change',updateStats);$('search').addEventListener('input',updateStats);
+$('loadButton').addEventListener('click',async()=>{
+ const b=$('loadButton');b.disabled=true;b.textContent='Загрузка…';$('studentsList').innerHTML='<div class="empty">Получаем данные…</div>';note('','');
+ try{
+  const {data,error}=await db.from('students').select('id,full_name,student_group,course,curator,consent_received,consent_date').order('student_group').order('full_name');
+  if(error)throw error;
+  students=data||[];
+  const groups=[...new Set(students.map(s=>s.student_group).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'ru',{numeric:true}));
+  $('groupFilter').innerHTML='<option value="">Все группы</option>'+groups.map(g=>'<option value="'+esc(g)+'">'+esc(g)+'</option>').join('');
+  $('groupFilter').disabled=false;$('search').disabled=false;updateStats();
+  note('Список загружен. Всего студентов: '+students.length+'.','success');
+ }catch(e){$('studentsList').innerHTML='<div class="empty">Не удалось загрузить список.</div>';note('Ошибка подключения: '+(e?.message||String(e))+' . Проверьте доступность Supabase и подключение к интернету.','error');}
+ finally{b.disabled=false;b.textContent='Обновить список студентов';}
+});
+$('studentsList').addEventListener('change',async ev=>{
+ const input=ev.target;if(!input.matches('.toggle'))return;
+ const student=students.find(s=>String(s.id)===input.dataset.id);if(!student)return;
+ const val=input.checked;input.disabled=true;
+ const {error}=await db.from('students').update({consent_received:val,consent_date:val?new Date().toISOString():null}).eq('id',student.id);
+ if(error){input.checked=!val;note('Не удалось сохранить отметку: '+error.message,'error');}
+ else{student.consent_received=val;student.consent_date=val?new Date().toISOString():null;note('Отметка сохранена.','success');updateStats();}
+ input.disabled=false;
+});
+</script></body></html>
