@@ -4,37 +4,29 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Учёт согласий родителей — IT & Business College</title>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="bg-slate-50 text-slate-800 min-h-screen">
 <header class="bg-indigo-700 text-white shadow">
-  <div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between gap-3">
-    <div><h1 class="text-xl font-bold">Учёт согласий 2026</h1><p class="text-sm text-indigo-100">IT & Business College · Ala-Too</p></div>
-    <button id="logoutBtn" class="hidden bg-indigo-900 hover:bg-indigo-950 px-3 py-2 rounded-lg text-sm">Выйти</button>
-  </div>
+  <div class="max-w-5xl mx-auto px-4 py-4"><h1 class="text-xl font-bold">Учёт согласий 2026</h1><p class="text-sm text-indigo-100">IT & Business College · Ala-Too</p></div>
 </header>
 <main class="max-w-5xl mx-auto p-4">
   <section id="loginPanel" class="bg-white rounded-2xl shadow-sm border p-6 max-w-md mx-auto mt-8">
-    <h2 class="text-lg font-semibold mb-2">Вход куратора</h2>
-    <p class="text-sm text-slate-600 mb-4">Войдите с учётной записью, созданной администрацией Supabase. Отметки будут синхронизироваться между компьютерами.</p>
+    <div class="text-center mb-4"><div class="text-3xl mb-2">🔐</div><h2 class="text-lg font-semibold">Учёт согласий родителей</h2><p class="text-sm text-slate-500 mt-1">Введите общий пароль для продолжения</p></div>
     <form id="loginForm" class="space-y-3">
-      <label class="block text-sm">Электронная почта<input id="email" type="email" autocomplete="username" required class="mt-1 w-full border rounded-lg p-3" /></label>
-      <label class="block text-sm">Пароль<input id="password" type="password" autocomplete="current-password" required class="mt-1 w-full border rounded-lg p-3" /></label>
+      <label class="block text-sm font-medium">Общий пароль
+        <input id="password" type="password" autocomplete="current-password" required class="mt-1 w-full border rounded-lg p-3 focus:ring-2 focus:ring-indigo-500 outline-none" placeholder="Введите пароль">
+      </label>
       <button id="loginBtn" class="w-full bg-indigo-700 hover:bg-indigo-800 text-white rounded-lg p-3 font-medium">Войти</button>
     </form>
     <p id="loginMessage" role="status" class="text-sm mt-3 text-rose-700"></p>
   </section>
-
   <section id="appPanel" class="hidden">
     <div class="bg-white rounded-2xl shadow-sm border p-5 mb-5">
       <div class="flex flex-col sm:flex-row sm:items-end gap-3">
-        <label class="block text-sm flex-1">Группа
-          <select id="groupSelect" class="mt-1 w-full border rounded-lg p-3"></select>
-        </label>
-        <label class="block text-sm flex-1">Поиск по ФИО
-          <input id="searchInput" type="search" placeholder="Введите фамилию или имя" class="mt-1 w-full border rounded-lg p-3" />
-        </label>
+        <label class="block text-sm flex-1">Группа<select id="groupSelect" class="mt-1 w-full border rounded-lg p-3"></select></label>
+        <label class="block text-sm flex-1">Поиск по ФИО<input id="searchInput" type="search" placeholder="Введите фамилию или имя" class="mt-1 w-full border rounded-lg p-3"></label>
+        <button id="logoutBtn" class="bg-slate-100 hover:bg-slate-200 px-4 py-3 rounded-lg text-sm">Выйти</button>
       </div>
       <p id="statusMessage" role="status" class="text-sm mt-3 text-slate-600">Загрузка…</p>
     </div>
@@ -43,37 +35,27 @@
       <div class="bg-white border rounded-xl p-4"><p class="text-xs uppercase text-green-700">Согласие есть</p><p id="yesCount" class="text-2xl font-bold text-green-700">0</p></div>
       <div class="bg-white border rounded-xl p-4"><p class="text-xs uppercase text-rose-700">Согласия нет</p><p id="noCount" class="text-2xl font-bold text-rose-700">0</p></div>
     </div>
-    <section class="bg-white rounded-2xl shadow-sm border p-3">
-      <div id="studentsList" class="divide-y max-h-[65vh] overflow-y-auto"></div>
-    </section>
+    <section class="bg-white rounded-2xl shadow-sm border p-3"><div id="studentsList" class="divide-y max-h-[65vh] overflow-y-auto"></div></section>
   </section>
 </main>
 <footer class="text-center text-xs text-slate-400 py-6">Ala-Too IT & Business College © 2026</footer>
 <script>
-const SUPABASE_URL = 'https://sjydvsyazfzzovexuyr.supabase.co';
-const SUPABASE_KEY = 'sb_publishable_-festeUT3kAEXR0x_nJ02Q_YaxYmnxx';
-const db = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
-let currentUser = null;
+const API_URL = 'https://sjydvsyazfzzovexuyr.supabase.co/functions/v1/consent-api';
+let appPassword = '';
 let students = [];
 let statuses = {};
 const $ = id => document.getElementById(id);
 const groupSelect = $('groupSelect');
 const searchInput = $('searchInput');
-
-function safeText(tag, text, className) {
-  const el = document.createElement(tag);
-  el.textContent = text ?? '';
-  if (className) el.className = className;
-  return el;
-}
-function studentKey(s) {
-  // Deterministic technical key; no student ID is required.
-  return (s.group.trim() + '::' + s.name.trim()).toLocaleLowerCase('ru');
-}
-function showLoggedIn(loggedIn) {
-  $('loginPanel').classList.toggle('hidden', loggedIn);
-  $('appPanel').classList.toggle('hidden', !loggedIn);
-  $('logoutBtn').classList.toggle('hidden', !loggedIn);
+function studentKey(s) { return (s.group.trim() + '::' + s.name.trim()).toLocaleLowerCase('ru'); }
+async function api(method, body) {
+  const options = { method, headers: { 'x-app-password': appPassword } };
+  if (body !== undefined) { options.headers['Content-Type'] = 'application/json'; options.body = JSON.stringify(body); }
+  const response = await fetch(API_URL, options);
+  let data = {};
+  try { data = await response.json(); } catch {}
+  if (!response.ok) throw new Error(data.error || 'Ошибка сервера (' + response.status + ')');
+  return data;
 }
 function updateStats() {
   $('totalCount').textContent = students.length;
@@ -83,120 +65,58 @@ function updateStats() {
 function renderStudents() {
   const selectedGroup = groupSelect.value;
   const q = searchInput.value.trim().toLocaleLowerCase('ru');
-  const list = $('studentsList');
-  list.replaceChildren();
+  const list = $('studentsList'); list.replaceChildren();
   const filtered = students.filter(s => (!selectedGroup || s.group === selectedGroup) && s.name.toLocaleLowerCase('ru').includes(q));
-  if (!filtered.length) {
-    list.appendChild(safeText('p', 'В этой группе студенты не найдены.', 'text-center text-slate-500 p-6'));
-  }
+  if (!filtered.length) { const p=document.createElement('p'); p.className='text-center text-slate-500 p-6'; p.textContent='В этой группе студенты не найдены.'; list.appendChild(p); }
   for (const s of filtered) {
-    const row = document.createElement('div');
-    row.className = 'flex flex-col sm:flex-row sm:items-center justify-between gap-3 py-3 px-2';
-    const info = document.createElement('div');
-    info.appendChild(safeText('p', s.name, 'font-medium'));
-    info.appendChild(safeText('p', [s.group, s.course ? 'Курс ' + s.course : '', s.curator ? 'Куратор: ' + s.curator : ''].filter(Boolean).join(' · '), 'text-xs text-slate-500 mt-1'));
-    const actions = document.createElement('div');
-    actions.className = 'flex gap-2 flex-wrap';
-    const yes = document.createElement('button');
-    yes.type = 'button';
-    yes.textContent = '✓ Согласие есть';
-    yes.className = 'rounded-lg px-3 py-2 text-sm font-medium ' + (statuses[s.key] === true ? 'bg-green-100 text-green-800 ring-2 ring-green-500' : 'bg-slate-100 hover:bg-green-50');
-    yes.disabled = !currentUser;
-    yes.addEventListener('click', () => setConsent(s, true));
-    const no = document.createElement('button');
-    no.type = 'button';
-    no.textContent = '✕ Согласия нет';
-    no.className = 'rounded-lg px-3 py-2 text-sm font-medium ' + (statuses[s.key] === false ? 'bg-rose-100 text-rose-800 ring-2 ring-rose-500' : 'bg-slate-100 hover:bg-rose-50');
-    no.disabled = !currentUser;
-    no.addEventListener('click', () => setConsent(s, false));
-    actions.append(yes, no);
-    row.append(info, actions);
-    list.appendChild(row);
+    const row=document.createElement('div'); row.className='flex flex-col sm:flex-row sm:items-center justify-between gap-3 py-3 px-2';
+    const info=document.createElement('div'); const name=document.createElement('p'); name.className='font-medium'; name.textContent=s.name; info.appendChild(name);
+    const meta=document.createElement('p'); meta.className='text-xs text-slate-500 mt-1'; meta.textContent=[s.group,s.course?'Курс '+s.course:'',s.curator?'Куратор: '+s.curator:''].filter(Boolean).join(' · '); info.appendChild(meta);
+    const actions=document.createElement('div'); actions.className='flex gap-2 flex-wrap';
+    for (const [value,label] of [[true,'✓ Согласие есть'],[false,'✕ Согласия нет']]) {
+      const btn=document.createElement('button'); btn.type='button'; btn.textContent=label;
+      btn.className='rounded-lg px-3 py-2 text-sm font-medium '+(statuses[s.key]===value?(value?'bg-green-100 text-green-800 ring-2 ring-green-500':'bg-rose-100 text-rose-800 ring-2 ring-rose-500'):'bg-slate-100 hover:bg-slate-200');
+      btn.addEventListener('click',()=>setConsent(s,value)); actions.appendChild(btn);
+    }
+    row.append(info,actions); list.appendChild(row);
   }
   updateStats();
 }
 async function loadStatuses() {
-  const { data, error } = await db.from('consent_statuses').select('student_key,consent,updated_at');
-  if (error) throw error;
-  statuses = {};
-  for (const r of data || []) statuses[r.student_key] = r.consent;
+  const data=await api('GET'); statuses={};
+  for (const item of (data.statuses||[])) statuses[item.student_key]=item.consent;
 }
-async function setConsent(student, value) {
-  $('statusMessage').textContent = 'Сохраняю отметку…';
-  const { error } = await db.from('consent_statuses').upsert({
-    student_key: student.key,
-    consent: value,
-    updated_at: new Date().toISOString(),
-    updated_by: currentUser.id
-  }, { onConflict: 'student_key' });
-  if (error) {
-    $('statusMessage').textContent = 'Не удалось сохранить: ' + error.message;
-    return;
-  }
-  statuses[student.key] = value;
-  renderStudents();
-  $('statusMessage').textContent = 'Отметка сохранена и будет доступна на других компьютерах.';
-}
-async function loadRoster() {
-  $('statusMessage').textContent = 'Загружаю список студентов из GitHub…';
-  const response = await fetch('./students.json', { cache: 'no-store' });
-  if (!response.ok) throw new Error('Не удалось загрузить students.json (' + response.status + ')');
-  const rows = await response.json();
-  if (!Array.isArray(rows)) throw new Error('students.json имеет неверный формат');
-  students = rows.map(s => {
-    const student = { name: String(s.name || '').trim(), group: String(s.group || '').trim(), course: String(s.course || '').trim(), curator: String(s.curator || '').trim() };
-    student.key = studentKey(student);
-    return student;
-  }).filter(s => s.name);
-  const groups = [...new Set(students.map(s => s.group).filter(Boolean))].sort((a,b) => a.localeCompare(b, 'ru'));
-  groupSelect.replaceChildren();
-  for (const group of groups) groupSelect.appendChild(new Option(group, group));
-  $('statusMessage').textContent = 'Загружено студентов: ' + students.length + '. Загружаю отметки…';
-}
-async function openApp(user) {
-  currentUser = user;
-  showLoggedIn(true);
+async function setConsent(student,value) {
+  $('statusMessage').textContent='Сохраняю отметку…';
   try {
-    await loadRoster();
-    await loadStatuses();
-    renderStudents();
-    $('statusMessage').textContent = 'Синхронизация включена. Последняя проверка: ' + new Date().toLocaleTimeString('ru-RU');
-  } catch (e) {
-    $('statusMessage').textContent = 'Ошибка загрузки: ' + (e.message || e);
-  }
+    await api('POST',{student_key:student.key,consent:value});
+    statuses[student.key]=value; renderStudents();
+    $('statusMessage').textContent='Отметка сохранена. Синхронизация с другими компьютерами включена.';
+  } catch(e) { $('statusMessage').textContent='Ошибка сохранения: '+e.message; }
 }
-$('loginForm').addEventListener('submit', async e => {
-  e.preventDefault();
-  $('loginBtn').disabled = true;
-  $('loginMessage').textContent = 'Выполняю вход…';
-  const { data, error } = await db.auth.signInWithPassword({ email: $('email').value.trim(), password: $('password').value });
-  $('loginBtn').disabled = false;
-  if (error) { $('loginMessage').textContent = 'Ошибка входа: ' + error.message; return; }
-  $('loginMessage').textContent = '';
-  await openApp(data.user);
+async function startApp(password) {
+  appPassword=password;
+  $('statusMessage').textContent='Загружаю список студентов из GitHub…';
+  const response=await fetch('./students.json',{cache:'no-store'});
+  if(!response.ok) throw new Error('Не удалось загрузить students.json ('+response.status+'). Проверьте, что файл загружен в GitHub.');
+  const rows=await response.json();
+  if(!Array.isArray(rows)) throw new Error('students.json имеет неверный формат.');
+  students=rows.map(r=>{const s={name:String(r.name||'').trim(),group:String(r.group||'').trim(),course:String(r.course||'').trim(),curator:String(r.curator||'').trim()};s.key=studentKey(s);return s;}).filter(s=>s.name);
+  const groups=[...new Set(students.map(s=>s.group).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'ru'));
+  groupSelect.replaceChildren(); for(const g of groups) groupSelect.appendChild(new Option(g,g));
+  await loadStatuses();
+  $('loginPanel').classList.add('hidden'); $('appPanel').classList.remove('hidden');
+  renderStudents(); $('statusMessage').textContent='Загружено студентов: '+students.length+'. Отметки синхронизируются.';
+}
+$('loginForm').addEventListener('submit',async e=>{
+  e.preventDefault(); $('loginBtn').disabled=true; $('loginMessage').textContent='Проверяю пароль…';
+  try { await startApp($('password').value); $('password').value=''; $('loginMessage').textContent=''; }
+  catch(err) { appPassword=''; $('loginMessage').textContent=err.message==='Неверный пароль'?'Неверный пароль.':err.message; }
+  finally { $('loginBtn').disabled=false; }
 });
-$('logoutBtn').addEventListener('click', async () => {
-  await db.auth.signOut();
-  currentUser = null; students = []; statuses = {};
-  showLoggedIn(false);
-  $('loginMessage').textContent = 'Вы вышли из системы.';
-});
-groupSelect.addEventListener('change', renderStudents);
-searchInput.addEventListener('input', renderStudents);
-db.auth.getSession().then(async ({ data, error }) => {
-  if (error) { $('loginMessage').textContent = error.message; return; }
-  if (data.session) await openApp(data.session.user);
-});
-setInterval(async () => {
-  if (!currentUser || document.hidden) return;
-  try {
-    await loadStatuses();
-    renderStudents();
-    $('statusMessage').textContent = 'Синхронизация активна · ' + new Date().toLocaleTimeString('ru-RU');
-  } catch (e) {
-    $('statusMessage').textContent = 'Не удалось обновить отметки: ' + (e.message || e);
-  }
-}, 10000);
+$('logoutBtn').addEventListener('click',()=>{appPassword='';students=[];statuses={};$('appPanel').classList.add('hidden');$('loginPanel').classList.remove('hidden');$('password').value='';$('loginMessage').textContent='Вы вышли.';});
+groupSelect.addEventListener('change',renderStudents); searchInput.addEventListener('input',renderStudents);
+setInterval(async()=>{if(!appPassword||document.hidden)return;try{await loadStatuses();renderStudents();$('statusMessage').textContent='Синхронизация активна · '+new Date().toLocaleTimeString('ru-RU');}catch(e){$('statusMessage').textContent='Не удалось обновить отметки: '+e.message;}},10000);
 </script>
 </body>
 </html>
