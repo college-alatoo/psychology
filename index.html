@@ -103,7 +103,7 @@
 
             const filtered = studentsData.filter(s => {
                 const matchGroup = s.group === selectedGroup;
-                const matchQuery = s.name.toLowerCase().includes(query) || s.id.includes(query);
+                const matchQuery = s.name.toLowerCase().includes(query);
                 return matchGroup && matchQuery;
             });
 
@@ -118,11 +118,11 @@
                 div.innerHTML = `
                     <div>
                         <p class="font-medium text-gray-800">${student.name}</p>
-                        <p class="text-xs text-gray-400">ID: ${student.id} · Группа: ${student.group}</p>
+                        <p class="text-xs text-gray-400">Группа: ${student.group}</p>
                     </div>
                     <div class="flex flex-wrap gap-2">
-                        <button onclick="setConsent('${student.id}', true)" class="px-3 py-1.5 rounded-lg text-sm font-medium transition ${student.consent === true ? 'bg-green-100 text-green-700 ring-2 ring-green-500' : 'bg-gray-100 text-gray-600 hover:bg-green-50'}">✓ Согласие есть</button>
-                        <button onclick="setConsent('${student.id}', false)" class="px-3 py-1.5 rounded-lg text-sm font-medium transition ${student.consent === false ? 'bg-red-100 text-red-700 ring-2 ring-red-500' : 'bg-gray-100 text-gray-600 hover:bg-red-50'}">✕ Согласия нет</button>
+                        <button onclick="setConsent('${student.key}', true)" class="px-3 py-1.5 rounded-lg text-sm font-medium transition ${student.consent === true ? 'bg-green-100 text-green-700 ring-2 ring-green-500' : 'bg-gray-100 text-gray-600 hover:bg-green-50'}">✓ Согласие есть</button>
+                        <button onclick="setConsent('${student.key}', false)" class="px-3 py-1.5 rounded-lg text-sm font-medium transition ${student.consent === false ? 'bg-red-100 text-red-700 ring-2 ring-red-500' : 'bg-gray-100 text-gray-600 hover:bg-red-50'}">✕ Согласия нет</button>
                     </div>
                 `;
                 studentsList.appendChild(div);
@@ -132,10 +132,10 @@
         }
 
         function setConsent(id, value) {
-            const student = studentsData.find(s => s.id === id);
+            const student = studentsData.find(s => s.key === id);
             if (!student) return;
             student.consent = value;
-            savedStatuses[student.id] = value;
+            savedStatuses[student.key] = value;
             localStorage.setItem('consent_statuses', JSON.stringify(savedStatuses));
             renderStudents();
         }
@@ -188,10 +188,12 @@
                 const rows = await response.json();
                 if (!Array.isArray(rows)) throw new Error('Файл students.json имеет неверный формат');
                 studentsData = rows.map(s => ({
-                    id: String(s.id ?? ''),
                     name: String(s.name ?? ''),
                     group: String(s.group ?? ''),
-                    consent: Object.prototype.hasOwnProperty.call(savedStatuses, String(s.id)) ? savedStatuses[String(s.id)] : null
+                    course: String(s.course ?? ''),
+                    curator: String(s.curator ?? ''),
+                    key: String(s.group ?? '') + '::' + String(s.name ?? ''),
+                    consent: Object.prototype.hasOwnProperty.call(savedStatuses, String(s.group ?? '') + '::' + String(s.name ?? '')) ? savedStatuses[String(s.group ?? '') + '::' + String(s.name ?? '')] : null
                 }));
                 const groups = [...new Set(studentsData.map(s => s.group).filter(Boolean))];
                 const previousGroup = groupSelect.value;
