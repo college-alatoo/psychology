@@ -98,7 +98,7 @@ async function setConsent(student,value) {
 async function startApp(password) {
   appPassword=password;
   $('statusMessage').textContent='Загружаю список студентов из GitHub…';
-  const response=await fetch('./students.json',{cache:'no-store'});
+  const response=await fetch('./students.json',{cache:'default'});
   if(!response.ok) throw new Error('Не удалось загрузить students.json ('+response.status+'). Проверьте, что файл загружен в GitHub.');
   const rows=await response.json();
   if(!Array.isArray(rows)) throw new Error('students.json имеет неверный формат.');
@@ -117,7 +117,7 @@ $('loginForm').addEventListener('submit',async e=>{
 });
 $('logoutBtn').addEventListener('click',()=>{appPassword='';students=[];statuses={};$('appPanel').classList.add('hidden');$('loginPanel').classList.remove('hidden');$('password').value='';$('loginMessage').textContent='Вы вышли.';});
 groupSelect.addEventListener('change',renderStudents); searchInput.addEventListener('input',renderStudents);
-setInterval(async()=>{if(!appPassword||document.hidden)return;try{await loadStatuses();renderStudents();$('statusMessage').textContent='Синхронизация активна · '+new Date().toLocaleTimeString('ru-RU');}catch(e){$('statusMessage').textContent='Не удалось обновить отметки: '+e.message;}},10000);
+setInterval(async()=>{if(!appPassword||document.hidden)return;try{await loadStatuses();renderStudents();$('statusMessage').textContent='Синхронизация активна · '+new Date().toLocaleTimeString('ru-RU');}catch(e){$('statusMessage').textContent='Не удалось обновить отметки: '+e.message;}},30000);
 </script>
 </body>
 </html>
