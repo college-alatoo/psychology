@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Учет флюорографии — IT & Business College</title>
+    <title>Учёт согласий родителей — IT & Business College</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -13,7 +13,7 @@
     <header class="bg-indigo-700 text-white shadow-md py-4 px-6">
         <div class="max-w-4xl mx-auto flex justify-between items-center">
             <h1 class="text-xl font-bold flex items-center gap-2">
-                <i class="fa-solid fa-lungs"></i> Флюорография 2026
+                <i class="fa-solid fa-file-signature"></i> Учёт согласий 2026
             </h1>
             <button onclick="toggleAdmin()" id="adminBtn" class="bg-indigo-800 hover:bg-indigo-900 text-sm px-3 py-1.5 rounded-lg transition">
                 <i class="fa-solid fa-lock"></i> Админ
@@ -26,7 +26,7 @@
         
         <!-- Секция поиска студента -->
         <div id="studentSection" class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 mb-6">
-            <h2 class="text-lg font-semibold mb-4 text-gray-700">Отметить прохождение флюорографии</h2>
+            <h2 class="text-lg font-semibold mb-4 text-gray-700">Согласие родителей на психологическое сопровождение</h2>
             
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
                 <div>
@@ -37,8 +37,8 @@
                     </select>
                 </div>
                 <div>
-                    <label class="block text-sm font-medium text-gray-600 mb-1">Поиск по ФИО или Student ID:</label>
-                    <input type="text" id="searchInput" placeholder="Например: Акбаров или 268712020" class="w-full border border-gray-300 rounded-lg p-2.5 focus:ring-2 focus:ring-indigo-500 outline-none">
+                    <label class="block text-sm font-medium text-gray-600 mb-1">Поиск студента по ФИО или ID:</label>
+                    <input type="text" id="searchInput" placeholder="Введите фамилию или ID студента" class="w-full border border-gray-300 rounded-lg p-2.5 focus:ring-2 focus:ring-indigo-500 outline-none">
                 </div>
             </div>
 
@@ -52,7 +52,7 @@
         <div id="adminPanel" class="hidden bg-white p-6 rounded-2xl shadow-sm border border-gray-100 mb-6">
             <div class="flex justify-between items-center mb-4">
                 <h2 class="text-lg font-semibold text-gray-700"><i class="fa-solid fa-chart-pie text-indigo-600"></i> Статистика и отчеты</h2>
-                <button onclick="resetData()" class="text-red-600 hover:text-red-800 text-sm font-medium">Сбросить все статусы</button>
+                <button onclick="resetData()" class="text-red-600 hover:text-red-800 text-sm font-medium">Сбросить все отметки</button>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
@@ -61,11 +61,11 @@
                     <p id="totalCount" class="text-2xl font-bold text-indigo-700">0</p>
                 </div>
                 <div class="bg-green-50 p-4 rounded-xl border border-green-100">
-                    <p class="text-xs text-green-500 font-semibold uppercase">Прошли</p>
+                    <p class="text-xs text-green-500 font-semibold uppercase">Согласие есть</p>
                     <p id="passedCount" class="text-2xl font-bold text-green-700">0</p>
                 </div>
                 <div class="bg-orange-50 p-4 rounded-xl border border-orange-100">
-                    <p class="text-xs text-orange-500 font-semibold uppercase">Осталось</p>
+                    <p class="text-xs text-orange-500 font-semibold uppercase">Согласия нет</p>
                     <p id="leftCount" class="text-2xl font-bold text-orange-700">0</p>
                 </div>
             </div>
@@ -74,7 +74,7 @@
             <div class="w-full bg-gray-200 rounded-full h-4 mb-2 overflow-hidden">
                 <div id="progressBar" class="bg-green-600 h-4 transition-all duration-500" style="width: 0%"></div>
             </div>
-            <p id="progressText" class="text-sm text-gray-500 text-right">0% выполнено</p>
+            <p id="progressText" class="text-sm text-gray-500 text-right">0% согласий</p>
         </div>
 
     </main>
@@ -89,7 +89,7 @@
         let studentsData = []; // Загружается из students.json в GitHub
 
         // Временное локальное хранение статусов сохраняется до подключения Supabase.
-        let savedStatuses = JSON.parse(localStorage.getItem('fluoro_statuses')) || {};
+        let savedStatuses = JSON.parse(localStorage.getItem('consent_statuses')) || {};
 
         const groupSelect = document.getElementById('groupSelect');
         const searchInput = document.getElementById('searchInput');
@@ -108,22 +108,22 @@
             });
 
             if (filtered.length === 0) {
-                studentsList.innerHTML = '<p class="text-center text-gray-400 py-4">Студенты не найдены</p>';
+                studentsList.innerHTML = '<p class="text-center text-gray-400 py-4">Студенты не найдены в выбранной группе</p>';
                 return;
             }
 
             filtered.forEach(student => {
                 const div = document.createElement('div');
-                div.className = "flex items-center justify-between py-3 px-2 hover:bg-gray-50 rounded-lg transition";
-                
+                div.className = "flex flex-col sm:flex-row sm:items-center justify-between gap-3 py-3 px-2 hover:bg-gray-50 rounded-lg transition";
                 div.innerHTML = `
                     <div>
                         <p class="font-medium text-gray-800">${student.name}</p>
-                        <p class="text-xs text-gray-400">ID: ${student.id}</p>
+                        <p class="text-xs text-gray-400">ID: ${student.id} · Группа: ${student.group}</p>
                     </div>
-                    <button onclick="togglePassed('${student.id}')" class="px-4 py-1.5 rounded-lg text-sm font-medium transition ${student.passed ? 'bg-green-100 text-green-700 hover:bg-green-200' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}">
-                        ${student.passed ? '<i class="fa-solid fa-check"></i> Прошел' : 'Не прошел'}
-                    </button>
+                    <div class="flex flex-wrap gap-2">
+                        <button onclick="setConsent('${student.id}', true)" class="px-3 py-1.5 rounded-lg text-sm font-medium transition ${student.consent === true ? 'bg-green-100 text-green-700 ring-2 ring-green-500' : 'bg-gray-100 text-gray-600 hover:bg-green-50'}">✓ Согласие есть</button>
+                        <button onclick="setConsent('${student.id}', false)" class="px-3 py-1.5 rounded-lg text-sm font-medium transition ${student.consent === false ? 'bg-red-100 text-red-700 ring-2 ring-red-500' : 'bg-gray-100 text-gray-600 hover:bg-red-50'}">✕ Согласия нет</button>
+                    </div>
                 `;
                 studentsList.appendChild(div);
             });
@@ -131,27 +131,26 @@
             updateAdminStats();
         }
 
-        function togglePassed(id) {
+        function setConsent(id, value) {
             const student = studentsData.find(s => s.id === id);
-            if (student) {
-                student.passed = !student.passed;
-                savedStatuses[student.id] = student.passed;
-                localStorage.setItem('fluoro_statuses', JSON.stringify(savedStatuses));
-                renderStudents();
-            }
+            if (!student) return;
+            student.consent = value;
+            savedStatuses[student.id] = value;
+            localStorage.setItem('consent_statuses', JSON.stringify(savedStatuses));
+            renderStudents();
         }
 
         function updateAdminStats() {
             const total = studentsData.length;
-            const passed = studentsData.filter(s => s.passed).length;
-            const left = total - passed;
+            const passed = studentsData.filter(s => s.consent === true).length;
+            const left = studentsData.filter(s => s.consent === false).length;
             const percent = total > 0 ? Math.round((passed / total) * 100) : 0;
 
             document.getElementById('totalCount').innerText = total;
             document.getElementById('passedCount').innerText = passed;
             document.getElementById('leftCount').innerText = left;
             document.getElementById('progressBar').style.width = percent + '%';
-            document.getElementById('progressText').innerText = percent + '% выполнено';
+            document.getElementById('progressText').innerText = percent + '% согласий';
         }
 
         function toggleAdmin() {
@@ -170,8 +169,8 @@
 
         function resetData() {
             if (confirm('Вы уверены, что хотите сбросить все статусы?')) {
-                localStorage.removeItem('fluoro_statuses');
-                studentsData.forEach(s => s.passed = false);
+                localStorage.removeItem('consent_statuses');
+                studentsData.forEach(s => s.consent = null);
                 savedStatuses = {};
                 renderStudents();
             }
@@ -192,7 +191,7 @@
                     id: String(s.id ?? ''),
                     name: String(s.name ?? ''),
                     group: String(s.group ?? ''),
-                    passed: savedStatuses[String(s.id)] === true
+                    consent: Object.prototype.hasOwnProperty.call(savedStatuses, String(s.id)) ? savedStatuses[String(s.id)] : null
                 }));
                 const groups = [...new Set(studentsData.map(s => s.group).filter(Boolean))];
                 const previousGroup = groupSelect.value;
