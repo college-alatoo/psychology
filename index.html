@@ -1,87 +1,232 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#123b73">
-<title>Учёт согласий | IT & Business College</title>
-<style>
-:root{--navy:#4338ca;--blue:#4f46e5;--ink:#17263c;--muted:#64748b;--line:#e2e8f0;--bg:#f8fafc;--green:#15803d}
-*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink)}
-header{background:#4338ca;color:#fff;padding:16px;border-bottom:1px solid #3730a3;box-shadow:0 3px 12px #312e811f}.head{max-width:980px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{font-size:11px;font-weight:800;letter-spacing:1.5px;color:#c7d2fe}h1{font-size:21px;margin:6px 0;color:#fff}header p{margin:0;color:#e0e7ff;font-size:13px}.admin-btn{width:auto;white-space:nowrap;background:#3730a3;border:1px solid #6366f1;padding:10px 13px;font-size:13px}.admin-panel{display:none}.admin-panel.open{display:block}.admin-panel h3{margin:0 0 12px}.admin-actions{display:flex;gap:10px;flex-wrap:wrap}.admin-actions button{width:auto;font-size:13px;padding:10px 13px}.admin-actions .secondary{background:#eef2ff;color:#3730a3}
-main{max-width:980px;margin:20px auto;padding:0 14px 30px}.intro{margin-bottom:16px}.intro h2{font-size:22px;margin:0 0 5px}.intro p{font-size:14px;color:var(--muted);margin:0}
-.panel{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px;margin-bottom:14px;box-shadow:0 4px 16px #15345a08}
-button,select,input{font:inherit}select,input[type=search]{width:100%;padding:13px 12px;border:1px solid #cbd5e1;border-radius:11px;background:#fff;color:var(--ink);font-size:16px}
-.controls{display:grid;grid-template-columns:1fr 1fr;gap:10px}.field label{display:block;font-size:12px;font-weight:700;color:var(--muted);margin:0 0 6px}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin:14px 0}.stat{background:#f8fafc;border:1px solid var(--line);border-radius:12px;padding:12px}.stat strong{display:block;font-size:23px}.stat span{font-size:11px;color:var(--muted)}
-.progress{height:8px;background:#e8eef7;border-radius:99px;overflow:hidden;margin:10px 0 3px}.progress div{height:100%;background:var(--green);width:0;transition:width .2s}
-.list-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:8px 0 12px}.list-head h3{margin:0;font-size:17px}.list-head small{color:var(--muted)}
-.student{display:flex;align-items:center;gap:12px;padding:13px 2px;border-top:1px solid var(--line);min-height:62px}.student:first-child{border-top:0}.student-info{flex:1;min-width:0}.student-name{font-weight:650;font-size:14px;overflow-wrap:anywhere}.student-group{font-size:12px;color:var(--muted);margin-top:3px}
-.toggle{width:28px;height:28px;flex:0 0 28px;accent-color:var(--green)}.student:has(.toggle:checked) .student-name{color:#166534}
-.empty{text-align:center;color:var(--muted);padding:28px 10px}.message{padding:11px 12px;border-radius:10px;margin-top:10px;font-size:13px;display:none;overflow-wrap:anywhere}.message.error{display:block;background:#fff1f2;color:#9f1239}.message.success{display:block;background:#f0fdf4;color:#166534}
-button{border:0;background:var(--blue);color:#fff;padding:13px 15px;border-radius:11px;font-weight:700;width:100%;cursor:pointer}button:disabled{opacity:.55}.hidden{display:none!important}.load{margin-top:14px}
-footer{text-align:center;padding:18px;color:#8290a4;font-size:11px}
-@media(max-width:560px){header{padding:15px 14px}.head{align-items:flex-start}h1{font-size:19px}main{margin:14px auto;padding:0 10px 22px}.panel{padding:13px;border-radius:14px}.controls{grid-template-columns:1fr}.stat{padding:10px 8px}.stat strong{font-size:21px}.stat span{font-size:10px}.intro h2{font-size:20px}}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учет флюорографии — IT & Business College</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-<header><div class="head"><div><div class="brand">IT &amp; BUSINESS COLLEGE</div><h1>Учёт согласий 2026</h1><p>Психологическое сопровождение студентов</p></div><button class="admin-btn" id="adminButton" type="button">♙ Админ</button></div></header>
-<main>
-<section class="intro"><h2>Панель куратора</h2><p>Выберите учебную группу и отмечайте согласия прямо с телефона.</p></section>
-<section class="panel">
-<div class="controls">
-<div class="field"><label for="groupFilter">Учебная группа</label><select id="groupFilter" disabled><option value="">Загрузка групп…</option></select></div>
-<div class="field"><label for="search">Поиск студента</label><input id="search" type="search" placeholder="Введите фамилию или имя" disabled></div>
-</div>
-<div class="stats"><div class="stat"><strong id="total">—</strong><span>Всего в группе</span></div><div class="stat"><strong id="checked">—</strong><span>Согласия получены</span></div><div class="stat"><strong id="remaining">—</strong><span>Осталось</span></div></div>
-<div class="progress"><div id="progressBar"></div></div><div style="font-size:12px;color:var(--muted);text-align:right" id="percent">0%</div>
-<div id="message" class="message" role="status" aria-live="polite"></div>
-<button id="loadButton" class="load" type="button">Загрузить список студентов</button>
-</section>
-<section class="panel"><div class="list-head"><h3>Студенты</h3><small id="shown">Список не загружен</small></div><div id="studentsList"><div class="empty">Нажмите «Загрузить список студентов»</div></div></section>
-</main>
-<section class="panel admin-panel" id="adminPanel"><h3>Общая статистика</h3><div class="stats"><div class="stat"><strong id="adminTotal">—</strong><span>Всего студентов</span></div><div class="stat"><strong id="adminChecked">—</strong><span>Согласия получены</span></div><div class="stat"><strong id="adminRemaining">—</strong><span>Осталось</span></div></div><div class="progress"><div id="adminProgress"></div></div><div id="adminPercent" style="font-size:12px;color:var(--muted);text-align:right">0%</div><div class="admin-actions" style="margin-top:14px"><button id="exportButton" type="button">Экспорт CSV</button><button id="hideAdmin" class="secondary" type="button">Скрыть панель</button></div></section><footer>© 2026 IT &amp; Business College · Международный университет «Ала-Тоо»</footer>
-<script type="module">
-import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
-const URL='https://sjydvsyazfzzovexuyr.supabase.co';
-const KEY='sb_publishable_-festeUT3kAEXR0x_nJ02Q_YaxYmnxx';
-const db=createClient(URL,KEY);
-const $=id=>document.getElementById(id);
-let students=[];
-const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-function note(text,type){$('message').textContent=text;$('message').className='message '+type}
-function updateAdmin(){const total=students.length,done=students.filter(s=>s.consent_received).length,left=total-done,pct=total?Math.round(done/total*100):0;$('adminTotal').textContent=total;$('adminChecked').textContent=done;$('adminRemaining').textContent=left;$('adminProgress').style.width=pct+'%';$('adminPercent').textContent=pct+'% выполнено';}
-function updateStats(){
- const group=$('groupFilter').value, q=$('search').value.trim().toLocaleLowerCase('ru');
- const pool=students.filter(s=>!group||s.student_group===group);
- const complete=pool.filter(s=>s.consent_received).length, total=pool.length, left=total-complete, pct=total?Math.round(complete/total*100):0;
- $('total').textContent=total;$('checked').textContent=complete;$('remaining').textContent=left;$('percent').textContent=pct+'%';$('progressBar').style.width=pct+'%';
- const shown=pool.filter(s=>String(s.full_name||'').toLocaleLowerCase('ru').includes(q));
- updateAdmin();$('shown').textContent=shown.length+' из '+total;
- $('studentsList').innerHTML=shown.length?shown.map(s=>'<label class="student"><div class="student-info"><div class="student-name">'+esc(s.full_name)+'</div><div class="student-group">'+esc(s.student_group||'')+'</div></div><input class="toggle" type="checkbox" data-id="'+esc(s.id)+'" '+(s.consent_received?'checked':'')+' aria-label="Согласие для '+esc(s.full_name)+'"></label>').join(''):'<div class="empty">Студенты не найдены</div>';
-}
-$('groupFilter').addEventListener('change',updateStats);$('search').addEventListener('input',updateStats);
-$('adminButton').addEventListener('click',()=>{if($('adminPanel').classList.contains('open')){$('adminPanel').classList.remove('open');return;}const password=prompt('Введите пароль администратора:');if(password==='123'){$('adminPanel').classList.add('open');updateAdmin();$('adminPanel').scrollIntoView({behavior:'smooth',block:'start'});}else if(password!==null)alert('Неверный пароль');});
-$('hideAdmin').addEventListener('click',()=>$('adminPanel').classList.remove('open'));
-$('exportButton').addEventListener('click',()=>{if(!students.length){alert('Сначала загрузите список студентов');return;}const rows=[['ФИО','Группа','Курс','Куратор','Согласие','Дата'] ,...students.map(s=>[s.full_name,s.student_group,s.course,s.curator,s.consent_received?'Получено':'Не получено',s.consent_date||''])];const csv='\uFEFF'+rows.map(r=>r.map(v=>'"'+String(v??'').replace(/"/g,'""')+'"').join(';')).join('\r\n');const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8;'}));a.download='consent-report.csv';a.click();URL.revokeObjectURL(a.href);});
-$('loadButton').addEventListener('click',async()=>{
- const b=$('loadButton');b.disabled=true;b.textContent='Загрузка…';$('studentsList').innerHTML='<div class="empty">Получаем данные…</div>';note('','');
- try{
-  const {data,error}=await db.from('students').select('id,full_name,student_group,course,curator,consent_received,consent_date').order('student_group').order('full_name');
-  if(error)throw error;
-  students=data||[];
-  const groups=[...new Set(students.map(s=>s.student_group).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'ru',{numeric:true}));
-  $('groupFilter').innerHTML='<option value="">Все группы</option>'+groups.map(g=>'<option value="'+esc(g)+'">'+esc(g)+'</option>').join('');
-  $('groupFilter').disabled=false;$('search').disabled=false;updateStats();
-  note('Список загружен. Всего студентов: '+students.length+'.','success');
- }catch(e){$('studentsList').innerHTML='<div class="empty">Не удалось загрузить список.</div>';note('Ошибка подключения: '+(e?.message||String(e))+' . Проверьте доступность Supabase и подключение к интернету.','error');}
- finally{b.disabled=false;b.textContent='Обновить список студентов';}
-});
-$('studentsList').addEventListener('change',async ev=>{
- const input=ev.target;if(!input.matches('.toggle'))return;
- const student=students.find(s=>String(s.id)===input.dataset.id);if(!student)return;
- const val=input.checked;input.disabled=true;
- const {error}=await db.from('students').update({consent_received:val,consent_date:val?new Date().toISOString():null}).eq('id',student.id);
- if(error){input.checked=!val;note('Не удалось сохранить отметку: '+error.message,'error');}
- else{student.consent_received=val;student.consent_date=val?new Date().toISOString():null;note('Отметка сохранена.','success');updateStats();}
- input.disabled=false;
-});
-</script></body></html>
+<body class="bg-gray-50 text-gray-800 font-sans min-h-screen flex flex-col">
+
+    <!-- Шапка -->
+    <header class="bg-indigo-700 text-white shadow-md py-4 px-6">
+        <div class="max-w-4xl mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold flex items-center gap-2">
+                <i class="fa-solid fa-lungs"></i> Флюорография 2026
+            </h1>
+            <button onclick="toggleAdmin()" id="adminBtn" class="bg-indigo-800 hover:bg-indigo-900 text-sm px-3 py-1.5 rounded-lg transition">
+                <i class="fa-solid fa-lock"></i> Админ
+            </button>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="max-w-4xl mx-auto p-4 w-full flex-grow">
+        
+        <!-- Секция поиска студента -->
+        <div id="studentSection" class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 mb-6">
+            <h2 class="text-lg font-semibold mb-4 text-gray-700">Отметить прохождение флюорографии</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-600 mb-1">Выберите группу:</label>
+                    <select id="groupSelect" class="w-full border border-gray-300 rounded-lg p-2.5 focus:ring-2 focus:ring-indigo-500 outline-none">
+                        <option value="ACO-26">ACO-26 (Куратор: Nurzhan Nazarkulova)</option>
+                        <option value="SCA-26A">SCA-26A (Куратор: Dosbol Aliev)</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-600 mb-1">Поиск по ФИО или Student ID:</label>
+                    <input type="text" id="searchInput" placeholder="Например: Акбаров или 268712020" class="w-full border border-gray-300 rounded-lg p-2.5 focus:ring-2 focus:ring-indigo-500 outline-none">
+                </div>
+            </div>
+
+            <!-- Список студентов -->
+            <div id="studentsList" class="divide-y divide-gray-100 max-h-96 overflow-y-auto border border-gray-100 rounded-xl p-2">
+                <!-- Заполняется через JS -->
+            </div>
+        </div>
+
+        <!-- Панель Администратора (скрыта по умолчанию) -->
+        <div id="adminPanel" class="hidden bg-white p-6 rounded-2xl shadow-sm border border-gray-100 mb-6">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-lg font-semibold text-gray-700"><i class="fa-solid fa-chart-pie text-indigo-600"></i> Статистика и отчеты</h2>
+                <button onclick="resetData()" class="text-red-600 hover:text-red-800 text-sm font-medium">Сбросить все статусы</button>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+                <div class="bg-indigo-50 p-4 rounded-xl border border-indigo-100">
+                    <p class="text-xs text-indigo-500 font-semibold uppercase">Всего студентов</p>
+                    <p id="totalCount" class="text-2xl font-bold text-indigo-700">0</p>
+                </div>
+                <div class="bg-green-50 p-4 rounded-xl border border-green-100">
+                    <p class="text-xs text-green-500 font-semibold uppercase">Прошли</p>
+                    <p id="passedCount" class="text-2xl font-bold text-green-700">0</p>
+                </div>
+                <div class="bg-orange-50 p-4 rounded-xl border border-orange-100">
+                    <p class="text-xs text-orange-500 font-semibold uppercase">Осталось</p>
+                    <p id="leftCount" class="text-2xl font-bold text-orange-700">0</p>
+                </div>
+            </div>
+
+            <!-- Прогресс бар -->
+            <div class="w-full bg-gray-200 rounded-full h-4 mb-2 overflow-hidden">
+                <div id="progressBar" class="bg-green-600 h-4 transition-all duration-500" style="width: 0%"></div>
+            </div>
+            <p id="progressText" class="text-sm text-gray-500 text-right">0% выполнено</p>
+        </div>
+
+    </main>
+
+    <!-- Подвал -->
+    <footer class="text-center py-4 text-xs text-gray-400">
+        Ala-Too IT & Business College &copy; 2026
+    </footer>
+
+    <script>
+        // Данные студентов на основе таблицы
+        const studentsData = [
+            // ACO-26
+            { id: "268712020", name: "Акбаров Ихсан Шухратович", group: "ACO-26", passed: false },
+            { id: "268712015", name: "Айбекова Жанара Айбековна", group: "ACO-26", passed: false },
+            { id: "268712002", name: "Алманбетова Гульназ Айбековна", group: "ACO-26", passed: false },
+            { id: "268712012", name: "Асылбекова Аделя Асылбековна", group: "ACO-26", passed: false },
+            { id: "268712018", name: "Байышева Аяна Рустамовна", group: "ACO-26", passed: false },
+            { id: "268712022", name: "Бекташова Сауле Асылбековна", group: "ACO-26", passed: false },
+            { id: "268712010", name: "Божокоев Жантай Максатович", group: "ACO-26", passed: false },
+            { id: "268712017", name: "Горчевский Ярослав Владимирович", group: "ACO-26", passed: false },
+            { id: "268712003", name: "Джумгалбеков Арслан", group: "ACO-26", passed: false },
+            { id: "268712025", name: "Замирбекова Салия Замирбековна", group: "ACO-26", passed: false },
+            { id: "268712004", name: "Кадыркулова Кунайым Шергазиевна", group: "ACO-26", passed: false },
+            { id: "268712016", name: "Кенжебекова Сезим Мирбековна", group: "ACO-26", passed: false },
+            { id: "268712011", name: "Климбекова Сэдеф Эдилевна", group: "ACO-26", passed: false },
+            { id: "268712007", name: "Койчукеев Атай Майрамбекович", group: "ACO-26", passed: false },
+            { id: "268712013", name: "Кубанычбекова Алия Максатовна", group: "ACO-26", passed: false },
+            { id: "268712019", name: "Кылычбеков Амир Бусурманкулович", group: "ACO-26", passed: false },
+            { id: "268712014", name: "Ловаза Медина Мухамеевна", group: "ACO-26", passed: false },
+            { id: "268712024", name: "Темирбекова Аяна Эрланова", group: "ACO-26", passed: false },
+            { id: "268712021", name: "Мусаев Хазрат Кайратович", group: "ACO-26", passed: false },
+            { id: "268712008", name: "Манапбаева Арууке Дженишбековна", group: "ACO-26", passed: false },
+            { id: "268712023", name: "Мамыров Ураим Курмангазыевич", group: "ACO-26", passed: false },
+            { id: "268712009", name: "Марсов Ербол Ерланович", group: "ACO-26", passed: false },
+            { id: "268712006", name: "Мирзаева Лейла Вилаятовна", group: "ACO-26", passed: false },
+            { id: "268712001", name: "Фаридов Ариф Фаридович", group: "ACO-26", passed: false },
+            
+            // SCA-26A
+            { id: "268715001", name: "Абдыкайымов Белек", group: "SCA-26A", passed: false },
+            { id: "268715003", name: "Аманов Адилет", group: "SCA-26A", passed: false },
+            { id: "268715012", name: "Аманова Медина", group: "SCA-26A", passed: false },
+            { id: "268715023", name: "Бакаев Абакир", group: "SCA-26A", passed: false },
+            { id: "268715020", name: "Бектуров Алихан", group: "SCA-26A", passed: false },
+            { id: "268715005", name: "Берюев Эмирхан", group: "SCA-26A", passed: false },
+            { id: "268715032", name: "Гуламов Акбар", group: "SCA-26A", passed: false },
+            { id: "268715021", name: "Имашбеков Амир", group: "SCA-26A", passed: false },
+            { id: "268715010", name: "Исмаилов Актан", group: "SCA-26A", passed: false },
+            { id: "268715014", name: "Канатбеков Эдил", group: "SCA-26A", passed: false },
+            { id: "268715013", name: "Койбагаров Кайрат", group: "SCA-26A", passed: false },
+            { id: "268715015", name: "Кыдыкбаев Эрмек", group: "SCA-26A", passed: false }
+        ];
+
+        // Загрузка сохраненных данных из localStorage браузера
+        let savedStatuses = JSON.parse(localStorage.getItem('fluoro_statuses')) || {};
+        studentsData.forEach(s => {
+            if (savedStatuses[s.id] !== undefined) {
+                s.passed = savedStatuses[s.id];
+            }
+        });
+
+        const groupSelect = document.getElementById('groupSelect');
+        const searchInput = document.getElementById('searchInput');
+        const studentsList = document.getElementById('studentsList');
+
+        function renderStudents() {
+            const selectedGroup = groupSelect.value;
+            const query = searchInput.value.toLowerCase().trim();
+
+            studentsList.innerHTML = '';
+
+            const filtered = studentsData.filter(s => {
+                const matchGroup = s.group === selectedGroup;
+                const matchQuery = s.name.toLowerCase().includes(query) || s.id.includes(query);
+                return matchGroup && matchQuery;
+            });
+
+            if (filtered.length === 0) {
+                studentsList.innerHTML = '<p class="text-center text-gray-400 py-4">Студенты не найдены</p>';
+                return;
+            }
+
+            filtered.forEach(student => {
+                const div = document.createElement('div');
+                div.className = "flex items-center justify-between py-3 px-2 hover:bg-gray-50 rounded-lg transition";
+                
+                div.innerHTML = `
+                    <div>
+                        <p class="font-medium text-gray-800">${student.name}</p>
+                        <p class="text-xs text-gray-400">ID: ${student.id}</p>
+                    </div>
+                    <button onclick="togglePassed('${student.id}')" class="px-4 py-1.5 rounded-lg text-sm font-medium transition ${student.passed ? 'bg-green-100 text-green-700 hover:bg-green-200' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}">
+                        ${student.passed ? '<i class="fa-solid fa-check"></i> Прошел' : 'Не прошел'}
+                    </button>
+                `;
+                studentsList.appendChild(div);
+            });
+
+            updateAdminStats();
+        }
+
+        function togglePassed(id) {
+            const student = studentsData.find(s => s.id === id);
+            if (student) {
+                student.passed = !student.passed;
+                savedStatuses[student.id] = student.passed;
+                localStorage.setItem('fluoro_statuses', JSON.stringify(savedStatuses));
+                renderStudents();
+            }
+        }
+
+        function updateAdminStats() {
+            const total = studentsData.length;
+            const passed = studentsData.filter(s => s.passed).length;
+            const left = total - passed;
+            const percent = total > 0 ? Math.round((passed / total) * 100) : 0;
+
+            document.getElementById('totalCount').innerText = total;
+            document.getElementById('passedCount').innerText = passed;
+            document.getElementById('leftCount').innerText = left;
+            document.getElementById('progressBar').style.width = percent + '%';
+            document.getElementById('progressText').innerText = percent + '% выполнено';
+        }
+
+        function toggleAdmin() {
+            const panel = document.getElementById('adminPanel');
+            if (panel.classList.contains('hidden')) {
+                const password = prompt('Введите пароль администратора (по умолчанию: 123):');
+                if (password === '123' || password === 'admin') {
+                    panel.classList.remove('hidden');
+                } else if (password !== null) {
+                    alert('Неверный пароль!');
+                }
+            } else {
+                panel.classList.add('hidden');
+            }
+        }
+
+        function resetData() {
+            if (confirm('Вы уверены, что хотите сбросить все статусы?')) {
+                localStorage.removeItem('fluoro_statuses');
+                studentsData.forEach(s => s.passed = false);
+                savedStatuses = {};
+                renderStudents();
+            }
+        }
+
+        groupSelect.addEventListener('change', renderStudents);
+        searchInput.addEventListener('input', renderStudents);
+
+        // Первый запуск
+        renderStudents();
+    </script>
+</body>
+</html>
