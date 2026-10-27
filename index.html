@@ -168,7 +168,7 @@
         }
 
         function resetData() {
-            if (confirm('Вы уверены, что хотите сбросить все статусы?')) {
+            if (confirm('Вы уверены, что хотите сбросить все отметки согласия?')) {
                 localStorage.removeItem('consent_statuses');
                 studentsData.forEach(s => s.consent = null);
                 savedStatuses = {};
