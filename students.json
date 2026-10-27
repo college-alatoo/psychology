@@ -1,0 +1,4796 @@
+[
+  {
+    "name": "Акбаров Ихсан Шухратович",
+    "group": "ACO-26",
+    "course": "1",
+    "curator": "Nurzhan Nazarkulova"
+  },
+  {
+    "name": "Айбекова Жанара Айбековна",
+    "group": "ACO-26",
+    "course": "1",
+    "curator": "Nurzhan Nazarkulova"
+  },
+  {
+    "name": "Алманбетова Гульназ Айбековна",
+    "group": "ACO-26",
+    "course": "1",
+    "curator": "Nurzhan Nazarkulova"
+  },
+  {
+    "name": "Асылбекова Аделя Асылбековна",
+    "group": "ACO-26",
+    "course": "1",
+    "curator": "Nurzhan Nazarkulova"
+  },
+  {
+    "name": "Байышева Аяна Рустамовна",
+    "group": "ACO-26",
+    "course": "1",
+    "curator": "Nurzhan Nazarkulova"
+  },
+  {
+    "name": "Бекташова Сауле Асылбековна",
+    "group": "ACO-26",
+    "course": "1",
+    "curator": "Nurzhan Nazarkulova"
+  },
+  {
+    "name": "Божокоев Жантай Максатович",
+    "group": "ACO-26",
+    "course": "1",
+    "curator": "Nurzhan Nazarkulova"
+  },
+  {
+    "name": "Горчевский Ярослав Владимирович",
+    "group": "ACO-26",
+    "course": "1",
+    "curator": "Nurzhan Nazarkulova"
+  },
+  {
+    "name": "Джумгалбеков Арслан",
+    "group": "ACO-26",
+    "course": "1",
+    "curator": "Nurzhan Nazarkulova"
+  },
+  {
+    "name": "Замирбекова Салия Замирбековна",
+    "group": "ACO-26",
+    "course": "1",
+    "curator": "Nurzhan Nazarkulova"
+  },
+  {
+    "name": "Кадыркулова Кунайым Шергазиевна",
+    "group": "ACO-26",
+    "course": "1",
+    "curator": "Nurzhan Nazarkulova"
+  },
+  {
+    "name": "Кенжебекова Сезим Мирбековна",
+    "group": "ACO-26",
+    "course": "1",
+    "curator": "Nurzhan Nazarkulova"
+  },
+  {
+    "name": "Климбекова Сэдеф Эдилевна",
+    "group": "ACO-26",
+    "course": "1",
+    "curator": "Nurzhan Nazarkulova"
+  },
+  {
+    "name": "Койчукеев Атай Майрамбекович",
+    "group": "ACO-26",
+    "course": "1",
+    "curator": "Nurzhan Nazarkulova"
+  },
+  {
+    "name": "Кубанычбекова Алия Максатовна",
+    "group": "ACO-26",
+    "course": "1",
+    "curator": "Nurzhan Nazarkulova"
+  },
+  {
+    "name": "Кылычбеков Амир Бусурманкулович",
+    "group": "ACO-26",
+    "course": "1",
+    "curator": "Nurzhan Nazarkulova"
+  },
+  {
+    "name": "Ловаза Медина Мухамеевна",
+    "group": "ACO-26",
+    "course": "1",
+    "curator": "Nurzhan Nazarkulova"
+  },
+  {
+    "name": "Темирбекова Аяна Эрланова",
+    "group": "ACO-26",
+    "course": "1",
+    "curator": "Nurzhan Nazarkulova"
+  },
+  {
+    "name": "Мусаев Хазрат Кайратович",
+    "group": "ACO-26",
+    "course": "1",
+    "curator": "Nurzhan Nazarkulova"
+  },
+  {
+    "name": "Манапбаева Арууке Дженишбековна",
+    "group": "ACO-26",
+    "course": "1",
+    "curator": "Nurzhan Nazarkulova"
+  },
+  {
+    "name": "Мамыров Ураим Курмангазыевич",
+    "group": "ACO-26",
+    "course": "1",
+    "curator": "Nurzhan Nazarkulova"
+  },
+  {
+    "name": "Марсов Ербол Ерланович",
+    "group": "ACO-26",
+    "course": "1",
+    "curator": "Nurzhan Nazarkulova"
+  },
+  {
+    "name": "Мирзаева Лейла Вилаятовна",
+    "group": "ACO-26",
+    "course": "1",
+    "curator": "Nurzhan Nazarkulova"
+  },
+  {
+    "name": "Фаридов Ариф Фаридович",
+    "group": "ACO-26",
+    "course": "1",
+    "curator": "Nurzhan Nazarkulova"
+  },
+  {
+    "name": "Абдыкайымов Белек",
+    "group": "SCA-26A",
+    "course": "1",
+    "curator": "Dosbol Aliev"
+  },
+  {
+    "name": "Аманов Адилет",
+    "group": "SCA-26A",
+    "course": "1",
+    "curator": "Dosbol Aliev"
+  },
+  {
+    "name": "Аманова Медина",
+    "group": "SCA-26A",
+    "course": "1",
+    "curator": "Dosbol Aliev"
+  },
+  {
+    "name": "Бакаев Абакир",
+    "group": "SCA-26A",
+    "course": "1",
+    "curator": "Dosbol Aliev"
+  },
+  {
+    "name": "Бектуров Алихан",
+    "group": "SCA-26A",
+    "course": "1",
+    "curator": "Dosbol Aliev"
+  },
+  {
+    "name": "Берюев Эмирхан",
+    "group": "SCA-26A",
+    "course": "1",
+    "curator": "Dosbol Aliev"
+  },
+  {
+    "name": "Гуламов Акбар",
+    "group": "SCA-26A",
+    "course": "1",
+    "curator": "Dosbol Aliev"
+  },
+  {
+    "name": "Имашбеков Амир",
+    "group": "SCA-26A",
+    "course": "1",
+    "curator": "Dosbol Aliev"
+  },
+  {
+    "name": "Исмаилов Актан",
+    "group": "SCA-26A",
+    "course": "1",
+    "curator": "Dosbol Aliev"
+  },
+  {
+    "name": "Канатбеков Эдил",
+    "group": "SCA-26A",
+    "course": "1",
+    "curator": "Dosbol Aliev"
+  },
+  {
+    "name": "Койбагаров Кайрат",
+    "group": "SCA-26A",
+    "course": "1",
+    "curator": "Dosbol Aliev"
+  },
+  {
+    "name": "Кыдыкбаев Эрмек",
+    "group": "SCA-26A",
+    "course": "1",
+    "curator": "Dosbol Aliev"
+  },
+  {
+    "name": "Лансаров Юсуф",
+    "group": "SCA-26A",
+    "course": "1",
+    "curator": "Dosbol Aliev"
+  },
+  {
+    "name": "Мамашарипов Нурэл",
+    "group": "SCA-26A",
+    "course": "1",
+    "curator": "Dosbol Aliev"
+  },
+  {
+    "name": "Мелисов Нурбол",
+    "group": "SCA-26A",
+    "course": "1",
+    "curator": "Dosbol Aliev"
+  },
+  {
+    "name": "Мусуралиев Нурсултан",
+    "group": "SCA-26A",
+    "course": "1",
+    "curator": "Dosbol Aliev"
+  },
+  {
+    "name": "Нышанова Адиля",
+    "group": "SCA-26A",
+    "course": "1",
+    "curator": "Dosbol Aliev"
+  },
+  {
+    "name": "Рысбаев Айдар",
+    "group": "SCA-26A",
+    "course": "1",
+    "curator": "Dosbol Aliev"
+  },
+  {
+    "name": "Рыскелдиева Бегимай",
+    "group": "SCA-26A",
+    "course": "1",
+    "curator": "Dosbol Aliev"
+  },
+  {
+    "name": "Салиев Салим",
+    "group": "SCA-26A",
+    "course": "1",
+    "curator": "Dosbol Aliev"
+  },
+  {
+    "name": "Тажиев Нурмухамед",
+    "group": "SCA-26A",
+    "course": "1",
+    "curator": "Dosbol Aliev"
+  },
+  {
+    "name": "Замирбекова Мирель",
+    "group": "SCA-26A",
+    "course": "1",
+    "curator": "Dosbol Aliev"
+  },
+  {
+    "name": "Жапараалыева Малика",
+    "group": "SCA-26A",
+    "course": "1",
+    "curator": "Dosbol Aliev"
+  },
+  {
+    "name": "Эсеналиев Атай",
+    "group": "SCA-26A",
+    "course": "1",
+    "curator": "Dosbol Aliev"
+  },
+  {
+    "name": "Аблаева Рузанна",
+    "group": "SCA-26B",
+    "course": "1",
+    "curator": "Azizbek Karimov"
+  },
+  {
+    "name": "Айдаров Рамзан",
+    "group": "SCA-26B",
+    "course": "1",
+    "curator": "Azizbek Karimov"
+  },
+  {
+    "name": "Айтакунов Эрбол",
+    "group": "SCA-26B",
+    "course": "1",
+    "curator": "Azizbek Karimov"
+  },
+  {
+    "name": "Ажыгулов Максат",
+    "group": "SCA-26B",
+    "course": "1",
+    "curator": "Azizbek Karimov"
+  },
+  {
+    "name": "Арзиева Хадича",
+    "group": "SCA-26B",
+    "course": "1",
+    "curator": "Azizbek Karimov"
+  },
+  {
+    "name": "Багачарова Айтурган",
+    "group": "SCA-26B",
+    "course": "1",
+    "curator": "Azizbek Karimov"
+  },
+  {
+    "name": "Джуманалиев Актан",
+    "group": "SCA-26B",
+    "course": "1",
+    "curator": "Azizbek Karimov"
+  },
+  {
+    "name": "Кадырбеков Бекхан",
+    "group": "SCA-26B",
+    "course": "1",
+    "curator": "Azizbek Karimov"
+  },
+  {
+    "name": "Керимкулов Адиль",
+    "group": "SCA-26B",
+    "course": "1",
+    "curator": "Azizbek Karimov"
+  },
+  {
+    "name": "Кожахматов Нурислам",
+    "group": "SCA-26B",
+    "course": "1",
+    "curator": "Azizbek Karimov"
+  },
+  {
+    "name": "Кубатбеков Аманбол",
+    "group": "SCA-26B",
+    "course": "1",
+    "curator": "Azizbek Karimov"
+  },
+  {
+    "name": "Кырманчиев Нурдан",
+    "group": "SCA-26B",
+    "course": "1",
+    "curator": "Azizbek Karimov"
+  },
+  {
+    "name": "Муратбеков Имран",
+    "group": "SCA-26B",
+    "course": "1",
+    "curator": "Azizbek Karimov"
+  },
+  {
+    "name": "Маратбеков Умар",
+    "group": "SCA-26B",
+    "course": "1",
+    "curator": "Azizbek Karimov"
+  },
+  {
+    "name": "Маратов Байэл",
+    "group": "SCA-26B",
+    "course": "1",
+    "curator": "Azizbek Karimov"
+  },
+  {
+    "name": "Нурбеков Аман",
+    "group": "SCA-26B",
+    "course": "1",
+    "curator": "Azizbek Karimov"
+  },
+  {
+    "name": "Нурланова Айчурок",
+    "group": "SCA-26B",
+    "course": "1",
+    "curator": "Azizbek Karimov"
+  },
+  {
+    "name": "Осмонакунов Нурэл",
+    "group": "SCA-26B",
+    "course": "1",
+    "curator": "Azizbek Karimov"
+  },
+  {
+    "name": "Саматов Аманбек",
+    "group": "SCA-26B",
+    "course": "1",
+    "curator": "Azizbek Karimov"
+  },
+  {
+    "name": "Суранаева Айзирек",
+    "group": "SCA-26B",
+    "course": "1",
+    "curator": "Azizbek Karimov"
+  },
+  {
+    "name": "Торубаев Жоодарбегим",
+    "group": "SCA-26B",
+    "course": "1",
+    "curator": "Azizbek Karimov"
+  },
+  {
+    "name": "Турунбеков Исхак",
+    "group": "SCA-26B",
+    "course": "1",
+    "curator": "Azizbek Karimov"
+  },
+  {
+    "name": "Жолдошбеков Эмир",
+    "group": "SCA-26B",
+    "course": "1",
+    "curator": "Azizbek Karimov"
+  },
+  {
+    "name": "Жээнбеков Шахан",
+    "group": "SCA-26B",
+    "course": "1",
+    "curator": "Azizbek Karimov"
+  },
+  {
+    "name": "Абдиманнапов Ибрахим",
+    "group": "SCA-26C",
+    "course": "1",
+    "curator": "Talant Arystanov"
+  },
+  {
+    "name": "Абдылдаев Эмир",
+    "group": "SCA-26C",
+    "course": "1",
+    "curator": "Talant Arystanov"
+  },
+  {
+    "name": "Абытанов Атабек",
+    "group": "SCA-26C",
+    "course": "1",
+    "curator": "Talant Arystanov"
+  },
+  {
+    "name": "Алыбеков Ариет",
+    "group": "SCA-26C",
+    "course": "1",
+    "curator": "Talant Arystanov"
+  },
+  {
+    "name": "Амандыков Эмир",
+    "group": "SCA-26C",
+    "course": "1",
+    "curator": "Talant Arystanov"
+  },
+  {
+    "name": "Амантуров Айман",
+    "group": "SCA-26C",
+    "course": "1",
+    "curator": "Talant Arystanov"
+  },
+  {
+    "name": "Аширматкулов Нур-Ислам",
+    "group": "SCA-26C",
+    "course": "1",
+    "curator": "Talant Arystanov"
+  },
+  {
+    "name": "Бейшеналиев Сыргак",
+    "group": "SCA-26C",
+    "course": "1",
+    "curator": "Talant Arystanov"
+  },
+  {
+    "name": "Жаналиев Илим",
+    "group": "SCA-26C",
+    "course": "1",
+    "curator": "Talant Arystanov"
+  },
+  {
+    "name": "Жанышов Жоомарт",
+    "group": "SCA-26C",
+    "course": "1",
+    "curator": "Talant Arystanov"
+  },
+  {
+    "name": "Исманов Салман",
+    "group": "SCA-26C",
+    "course": "1",
+    "curator": "Talant Arystanov"
+  },
+  {
+    "name": "Камчыбеков Нурэл",
+    "group": "SCA-26C",
+    "course": "1",
+    "curator": "Talant Arystanov"
+  },
+  {
+    "name": "Касымбекова Зейнеп",
+    "group": "SCA-26C",
+    "course": "1",
+    "curator": "Talant Arystanov"
+  },
+  {
+    "name": "Кочкунбеков Алинур",
+    "group": "SCA-26C",
+    "course": "1",
+    "curator": "Talant Arystanov"
+  },
+  {
+    "name": "Курванбеков Нурислам",
+    "group": "SCA-26C",
+    "course": "1",
+    "curator": "Talant Arystanov"
+  },
+  {
+    "name": "Мааткаримов Чынгыз",
+    "group": "SCA-26C",
+    "course": "1",
+    "curator": "Talant Arystanov"
+  },
+  {
+    "name": "Майрамбаев Абдуразак",
+    "group": "SCA-26C",
+    "course": "1",
+    "curator": "Talant Arystanov"
+  },
+  {
+    "name": "Наматбеков Акылес",
+    "group": "SCA-26C",
+    "course": "1",
+    "curator": "Talant Arystanov"
+  },
+  {
+    "name": "Русланов Рахим",
+    "group": "SCA-26C",
+    "course": "1",
+    "curator": "Talant Arystanov"
+  },
+  {
+    "name": "Сабыралиева Аяна",
+    "group": "SCA-26C",
+    "course": "1",
+    "curator": "Talant Arystanov"
+  },
+  {
+    "name": "Тюбеева Сезим",
+    "group": "SCA-26C",
+    "course": "1",
+    "curator": "Talant Arystanov"
+  },
+  {
+    "name": "Уланбеков Нуртилек",
+    "group": "SCA-26C",
+    "course": "1",
+    "curator": "Talant Arystanov"
+  },
+  {
+    "name": "Замирбеков Ильяс",
+    "group": "SCA-26C",
+    "course": "1",
+    "curator": "Talant Arystanov"
+  },
+  {
+    "name": "Эсенбаев Ардак",
+    "group": "SCA-26C",
+    "course": "1",
+    "curator": "Talant Arystanov"
+  },
+  {
+    "name": "Аманбаев Уларбек Нурланбекович",
+    "group": "CSC-26",
+    "course": "1",
+    "curator": "Erbol Bolushev"
+  },
+  {
+    "name": "Антошкин Тимур Денисович",
+    "group": "CSC-26",
+    "course": "1",
+    "curator": "Erbol Bolushev"
+  },
+  {
+    "name": "Антошкина Ксения Павловна",
+    "group": "CSC-26",
+    "course": "1",
+    "curator": "Erbol Bolushev"
+  },
+  {
+    "name": "Асанбеков Эльдар Назбекович",
+    "group": "CSC-26",
+    "course": "1",
+    "curator": "Erbol Bolushev"
+  },
+  {
+    "name": "Аскарбеков Бексултан Бактыбекович",
+    "group": "CSC-26",
+    "course": "1",
+    "curator": "Erbol Bolushev"
+  },
+  {
+    "name": "Бейшембеков Нурбол Маратович",
+    "group": "CSC-26",
+    "course": "1",
+    "curator": "Erbol Bolushev"
+  },
+  {
+    "name": "Бектуров Бексултан Толобекович",
+    "group": "CSC-26",
+    "course": "1",
+    "curator": "Erbol Bolushev"
+  },
+  {
+    "name": "Джумаков Элдияр Алмасбекович",
+    "group": "CSC-26",
+    "course": "1",
+    "curator": "Erbol Bolushev"
+  },
+  {
+    "name": "Дуйшобеков Эмир Уланович",
+    "group": "CSC-26",
+    "course": "1",
+    "curator": "Erbol Bolushev"
+  },
+  {
+    "name": "Жоомартбеков Нурсултан Мухамедович",
+    "group": "CSC-26",
+    "course": "1",
+    "curator": "Erbol Bolushev"
+  },
+  {
+    "name": "Калчабаев Мукаш Эрланович",
+    "group": "CSC-26",
+    "course": "1",
+    "curator": "Erbol Bolushev"
+  },
+  {
+    "name": "Каримов Самир Фирдавсович",
+    "group": "CSC-26",
+    "course": "1",
+    "curator": "Erbol Bolushev"
+  },
+  {
+    "name": "Кармышов Эрнис Тилекович",
+    "group": "CSC-26",
+    "course": "1",
+    "curator": "Erbol Bolushev"
+  },
+  {
+    "name": "Касымбеков Баястан Маликович",
+    "group": "CSC-26",
+    "course": "1",
+    "curator": "Erbol Bolushev"
+  },
+  {
+    "name": "Нарынбеков Адахан Азизбекович",
+    "group": "CSC-26",
+    "course": "1",
+    "curator": "Erbol Bolushev"
+  },
+  {
+    "name": "Нурова Кыял Нуровна",
+    "group": "CSC-26",
+    "course": "1",
+    "curator": "Erbol Bolushev"
+  },
+  {
+    "name": "Орозбаев Эрасыл Айбекович",
+    "group": "CSC-26",
+    "course": "1",
+    "curator": "Erbol Bolushev"
+  },
+  {
+    "name": "Садыров Азамат Панзатбекович",
+    "group": "CSC-26",
+    "course": "1",
+    "curator": "Erbol Bolushev"
+  },
+  {
+    "name": "Супруненко Никита Борисович",
+    "group": "CSC-26",
+    "course": "1",
+    "curator": "Erbol Bolushev"
+  },
+  {
+    "name": "Темирбеков Алим Максатович",
+    "group": "CSC-26",
+    "course": "1",
+    "curator": "Erbol Bolushev"
+  },
+  {
+    "name": "Торобеков Атай Уланович",
+    "group": "CSC-26",
+    "course": "1",
+    "curator": "Erbol Bolushev"
+  },
+  {
+    "name": "Турсунбеков Али Таалайбекович",
+    "group": "CSC-26",
+    "course": "1",
+    "curator": "Erbol Bolushev"
+  },
+  {
+    "name": "Тынчтыкбекова Милана Эмиловна",
+    "group": "CSC-26",
+    "course": "1",
+    "curator": "Erbol Bolushev"
+  },
+  {
+    "name": "Шайыков Жандар",
+    "group": "CSC-26",
+    "course": "1",
+    "curator": "Erbol Bolushev"
+  },
+  {
+    "name": "Абдыкапарова Райана",
+    "group": "DES 26 А",
+    "course": "1",
+    "curator": "Aigerim Akusheva"
+  },
+  {
+    "name": "Айбекова Сезим",
+    "group": "DES 26 А",
+    "course": "1",
+    "curator": "Aigerim Akusheva"
+  },
+  {
+    "name": "Албарсбеков Камил",
+    "group": "DES 26 А",
+    "course": "1",
+    "curator": "Aigerim Akusheva"
+  },
+  {
+    "name": "Алиева Надия",
+    "group": "DES 26 А",
+    "course": "1",
+    "curator": "Aigerim Akusheva"
+  },
+  {
+    "name": "Алсеитова Арууке",
+    "group": "DES 26 А",
+    "course": "1",
+    "curator": "Aigerim Akusheva"
+  },
+  {
+    "name": "Амангелдиев Чагатай",
+    "group": "DES 26 А",
+    "course": "1",
+    "curator": "Aigerim Akusheva"
+  },
+  {
+    "name": "Аманкожоев Алинур",
+    "group": "DES 26 А",
+    "course": "1",
+    "curator": "Aigerim Akusheva"
+  },
+  {
+    "name": "Бактыбекова Айзат",
+    "group": "DES 26 А",
+    "course": "1",
+    "curator": "Aigerim Akusheva"
+  },
+  {
+    "name": "Базарбаев Юсуп",
+    "group": "DES 26 А",
+    "course": "1",
+    "curator": "Aigerim Akusheva"
+  },
+  {
+    "name": "Дайиева Азияна",
+    "group": "DES 26 А",
+    "course": "1",
+    "curator": "Aigerim Akusheva"
+  },
+  {
+    "name": "Карагулова Акбийке",
+    "group": "DES 26 А",
+    "course": "1",
+    "curator": "Aigerim Akusheva"
+  },
+  {
+    "name": "Ким Алексей",
+    "group": "DES 26 А",
+    "course": "1",
+    "curator": "Aigerim Akusheva"
+  },
+  {
+    "name": "Кылычбеков Назар",
+    "group": "DES 26 А",
+    "course": "1",
+    "curator": "Aigerim Akusheva"
+  },
+  {
+    "name": "Мамаджанова Шахрия",
+    "group": "DES 26 А",
+    "course": "1",
+    "curator": "Aigerim Akusheva"
+  },
+  {
+    "name": "Мелисов Али",
+    "group": "DES 26 А",
+    "course": "1",
+    "curator": "Aigerim Akusheva"
+  },
+  {
+    "name": "Муратова Бермет",
+    "group": "DES 26 А",
+    "course": "1",
+    "curator": "Aigerim Akusheva"
+  },
+  {
+    "name": "Назаров Эдуард",
+    "group": "DES 26 А",
+    "course": "1",
+    "curator": "Aigerim Akusheva"
+  },
+  {
+    "name": "Райымбеков Чингис",
+    "group": "DES 26 А",
+    "course": "1",
+    "curator": "Aigerim Akusheva"
+  },
+  {
+    "name": "Сакенова Баяна",
+    "group": "DES 26 А",
+    "course": "1",
+    "curator": "Aigerim Akusheva"
+  },
+  {
+    "name": "Сапарбаева Сайкал",
+    "group": "DES 26 А",
+    "course": "1",
+    "curator": "Aigerim Akusheva"
+  },
+  {
+    "name": "Сулейманов Амир",
+    "group": "DES 26 А",
+    "course": "1",
+    "curator": "Aigerim Akusheva"
+  },
+  {
+    "name": "Тимурбекова Дарина",
+    "group": "DES 26 А",
+    "course": "1",
+    "curator": "Aigerim Akusheva"
+  },
+  {
+    "name": "Токторбаев Актан",
+    "group": "DES 26 А",
+    "course": "1",
+    "curator": "Aigerim Akusheva"
+  },
+  {
+    "name": "Шеров Амирхан",
+    "group": "",
+    "course": "1",
+    "curator": ""
+  },
+  {
+    "name": "Аалыев Ариет",
+    "group": "DES 26 B",
+    "course": "1",
+    "curator": "Aidana Abylova"
+  },
+  {
+    "name": "Акмырзаев Муслим",
+    "group": "DES 26 B",
+    "course": "1",
+    "curator": "Aidana Abylova"
+  },
+  {
+    "name": "Асыранкулова Ясмина",
+    "group": "DES 26 B",
+    "course": "1",
+    "curator": "Aidana Abylova"
+  },
+  {
+    "name": "Абдубалиева Ажара",
+    "group": "DES 26 B",
+    "course": "1",
+    "curator": "Aidana Abylova"
+  },
+  {
+    "name": "Анарбеков Салымбек",
+    "group": "DES 26 B",
+    "course": "1",
+    "curator": "Aidana Abylova"
+  },
+  {
+    "name": "Бекболотова Аима",
+    "group": "DES 26 B",
+    "course": "1",
+    "curator": "Aidana Abylova"
+  },
+  {
+    "name": "Джолдошева Диана",
+    "group": "DES 26 B",
+    "course": "1",
+    "curator": "Aidana Abylova"
+  },
+  {
+    "name": "Эркинбеков Нуртегин",
+    "group": "DES 26 B",
+    "course": "1",
+    "curator": "Aidana Abylova"
+  },
+  {
+    "name": "Иманалиева Адилай",
+    "group": "DES 26 B",
+    "course": "1",
+    "curator": "Aidana Abylova"
+  },
+  {
+    "name": "Камчыбеков Жабраил",
+    "group": "DES 26 B",
+    "course": "1",
+    "curator": "Aidana Abylova"
+  },
+  {
+    "name": "Касымбеков Алинур",
+    "group": "DES 26 B",
+    "course": "1",
+    "curator": "Aidana Abylova"
+  },
+  {
+    "name": "Нургазиева Аруна",
+    "group": "DES 26 B",
+    "course": "1",
+    "curator": "Aidana Abylova"
+  },
+  {
+    "name": "Мунарбеков Баянбек",
+    "group": "DES 26 B",
+    "course": "1",
+    "curator": "Aidana Abylova"
+  },
+  {
+    "name": "Мусаева Нуркыз",
+    "group": "DES 26 B",
+    "course": "1",
+    "curator": "Aidana Abylova"
+  },
+  {
+    "name": "Назарбекова Жанэль",
+    "group": "DES 26 B",
+    "course": "1",
+    "curator": "Aidana Abylova"
+  },
+  {
+    "name": "Омургожоева Аина",
+    "group": "DES 26 B",
+    "course": "1",
+    "curator": "Aidana Abylova"
+  },
+  {
+    "name": "Ренатов Алихан",
+    "group": "DES 26 B",
+    "course": "1",
+    "curator": "Aidana Abylova"
+  },
+  {
+    "name": "Русланова Сезим",
+    "group": "DES 26 B",
+    "course": "1",
+    "curator": "Aidana Abylova"
+  },
+  {
+    "name": "Рыскулова Раяна",
+    "group": "DES 26 B",
+    "course": "1",
+    "curator": "Aidana Abylova"
+  },
+  {
+    "name": "Саламатова Амаль",
+    "group": "DES 26 B",
+    "course": "1",
+    "curator": "Aidana Abylova"
+  },
+  {
+    "name": "Шакарбекова Айдай",
+    "group": "DES 26 B",
+    "course": "1",
+    "curator": "Aidana Abylova"
+  },
+  {
+    "name": "Шамбетова Суйуу",
+    "group": "DES 26 B",
+    "course": "1",
+    "curator": "Aidana Abylova"
+  },
+  {
+    "name": "Шерматова Аксаамай",
+    "group": "DES 26 B",
+    "course": "1",
+    "curator": "Aidana Abylova"
+  },
+  {
+    "name": "Абдыкадыров Ислам",
+    "group": "MAR-26A",
+    "course": "1",
+    "curator": "Murat Dzhaparov"
+  },
+  {
+    "name": "Аширова Керемет",
+    "group": "MAR-26A",
+    "course": "1",
+    "curator": "Murat Dzhaparov"
+  },
+  {
+    "name": "Бактыбекова Улара",
+    "group": "MAR-26A",
+    "course": "1",
+    "curator": "Murat Dzhaparov"
+  },
+  {
+    "name": "Борубаев Нурболот",
+    "group": "MAR-26A",
+    "course": "1",
+    "curator": "Murat Dzhaparov"
+  },
+  {
+    "name": "Джакыпов Таир",
+    "group": "MAR-26A",
+    "course": "1",
+    "curator": "Murat Dzhaparov"
+  },
+  {
+    "name": "Джайсанова Амина",
+    "group": "MAR-26A",
+    "course": "1",
+    "curator": "Murat Dzhaparov"
+  },
+  {
+    "name": "Эмильбеков Ормон",
+    "group": "MAR-26A",
+    "course": "1",
+    "curator": "Murat Dzhaparov"
+  },
+  {
+    "name": "Имаров Нурислам",
+    "group": "MAR-26A",
+    "course": "1",
+    "curator": "Murat Dzhaparov"
+  },
+  {
+    "name": "Исамдунова Насиба",
+    "group": "MAR-26A",
+    "course": "1",
+    "curator": "Murat Dzhaparov"
+  },
+  {
+    "name": "Кадыракунова Айдана",
+    "group": "MAR-26A",
+    "course": "1",
+    "curator": "Murat Dzhaparov"
+  },
+  {
+    "name": "Кадырова Айдай",
+    "group": "MAR-26A",
+    "course": "1",
+    "curator": "Murat Dzhaparov"
+  },
+  {
+    "name": "Камалова Назик",
+    "group": "MAR-26A",
+    "course": "1",
+    "curator": "Murat Dzhaparov"
+  },
+  {
+    "name": "Кантемиров Орхан-Эсад",
+    "group": "MAR-26A",
+    "course": "1",
+    "curator": "Murat Dzhaparov"
+  },
+  {
+    "name": "Касымов Билал",
+    "group": "MAR-26A",
+    "course": "1",
+    "curator": "Murat Dzhaparov"
+  },
+  {
+    "name": "Кубатов Илгиз",
+    "group": "MAR-26A",
+    "course": "1",
+    "curator": "Murat Dzhaparov"
+  },
+  {
+    "name": "Манасбеков Аслан",
+    "group": "MAR-26A",
+    "course": "1",
+    "curator": "Murat Dzhaparov"
+  },
+  {
+    "name": "Мукамбетов Баястан",
+    "group": "MAR-26A",
+    "course": "1",
+    "curator": "Murat Dzhaparov"
+  },
+  {
+    "name": "Назарбеков Алманбет",
+    "group": "MAR-26A",
+    "course": "1",
+    "curator": "Murat Dzhaparov"
+  },
+  {
+    "name": "Нурдинов Байнур",
+    "group": "MAR-26A",
+    "course": "1",
+    "curator": "Murat Dzhaparov"
+  },
+  {
+    "name": "Салиева Хафиза",
+    "group": "MAR-26A",
+    "course": "1",
+    "curator": "Murat Dzhaparov"
+  },
+  {
+    "name": "Сабирова Малика",
+    "group": "MAR-26A",
+    "course": "1",
+    "curator": "Murat Dzhaparov"
+  },
+  {
+    "name": "Советбеков Эрмек",
+    "group": "MAR-26A",
+    "course": "1",
+    "curator": "Murat Dzhaparov"
+  },
+  {
+    "name": "Сыдыков Нурэл",
+    "group": "MAR-26A",
+    "course": "1",
+    "curator": "Murat Dzhaparov"
+  },
+  {
+    "name": "Уланбеков Али",
+    "group": "MAR-26A",
+    "course": "1",
+    "curator": "Murat Dzhaparov"
+  },
+  {
+    "name": "Абдылдабеков Толкунбек",
+    "group": "MAR-26B",
+    "course": "1",
+    "curator": "Salidat Isaeva"
+  },
+  {
+    "name": "Азизбекова Фатима",
+    "group": "MAR-26B",
+    "course": "1",
+    "curator": "Salidat Isaeva"
+  },
+  {
+    "name": "Айтбаев Амирбек",
+    "group": "MAR-26B",
+    "course": "1",
+    "curator": "Salidat Isaeva"
+  },
+  {
+    "name": "Алтымбаев Эмир",
+    "group": "MAR-26B",
+    "course": "1",
+    "curator": "Salidat Isaeva"
+  },
+  {
+    "name": "Ахлидинов Алихан",
+    "group": "MAR-26B",
+    "course": "1",
+    "curator": "Salidat Isaeva"
+  },
+  {
+    "name": "Базаров Амир",
+    "group": "MAR-26B",
+    "course": "1",
+    "curator": "Salidat Isaeva"
+  },
+  {
+    "name": "Бекмурзаева Айбийке",
+    "group": "MAR-26B",
+    "course": "1",
+    "curator": "Salidat Isaeva"
+  },
+  {
+    "name": "Жапаралиева Аруука",
+    "group": "MAR-26B",
+    "course": "1",
+    "curator": "Salidat Isaeva"
+  },
+  {
+    "name": "Жапаралиева Айбийке",
+    "group": "MAR-26B",
+    "course": "1",
+    "curator": "Salidat Isaeva"
+  },
+  {
+    "name": "Закиржанов Артур",
+    "group": "MAR-26B",
+    "course": "1",
+    "curator": "Salidat Isaeva"
+  },
+  {
+    "name": "Кадыров Самир",
+    "group": "MAR-26B",
+    "course": "1",
+    "curator": "Salidat Isaeva"
+  },
+  {
+    "name": "Каимов Темирлан",
+    "group": "MAR-26B",
+    "course": "1",
+    "curator": "Salidat Isaeva"
+  },
+  {
+    "name": "Каныбекова Элая",
+    "group": "MAR-26B",
+    "course": "1",
+    "curator": "Salidat Isaeva"
+  },
+  {
+    "name": "Ким Алия",
+    "group": "MAR-26B",
+    "course": "1",
+    "curator": "Salidat Isaeva"
+  },
+  {
+    "name": "Момунбаева Арина",
+    "group": "MAR-26B",
+    "course": "1",
+    "curator": "Salidat Isaeva"
+  },
+  {
+    "name": "Сагынбеков Чоро",
+    "group": "MAR-26B",
+    "course": "1",
+    "curator": "Salidat Isaeva"
+  },
+  {
+    "name": "Советбекова Акбермет",
+    "group": "MAR-26B",
+    "course": "1",
+    "curator": "Salidat Isaeva"
+  },
+  {
+    "name": "Сүйүнбекова Адриана",
+    "group": "MAR-26B",
+    "course": "1",
+    "curator": "Salidat Isaeva"
+  },
+  {
+    "name": "Токтосунова Назик",
+    "group": "MAR-26B",
+    "course": "1",
+    "curator": "Salidat Isaeva"
+  },
+  {
+    "name": "Тологонов Алмазбек",
+    "group": "MAR-26B",
+    "course": "1",
+    "curator": "Salidat Isaeva"
+  },
+  {
+    "name": "Усонбаева Элина",
+    "group": "MAR-26B",
+    "course": "1",
+    "curator": "Salidat Isaeva"
+  },
+  {
+    "name": "Шарипбаев Байыш",
+    "group": "MAR-26B",
+    "course": "1",
+    "curator": "Salidat Isaeva"
+  },
+  {
+    "name": "Шербеков Эмир",
+    "group": "MAR-26B",
+    "course": "1",
+    "curator": "Salidat Isaeva"
+  },
+  {
+    "name": "Юсупов Икрамбек",
+    "group": "MAR-26B",
+    "course": "1",
+    "curator": "Salidat Isaeva"
+  },
+  {
+    "name": "Абдижалилова Айзирек",
+    "group": "CMN-26",
+    "course": "1",
+    "curator": "Mannap uulu Nurlan"
+  },
+  {
+    "name": "Абдимиталипова Марям",
+    "group": "CMN-26",
+    "course": "1",
+    "curator": "Mannap uulu Nurlan"
+  },
+  {
+    "name": "Азаматова Сезим",
+    "group": "CMN-26",
+    "course": "1",
+    "curator": "Mannap uulu Nurlan"
+  },
+  {
+    "name": "Акматов Нурдолот",
+    "group": "CMN-26",
+    "course": "1",
+    "curator": "Mannap uulu Nurlan"
+  },
+  {
+    "name": "Акылбекова Арууке",
+    "group": "CMN-26",
+    "course": "1",
+    "curator": "Mannap uulu Nurlan"
+  },
+  {
+    "name": "Атамкулова Даяна",
+    "group": "CMN-26",
+    "course": "1",
+    "curator": "Mannap uulu Nurlan"
+  },
+  {
+    "name": "Бегматова Айдеми",
+    "group": "CMN-26",
+    "course": "1",
+    "curator": "Mannap uulu Nurlan"
+  },
+  {
+    "name": "Женишбеков Умар",
+    "group": "CMN-26",
+    "course": "1",
+    "curator": "Mannap uulu Nurlan"
+  },
+  {
+    "name": "Каныбеков Байаман",
+    "group": "CMN-26",
+    "course": "1",
+    "curator": "Mannap uulu Nurlan"
+  },
+  {
+    "name": "Кубанычбеков Айдин",
+    "group": "CMN-26",
+    "course": "1",
+    "curator": "Mannap uulu Nurlan"
+  },
+  {
+    "name": "Кубанычбеков Шерден",
+    "group": "CMN-26",
+    "course": "1",
+    "curator": "Mannap uulu Nurlan"
+  },
+  {
+    "name": "Кыргызбаев Бексултан",
+    "group": "CMN-26",
+    "course": "1",
+    "curator": "Mannap uulu Nurlan"
+  },
+  {
+    "name": "Манасбеков Ырыскелди",
+    "group": "CMN-26",
+    "course": "1",
+    "curator": "Mannap uulu Nurlan"
+  },
+  {
+    "name": "Медерова Айяна",
+    "group": "CMN-26",
+    "course": "1",
+    "curator": "Mannap uulu Nurlan"
+  },
+  {
+    "name": "Омурова Гузеля",
+    "group": "CMN-26",
+    "course": "1",
+    "curator": "Mannap uulu Nurlan"
+  },
+  {
+    "name": "Орозбеков Майна",
+    "group": "CMN-26",
+    "course": "1",
+    "curator": "Mannap uulu Nurlan"
+  },
+  {
+    "name": "Осмонова Айдана",
+    "group": "CMN-26",
+    "course": "1",
+    "curator": "Mannap uulu Nurlan"
+  },
+  {
+    "name": "Сапаев Шакир",
+    "group": "CMN-26",
+    "course": "1",
+    "curator": "Mannap uulu Nurlan"
+  },
+  {
+    "name": "Сапарбекова Акылай",
+    "group": "CMN-26",
+    "course": "1",
+    "curator": "Mannap uulu Nurlan"
+  },
+  {
+    "name": "Сыдыкова Адина",
+    "group": "CMN-26",
+    "course": "1",
+    "curator": "Mannap uulu Nurlan"
+  },
+  {
+    "name": "Сыпарбеков Ибраим",
+    "group": "CMN-26",
+    "course": "1",
+    "curator": "Mannap uulu Nurlan"
+  },
+  {
+    "name": "Чотуев Нурсултан",
+    "group": "CMN-26",
+    "course": "1",
+    "curator": "Mannap uulu Nurlan"
+  },
+  {
+    "name": "Шигаев Ибрагим",
+    "group": "CMN-26",
+    "course": "1",
+    "curator": "Mannap uulu Nurlan"
+  },
+  {
+    "name": "Асапов Усман",
+    "group": "CFL-26",
+    "course": "1",
+    "curator": "Salia Kurmanova"
+  },
+  {
+    "name": "Бакытбекова Айгерим",
+    "group": "CFL-26",
+    "course": "1",
+    "curator": "Salia Kurmanova"
+  },
+  {
+    "name": "Бекбергенов Алихан",
+    "group": "CFL-26",
+    "course": "1",
+    "curator": "Salia Kurmanova"
+  },
+  {
+    "name": "Гасанов Мухаммад-Али",
+    "group": "CFL-26",
+    "course": "1",
+    "curator": "Salia Kurmanova"
+  },
+  {
+    "name": "Кабылов Эмирхан",
+    "group": "CFL-26",
+    "course": "1",
+    "curator": "Salia Kurmanova"
+  },
+  {
+    "name": "Кадыралиева Мадина",
+    "group": "CFL-26",
+    "course": "1",
+    "curator": "Salia Kurmanova"
+  },
+  {
+    "name": "Калыева Элима",
+    "group": "CFL-26",
+    "course": "1",
+    "curator": "Salia Kurmanova"
+  },
+  {
+    "name": "Кочконбаев Абдулвахид",
+    "group": "CFL-26",
+    "course": "1",
+    "curator": "Salia Kurmanova"
+  },
+  {
+    "name": "Кошубакова Амина",
+    "group": "CFL-26",
+    "course": "1",
+    "curator": "Salia Kurmanova"
+  },
+  {
+    "name": "Кылычбекова Айбийке",
+    "group": "CFL-26",
+    "course": "1",
+    "curator": "Salia Kurmanova"
+  },
+  {
+    "name": "Максатбекова Умайа",
+    "group": "CFL-26",
+    "course": "1",
+    "curator": "Salia Kurmanova"
+  },
+  {
+    "name": "Маратов Эмир",
+    "group": "CFL-26",
+    "course": "1",
+    "curator": "Salia Kurmanova"
+  },
+  {
+    "name": "Осмонова Аселя",
+    "group": "CFL-26",
+    "course": "1",
+    "curator": "Salia Kurmanova"
+  },
+  {
+    "name": "Райканова Амина",
+    "group": "CFL-26",
+    "course": "1",
+    "curator": "Salia Kurmanova"
+  },
+  {
+    "name": "Рустамова Алтынай",
+    "group": "CFL-26",
+    "course": "1",
+    "curator": "Salia Kurmanova"
+  },
+  {
+    "name": "Рыскулбеков Байаман",
+    "group": "CFL-26",
+    "course": "1",
+    "curator": "Salia Kurmanova"
+  },
+  {
+    "name": "Советбекова Айдай",
+    "group": "CFL-26",
+    "course": "1",
+    "curator": "Salia Kurmanova"
+  },
+  {
+    "name": "Шаршенбекова Айназик",
+    "group": "CFL-26",
+    "course": "1",
+    "curator": "Salia Kurmanova"
+  },
+  {
+    "name": "Шералиев Арсен",
+    "group": "CFL-26",
+    "course": "1",
+    "curator": "Salia Kurmanova"
+  },
+  {
+    "name": "Ыманкулов Ырыскелди",
+    "group": "CFL-26",
+    "course": "1",
+    "curator": "Salia Kurmanova"
+  },
+  {
+    "name": "Эдигеева Саадат",
+    "group": "CFL-26",
+    "course": "1",
+    "curator": "Salia Kurmanova"
+  },
+  {
+    "name": "Эркинбекова Айлуун",
+    "group": "CFL-26",
+    "course": "1",
+    "curator": "Salia Kurmanova"
+  },
+  {
+    "name": "Гладков Мирон",
+    "group": "FLET-26",
+    "course": "1",
+    "curator": "Aizada Mambetsadykova"
+  },
+  {
+    "name": "Жакшылыкова Умай",
+    "group": "FLET-26",
+    "course": "1",
+    "curator": "Aizada Mambetsadykova"
+  },
+  {
+    "name": "Женишбекова Назик",
+    "group": "FLET-26",
+    "course": "1",
+    "curator": "Aizada Mambetsadykova"
+  },
+  {
+    "name": "Жумабекова Нурайым",
+    "group": "FLET-26",
+    "course": "1",
+    "curator": "Aizada Mambetsadykova"
+  },
+  {
+    "name": "Изатова Анэля",
+    "group": "FLET-26",
+    "course": "1",
+    "curator": "Aizada Mambetsadykova"
+  },
+  {
+    "name": "Кенжебаева Айзирек",
+    "group": "FLET-26",
+    "course": "1",
+    "curator": "Aizada Mambetsadykova"
+  },
+  {
+    "name": "Кыязова Алина",
+    "group": "FLET-26",
+    "course": "1",
+    "curator": "Aizada Mambetsadykova"
+  },
+  {
+    "name": "Лансарова Ясмина",
+    "group": "FLET-26",
+    "course": "1",
+    "curator": "Aizada Mambetsadykova"
+  },
+  {
+    "name": "Муктарбекова Алтынай",
+    "group": "FLET-26",
+    "course": "1",
+    "curator": "Aizada Mambetsadykova"
+  },
+  {
+    "name": "Муктарова Нургуль",
+    "group": "FLET-26",
+    "course": "1",
+    "curator": "Aizada Mambetsadykova"
+  },
+  {
+    "name": "Садиева Нурсаида",
+    "group": "FLET-26",
+    "course": "1",
+    "curator": "Aizada Mambetsadykova"
+  },
+  {
+    "name": "Садыков Акжол",
+    "group": "FLET-26",
+    "course": "1",
+    "curator": "Aizada Mambetsadykova"
+  },
+  {
+    "name": "Сатаркулова Элина",
+    "group": "FLET-26",
+    "course": "1",
+    "curator": "Aizada Mambetsadykova"
+  },
+  {
+    "name": "Сатынбекова Адинай",
+    "group": "FLET-26",
+    "course": "1",
+    "curator": "Aizada Mambetsadykova"
+  },
+  {
+    "name": "Сейитканов Чынгыз",
+    "group": "FLET-26",
+    "course": "1",
+    "curator": "Aizada Mambetsadykova"
+  },
+  {
+    "name": "Султанбек Актан",
+    "group": "FLET-26",
+    "course": "1",
+    "curator": "Aizada Mambetsadykova"
+  },
+  {
+    "name": "Турганалиев Ильяз",
+    "group": "FLET-26",
+    "course": "1",
+    "curator": "Aizada Mambetsadykova"
+  },
+  {
+    "name": "Турумкулова Бактыгул",
+    "group": "FLET-26",
+    "course": "1",
+    "curator": "Aizada Mambetsadykova"
+  },
+  {
+    "name": "Уланова Алтынай",
+    "group": "FLET-26",
+    "course": "1",
+    "curator": "Aizada Mambetsadykova"
+  },
+  {
+    "name": "Шамшиева Мариям",
+    "group": "FLET-26",
+    "course": "1",
+    "curator": "Aizada Mambetsadykova"
+  },
+  {
+    "name": "Абыков Өмурбек Тургунбекович",
+    "group": "SCA25A",
+    "course": "2",
+    "curator": "SUYUNBEK SHERMATOV"
+  },
+  {
+    "name": "Абдыкайымова Асема Абдыкайымовна",
+    "group": "SCA25A",
+    "course": "2",
+    "curator": "SUYUNBEK SHERMATOV"
+  },
+  {
+    "name": "Адылов Нурислам Алмазбекович",
+    "group": "SCA25A",
+    "course": "2",
+    "curator": "SUYUNBEK SHERMATOV"
+  },
+  {
+    "name": "Акылбаев Байэл Мирланович",
+    "group": "SCA25A",
+    "course": "2",
+    "curator": "SUYUNBEK SHERMATOV"
+  },
+  {
+    "name": "Акылбекова Айтурган",
+    "group": "SCA25A",
+    "course": "2",
+    "curator": "SUYUNBEK SHERMATOV"
+  },
+  {
+    "name": "Алмазов Искандер Улугбекович",
+    "group": "SCA25A",
+    "course": "2",
+    "curator": "SUYUNBEK SHERMATOV"
+  },
+  {
+    "name": "Аралбаев Эржан Салабатович",
+    "group": "SCA25A",
+    "course": "2",
+    "curator": "SUYUNBEK SHERMATOV"
+  },
+  {
+    "name": "Бакинов  Нурсултан Русланович",
+    "group": "SCA25A",
+    "course": "2",
+    "curator": "SUYUNBEK SHERMATOV"
+  },
+  {
+    "name": "Женишев Нияз Кайратович",
+    "group": "SCA25A",
+    "course": "2",
+    "curator": "SUYUNBEK SHERMATOV"
+  },
+  {
+    "name": "Жусубалиев Алмаз Жаныбекович",
+    "group": "SCA25A",
+    "course": "2",
+    "curator": "SUYUNBEK SHERMATOV"
+  },
+  {
+    "name": "Исабекова Алтынай Нарынбековна",
+    "group": "SCA25A",
+    "course": "2",
+    "curator": "SUYUNBEK SHERMATOV"
+  },
+  {
+    "name": "Кайратов Кутман Кайратович",
+    "group": "SCA25A",
+    "course": "2",
+    "curator": "SUYUNBEK SHERMATOV"
+  },
+  {
+    "name": "Кайыпкулов Ислам Кубатович",
+    "group": "SCA25A",
+    "course": "2",
+    "curator": "SUYUNBEK SHERMATOV"
+  },
+  {
+    "name": "Кыдыров Нуран Нурланович",
+    "group": "SCA25A",
+    "course": "2",
+    "curator": "SUYUNBEK SHERMATOV"
+  },
+  {
+    "name": "Маликова Нагима Маликовна",
+    "group": "SCA25A",
+    "course": "2",
+    "curator": "SUYUNBEK SHERMATOV"
+  },
+  {
+    "name": "Мамедов Шамиль Саттарович",
+    "group": "SCA25A",
+    "course": "2",
+    "curator": "SUYUNBEK SHERMATOV"
+  },
+  {
+    "name": "Муратова Радийа Руслановна",
+    "group": "SCA25A",
+    "course": "2",
+    "curator": "SUYUNBEK SHERMATOV"
+  },
+  {
+    "name": "Муслимов Эрбол Айбекович",
+    "group": "SCA25A",
+    "course": "2",
+    "curator": "SUYUNBEK SHERMATOV"
+  },
+  {
+    "name": "Ниязов Аманбек Нурбекович",
+    "group": "SCA25A",
+    "course": "2",
+    "curator": "SUYUNBEK SHERMATOV"
+  },
+  {
+    "name": "Сагыналиев Мират Кайратович",
+    "group": "SCA25A",
+    "course": "2",
+    "curator": "SUYUNBEK SHERMATOV"
+  },
+  {
+    "name": "Салижанов Мирбек Жанарбекович",
+    "group": "SCA25A",
+    "course": "2",
+    "curator": "SUYUNBEK SHERMATOV"
+  },
+  {
+    "name": "Саткынова Айдана Ринатовна",
+    "group": "SCA25A",
+    "course": "2",
+    "curator": "SUYUNBEK SHERMATOV"
+  },
+  {
+    "name": "Эркинов Атай Айбекович",
+    "group": "SCA25A",
+    "course": "2",
+    "curator": "SUYUNBEK SHERMATOV"
+  },
+  {
+    "name": "Эркинов Атай Аабекович",
+    "group": "SCA25A",
+    "course": "2",
+    "curator": "SUYUNBEK SHERMATOV"
+  },
+  {
+    "name": "Чоконов Ислам Жайлообекович",
+    "group": "SCA25A",
+    "course": "2",
+    "curator": "SUYUNBEK SHERMATOV"
+  },
+  {
+    "name": "Абасбеков Нурхан Мелисович",
+    "group": "SCA25B",
+    "course": "2",
+    "curator": "DASTAN SATYBAEV"
+  },
+  {
+    "name": "Абдиманапов Байкут Өмурбекович",
+    "group": "SCA25B",
+    "course": "2",
+    "curator": "DASTAN SATYBAEV"
+  },
+  {
+    "name": "Манапов Абдували Саматбекович",
+    "group": "SCA25B",
+    "course": "2",
+    "curator": "DASTAN SATYBAEV"
+  },
+  {
+    "name": "Адылгазиева Жаркынай Нургазиевна",
+    "group": "SCA25B",
+    "course": "2",
+    "curator": "DASTAN SATYBAEV"
+  },
+  {
+    "name": "Акимканов Актан Маратович",
+    "group": "SCA25B",
+    "course": "2",
+    "curator": "DASTAN SATYBAEV"
+  },
+  {
+    "name": "Анарбаева Амина Азаматовна",
+    "group": "SCA25B",
+    "course": "2",
+    "curator": "DASTAN SATYBAEV"
+  },
+  {
+    "name": "Аскаров Абылай Аскарович",
+    "group": "SCA25B",
+    "course": "2",
+    "curator": "DASTAN SATYBAEV"
+  },
+  {
+    "name": "Давлетбеков Ариет Кымбатбекович",
+    "group": "SCA25B",
+    "course": "2",
+    "curator": "DASTAN SATYBAEV"
+  },
+  {
+    "name": "Джапаров Атабек Даниярович",
+    "group": "SCA25B",
+    "course": "2",
+    "curator": "DASTAN SATYBAEV"
+  },
+  {
+    "name": "Жаныбаев Элхан Русланович",
+    "group": "SCA25B",
+    "course": "2",
+    "curator": "DASTAN SATYBAEV"
+  },
+  {
+    "name": "Жекшалиев Адинур Аманатович",
+    "group": "SCA25B",
+    "course": "2",
+    "curator": "DASTAN SATYBAEV"
+  },
+  {
+    "name": "Жекшенов Нурэл Мирбекович",
+    "group": "SCA25B",
+    "course": "2",
+    "curator": "DASTAN SATYBAEV"
+  },
+  {
+    "name": "Зунунова Рамина",
+    "group": "SCA25B",
+    "course": "2",
+    "curator": "DASTAN SATYBAEV"
+  },
+  {
+    "name": "Ибраимов Амир Темирович",
+    "group": "SCA25B",
+    "course": "2",
+    "curator": "DASTAN SATYBAEV"
+  },
+  {
+    "name": "Кадырбаев Бакдөлөт Акылбекович",
+    "group": "SCA25B",
+    "course": "2",
+    "curator": "DASTAN SATYBAEV"
+  },
+  {
+    "name": "Карыбеков Нурболот Рахатович",
+    "group": "SCA25B",
+    "course": "2",
+    "curator": "DASTAN SATYBAEV"
+  },
+  {
+    "name": "Маматибраимов Айбек Бактыбекович",
+    "group": "SCA25B",
+    "course": "2",
+    "curator": "DASTAN SATYBAEV"
+  },
+  {
+    "name": "Манасбаев Алижан Жанатович",
+    "group": "SCA25B",
+    "course": "2",
+    "curator": "DASTAN SATYBAEV"
+  },
+  {
+    "name": "Маматкадыров Нурдөөлөт Аскаралиевич",
+    "group": "SCA25B",
+    "course": "2",
+    "curator": "DASTAN SATYBAEV"
+  },
+  {
+    "name": "Муктаров Бакытжан Муктарович",
+    "group": "SCA25B",
+    "course": "2",
+    "curator": "DASTAN SATYBAEV"
+  },
+  {
+    "name": "Разгуляева Зарина Владимировна",
+    "group": "SCA25B",
+    "course": "2",
+    "curator": "DASTAN SATYBAEV"
+  },
+  {
+    "name": "Рустамов Эркин Рустамович",
+    "group": "SCA25B",
+    "course": "2",
+    "curator": "DASTAN SATYBAEV"
+  },
+  {
+    "name": "Суранбеков Кутбол Бактыбаевич",
+    "group": "SCA25B",
+    "course": "2",
+    "curator": "DASTAN SATYBAEV"
+  },
+  {
+    "name": "Таштанов Мансур Эркинбекович",
+    "group": "SCA25B",
+    "course": "2",
+    "curator": "DASTAN SATYBAEV"
+  },
+  {
+    "name": "Токтобеков Бекбол Бердигулович",
+    "group": "SCA25B",
+    "course": "2",
+    "curator": "DASTAN SATYBAEV"
+  },
+  {
+    "name": "Абдымаликов Байбол Жаныбекович",
+    "group": "SCA25C",
+    "course": "2",
+    "curator": "KUBANYCH DZHYRGALBEKOV"
+  },
+  {
+    "name": "Абдыназарова Гулзар Нурлановна",
+    "group": "SCA25C",
+    "course": "2",
+    "curator": "KUBANYCH DZHYRGALBEKOV"
+  },
+  {
+    "name": "Абыкеева Айжамал Урматовна",
+    "group": "SCA25C",
+    "course": "2",
+    "curator": "KUBANYCH DZHYRGALBEKOV"
+  },
+  {
+    "name": "Бактыбеков Нурдөөлөт Русланович",
+    "group": "SCA25C",
+    "course": "2",
+    "curator": "KUBANYCH DZHYRGALBEKOV"
+  },
+  {
+    "name": "Жумабаев Айдос Авазович",
+    "group": "SCA25C",
+    "course": "2",
+    "curator": "KUBANYCH DZHYRGALBEKOV"
+  },
+  {
+    "name": "Колпочов Угузбек Жанарбекович",
+    "group": "SCA25C",
+    "course": "2",
+    "curator": "KUBANYCH DZHYRGALBEKOV"
+  },
+  {
+    "name": "Кожонов Курманбек Алмазович",
+    "group": "SCA25C",
+    "course": "2",
+    "curator": "KUBANYCH DZHYRGALBEKOV"
+  },
+  {
+    "name": "Кубатбеков Алишер",
+    "group": "SCA25C",
+    "course": "2",
+    "curator": "KUBANYCH DZHYRGALBEKOV"
+  },
+  {
+    "name": "Табылдиев Нургазы",
+    "group": "SCA25C",
+    "course": "2",
+    "curator": "KUBANYCH DZHYRGALBEKOV"
+  },
+  {
+    "name": "Мамразаков Нурислам Адиевич",
+    "group": "SCA25C",
+    "course": "2",
+    "curator": "KUBANYCH DZHYRGALBEKOV"
+  },
+  {
+    "name": "Мэлсбеков Умар Айбековича",
+    "group": "SCA25C",
+    "course": "2",
+    "curator": "KUBANYCH DZHYRGALBEKOV"
+  },
+  {
+    "name": "Омурзаков Уран Бакытович",
+    "group": "SCA25C",
+    "course": "2",
+    "curator": "KUBANYCH DZHYRGALBEKOV"
+  },
+  {
+    "name": "Орозбекова Айша Анварбековна",
+    "group": "SCA25C",
+    "course": "2",
+    "curator": "KUBANYCH DZHYRGALBEKOV"
+  },
+  {
+    "name": "Райымбеков Ислам Шукурбекович",
+    "group": "SCA25C",
+    "course": "2",
+    "curator": "KUBANYCH DZHYRGALBEKOV"
+  },
+  {
+    "name": "Рыскулов Алинур Дастанович",
+    "group": "SCA25C",
+    "course": "2",
+    "curator": "KUBANYCH DZHYRGALBEKOV"
+  },
+  {
+    "name": "Сулейманова Айжана Азаматовна",
+    "group": "SCA25C",
+    "course": "2",
+    "curator": "KUBANYCH DZHYRGALBEKOV"
+  },
+  {
+    "name": "Тагаев Улук Маратович",
+    "group": "SCA25C",
+    "course": "2",
+    "curator": "KUBANYCH DZHYRGALBEKOV"
+  },
+  {
+    "name": "Мансурова Сирена Кожоярова",
+    "group": "SCA25C",
+    "course": "2",
+    "curator": "KUBANYCH DZHYRGALBEKOV"
+  },
+  {
+    "name": "Токталиев Асман Нурланбекович",
+    "group": "SCA25C",
+    "course": "2",
+    "curator": "KUBANYCH DZHYRGALBEKOV"
+  },
+  {
+    "name": "Толонбаев Умар Алмазбекович",
+    "group": "SCA25C",
+    "course": "2",
+    "curator": "KUBANYCH DZHYRGALBEKOV"
+  },
+  {
+    "name": "Дуулатбеков Искендер Уланович",
+    "group": "SCA25C",
+    "course": "2",
+    "curator": "KUBANYCH DZHYRGALBEKOV"
+  },
+  {
+    "name": "Юрьев Бактыкул Айбекович",
+    "group": "SCA25C",
+    "course": "2",
+    "curator": "KUBANYCH DZHYRGALBEKOV"
+  },
+  {
+    "name": "Орозбаева Айзат",
+    "group": "SCA25C",
+    "course": "2",
+    "curator": "KUBANYCH DZHYRGALBEKOV"
+  },
+  {
+    "name": "Арапбаев Эльхан",
+    "group": "SCA25C",
+    "course": "2",
+    "curator": "KUBANYCH DZHYRGALBEKOV"
+  },
+  {
+    "name": "Арсен Нурэль",
+    "group": "CSC-25",
+    "course": "2",
+    "curator": "AKYLAI URAIMZHAN KYZY"
+  },
+  {
+    "name": "Асыпбеков Абай Эрадилович",
+    "group": "CSC-25",
+    "course": "2",
+    "curator": "AKYLAI URAIMZHAN KYZY"
+  },
+  {
+    "name": "Бообеков Актан Бекназарович",
+    "group": "CSC-25",
+    "course": "2",
+    "curator": "AKYLAI URAIMZHAN KYZY"
+  },
+  {
+    "name": "Жакшыбеков Адилхан Нурбекович",
+    "group": "CSC-25",
+    "course": "2",
+    "curator": "AKYLAI URAIMZHAN KYZY"
+  },
+  {
+    "name": "Камилдинов Даниел Акимбаевич",
+    "group": "CSC-25",
+    "course": "2",
+    "curator": "AKYLAI URAIMZHAN KYZY"
+  },
+  {
+    "name": "Кожобеков Нурбол Султанбекович",
+    "group": "CSC-25",
+    "course": "2",
+    "curator": "AKYLAI URAIMZHAN KYZY"
+  },
+  {
+    "name": "Маликов Азимбек Эркинович",
+    "group": "CSC-25",
+    "course": "2",
+    "curator": "AKYLAI URAIMZHAN KYZY"
+  },
+  {
+    "name": "Масалбеков Элхан Айбекович",
+    "group": "CSC-25",
+    "course": "2",
+    "curator": "AKYLAI URAIMZHAN KYZY"
+  },
+  {
+    "name": "Муйдинов Мухаммад Мухтарович",
+    "group": "CSC-25",
+    "course": "2",
+    "curator": "AKYLAI URAIMZHAN KYZY"
+  },
+  {
+    "name": "Муратбеков Нурболот Азисович",
+    "group": "CSC-25",
+    "course": "2",
+    "curator": "AKYLAI URAIMZHAN KYZY"
+  },
+  {
+    "name": "Нанаев Артур Талгарович",
+    "group": "CSC-25",
+    "course": "2",
+    "curator": "AKYLAI URAIMZHAN KYZY"
+  },
+  {
+    "name": "Сарыажиев Жантай Эмилевич",
+    "group": "CSC-25",
+    "course": "2",
+    "curator": "AKYLAI URAIMZHAN KYZY"
+  },
+  {
+    "name": "Темирбеков Гульчоро Мирланович",
+    "group": "CSC-25",
+    "course": "2",
+    "curator": "AKYLAI URAIMZHAN KYZY"
+  },
+  {
+    "name": "Тургуналиев Адилхан Бактыбекович",
+    "group": "CSC-25",
+    "course": "2",
+    "curator": "AKYLAI URAIMZHAN KYZY"
+  },
+  {
+    "name": "Узаков Эрик Узакович",
+    "group": "CSC-25",
+    "course": "2",
+    "curator": "AKYLAI URAIMZHAN KYZY"
+  },
+  {
+    "name": "Өмүрканов Эмир Бакирович",
+    "group": "CSC-25",
+    "course": "2",
+    "curator": "AKYLAI URAIMZHAN KYZY"
+  },
+  {
+    "name": "Чотуев Нурэл Сталбекович",
+    "group": "CSC-25",
+    "course": "2",
+    "curator": "AKYLAI URAIMZHAN KYZY"
+  },
+  {
+    "name": "Шамбетов Байэл Сагынбекович",
+    "group": "CSC-25",
+    "course": "2",
+    "curator": "AKYLAI URAIMZHAN KYZY"
+  },
+  {
+    "name": "Нурова Милана Нуровна",
+    "group": "CSC-25",
+    "course": "2",
+    "curator": "AKYLAI URAIMZHAN KYZY"
+  },
+  {
+    "name": "Турдалиева Арууке",
+    "group": "CSC-25",
+    "course": "2",
+    "curator": "AKYLAI URAIMZHAN KYZY"
+  },
+  {
+    "name": "Мукасов Муслим",
+    "group": "CSC-25",
+    "course": "2",
+    "curator": "AKYLAI URAIMZHAN KYZY"
+  },
+  {
+    "name": "Алмазбекова Амина Уланбековна",
+    "group": "ДизайнDES 25 A",
+    "course": "2",
+    "curator": "Nurzada Ergeshova"
+  },
+  {
+    "name": "Багишбеков Бакай Сардарбекович",
+    "group": "ДизайнDES 25 A",
+    "course": "2",
+    "curator": "Nurzada Ergeshova"
+  },
+  {
+    "name": "Байышова Диана",
+    "group": "ДизайнDES 25 A",
+    "course": "2",
+    "curator": "Nurzada Ergeshova"
+  },
+  {
+    "name": "Бейшенкулов Элдар Адилетович",
+    "group": "ДизайнDES 25 A",
+    "course": "2",
+    "curator": "Nurzada Ergeshova"
+  },
+  {
+    "name": "Жаныгулова Элина Алмазбековна",
+    "group": "ДизайнDES 25 A",
+    "course": "2",
+    "curator": "Nurzada Ergeshova"
+  },
+  {
+    "name": "Жекшенбеков Байэл Улукбекович",
+    "group": "ДизайнDES 25 A",
+    "course": "2",
+    "curator": "Nurzada Ergeshova"
+  },
+  {
+    "name": "Корчубекова Айым Эмильевна",
+    "group": "ДизайнDES 25 A",
+    "course": "2",
+    "curator": "Nurzada Ergeshova"
+  },
+  {
+    "name": "Медеров Айдар Талантович",
+    "group": "ДизайнDES 25 A",
+    "course": "2",
+    "curator": "Nurzada Ergeshova"
+  },
+  {
+    "name": "Нуржанова Бермет Алмазовна",
+    "group": "ДизайнDES 25 A",
+    "course": "2",
+    "curator": "Nurzada Ergeshova"
+  },
+  {
+    "name": "Рахматулин Дастан Аскатович",
+    "group": "ДизайнDES 25 A",
+    "course": "2",
+    "curator": "Nurzada Ergeshova"
+  },
+  {
+    "name": "Сабырбекова Назира Эдиковна",
+    "group": "ДизайнDES 25 A",
+    "course": "2",
+    "curator": "Nurzada Ergeshova"
+  },
+  {
+    "name": "Советова Аймончок Сырткуловна",
+    "group": "ДизайнDES 25 A",
+    "course": "2",
+    "curator": "Nurzada Ergeshova"
+  },
+  {
+    "name": "Талипова Ханифа Кэхрмановна",
+    "group": "ДизайнDES 25 A",
+    "course": "2",
+    "curator": "Nurzada Ergeshova"
+  },
+  {
+    "name": "Талипова Тасним Даврановна",
+    "group": "ДизайнDES 25 A",
+    "course": "2",
+    "curator": "Nurzada Ergeshova"
+  },
+  {
+    "name": "Тилекматов Сармат Акылбекович",
+    "group": "ДизайнDES 25 A",
+    "course": "2",
+    "curator": "Nurzada Ergeshova"
+  },
+  {
+    "name": "Жакыпова Раяна Сталбековна",
+    "group": "ДизайнDES 25 A",
+    "course": "2",
+    "curator": "Nurzada Ergeshova"
+  },
+  {
+    "name": "Турарова Камила Эркинбековна",
+    "group": "ДизайнDES 25 A",
+    "course": "2",
+    "curator": "Nurzada Ergeshova"
+  },
+  {
+    "name": "Уметалиева Камиля Руслановна",
+    "group": "ДизайнDES 25 A",
+    "course": "2",
+    "curator": "Nurzada Ergeshova"
+  },
+  {
+    "name": "Шаршенбаев Медет Нурдинович",
+    "group": "ДизайнDES 25 A",
+    "course": "2",
+    "curator": "Nurzada Ergeshova"
+  },
+  {
+    "name": "Чекиров Нур-Рахим Намазбекович",
+    "group": "ДизайнDES 25 A",
+    "course": "2",
+    "curator": "Nurzada Ergeshova"
+  },
+  {
+    "name": "Ташиева Айдана Давлатбековна",
+    "group": "ДизайнDES 25 A",
+    "course": "2",
+    "curator": "Nurzada Ergeshova"
+  },
+  {
+    "name": "Башыбекова Анара Назарбековна",
+    "group": "ДизайнDES 25 A",
+    "course": "2",
+    "curator": "Nurzada Ergeshova"
+  },
+  {
+    "name": "Абдыкапаров Нурдаулет Майсалбекович",
+    "group": "ДизайнDES 25В",
+    "course": "2",
+    "curator": "Nargiza Kutmanova"
+  },
+  {
+    "name": "Абдулдаева Гаухар Эркиновна",
+    "group": "ДизайнDES 25В",
+    "course": "2",
+    "curator": "Nargiza Kutmanova"
+  },
+  {
+    "name": "Азарбеков Сулайман Келдибекович",
+    "group": "ДизайнDES 25В",
+    "course": "2",
+    "curator": "Nargiza Kutmanova"
+  },
+  {
+    "name": "Алтымышев Айдар Уланович",
+    "group": "ДизайнDES 25В",
+    "course": "2",
+    "curator": "Nargiza Kutmanova"
+  },
+  {
+    "name": "Асанов Бакай Эрнисович",
+    "group": "ДизайнDES 25В",
+    "course": "2",
+    "curator": "Nargiza Kutmanova"
+  },
+  {
+    "name": "Ашимова Раяна Саматовна",
+    "group": "ДизайнDES 25В",
+    "course": "2",
+    "curator": "Nargiza Kutmanova"
+  },
+  {
+    "name": "Курманова Ясмин Насреддиновна",
+    "group": "ДизайнDES 25В",
+    "course": "2",
+    "curator": "Nargiza Kutmanova"
+  },
+  {
+    "name": "Замиров Каныбек Кубанычбекович",
+    "group": "ДизайнDES 25В",
+    "course": "2",
+    "curator": "Nargiza Kutmanova"
+  },
+  {
+    "name": "Исмаилов Азат Майрамбекович",
+    "group": "ДизайнDES 25В",
+    "course": "2",
+    "curator": "Nargiza Kutmanova"
+  },
+  {
+    "name": "Камчыбеков Нурболот Алмазбекович",
+    "group": "ДизайнDES 25В",
+    "course": "2",
+    "curator": "Nargiza Kutmanova"
+  },
+  {
+    "name": "Канаев Булат Нурбекович",
+    "group": "ДизайнDES 25В",
+    "course": "2",
+    "curator": "Nargiza Kutmanova"
+  },
+  {
+    "name": "Кафар Айко Улановна",
+    "group": "ДизайнDES 25В",
+    "course": "2",
+    "curator": "Nargiza Kutmanova"
+  },
+  {
+    "name": "Малдыбаева Карина Долоновна",
+    "group": "ДизайнDES 25В",
+    "course": "2",
+    "curator": "Nargiza Kutmanova"
+  },
+  {
+    "name": "Матиев Данис Эркинович",
+    "group": "ДизайнDES 25В",
+    "course": "2",
+    "curator": "Nargiza Kutmanova"
+  },
+  {
+    "name": "Мукасова Айдеми Руслановна",
+    "group": "ДизайнDES 25В",
+    "course": "2",
+    "curator": "Nargiza Kutmanova"
+  },
+  {
+    "name": "Назаркулов Ибирагим Чынгызович",
+    "group": "ДизайнDES 25В",
+    "course": "2",
+    "curator": "Nargiza Kutmanova"
+  },
+  {
+    "name": "Орозбаков Баястан Нурланович",
+    "group": "ДизайнDES 25В",
+    "course": "2",
+    "curator": "Nargiza Kutmanova"
+  },
+  {
+    "name": "Токтомбекова Аделина Темирбековна",
+    "group": "ДизайнDES 25В",
+    "course": "2",
+    "curator": "Nargiza Kutmanova"
+  },
+  {
+    "name": "Туратбеков Айдин Азаматович",
+    "group": "ДизайнDES 25В",
+    "course": "2",
+    "curator": "Nargiza Kutmanova"
+  },
+  {
+    "name": "Тургуналиева Аделя Абдибадитовна",
+    "group": "ДизайнDES 25В",
+    "course": "2",
+    "curator": "Nargiza Kutmanova"
+  },
+  {
+    "name": "Ысманова Гулиза Разыкуловна",
+    "group": "ДизайнDES 25В",
+    "course": "2",
+    "curator": "Nargiza Kutmanova"
+  },
+  {
+    "name": "Белекова Айдана Азаматовна",
+    "group": "ДизайнDES 25В",
+    "course": "2",
+    "curator": "Nargiza Kutmanova"
+  },
+  {
+    "name": "Насиров Эмир",
+    "group": "ДизайнDES 25В",
+    "course": "2",
+    "curator": "Nargiza Kutmanova"
+  },
+  {
+    "name": "Токташ Мээрим Идаятовна",
+    "group": "Экономика ACO25",
+    "course": "2",
+    "curator": "AIZADA OMURKULOVA"
+  },
+  {
+    "name": "Айтматов Шерхан Чынгызович",
+    "group": "Экономика ACO25",
+    "course": "2",
+    "curator": "AIZADA OMURKULOVA"
+  },
+  {
+    "name": "Асылбеков Азирет Уланович",
+    "group": "Экономика ACO25",
+    "course": "2",
+    "curator": "AIZADA OMURKULOVA"
+  },
+  {
+    "name": "Асангазыева Саадат үсөнбековна",
+    "group": "Экономика ACO25",
+    "course": "2",
+    "curator": "AIZADA OMURKULOVA"
+  },
+  {
+    "name": "Асамбаева Бермет Таалайбековна",
+    "group": "Экономика ACO25",
+    "course": "2",
+    "curator": "AIZADA OMURKULOVA"
+  },
+  {
+    "name": "Глушков Даниил Ярославович",
+    "group": "Экономика ACO25",
+    "course": "2",
+    "curator": "AIZADA OMURKULOVA"
+  },
+  {
+    "name": "Данияров Эльдар Даниярович",
+    "group": "Экономика ACO25",
+    "course": "2",
+    "curator": "AIZADA OMURKULOVA"
+  },
+  {
+    "name": "Дубанакулов Азамат Акматалиевич",
+    "group": "Экономика ACO25",
+    "course": "2",
+    "curator": "AIZADA OMURKULOVA"
+  },
+  {
+    "name": "Жаныбеков Дамир Жаныбекович",
+    "group": "Экономика ACO25",
+    "course": "2",
+    "curator": "AIZADA OMURKULOVA"
+  },
+  {
+    "name": "Кубанычбеков Ильгиз",
+    "group": "Экономика ACO25",
+    "course": "2",
+    "curator": "AIZADA OMURKULOVA"
+  },
+  {
+    "name": "Кубанычбекова Канышай Кубанычбековна",
+    "group": "Экономика ACO25",
+    "course": "2",
+    "curator": "AIZADA OMURKULOVA"
+  },
+  {
+    "name": "Малдышева Айым Максатовна",
+    "group": "Экономика ACO25",
+    "course": "2",
+    "curator": "AIZADA OMURKULOVA"
+  },
+  {
+    "name": "Муратбеков Эльдар Русланович",
+    "group": "Экономика ACO25",
+    "course": "2",
+    "curator": "AIZADA OMURKULOVA"
+  },
+  {
+    "name": "Солтонбеков Султан Айбекович",
+    "group": "Экономика ACO25",
+    "course": "2",
+    "curator": "AIZADA OMURKULOVA"
+  },
+  {
+    "name": "Сыдыкова Салтанат Нурбековна",
+    "group": "Экономика ACO25",
+    "course": "2",
+    "curator": "AIZADA OMURKULOVA"
+  },
+  {
+    "name": "Талиева Бермет Медетбековна",
+    "group": "Экономика ACO25",
+    "course": "2",
+    "curator": "AIZADA OMURKULOVA"
+  },
+  {
+    "name": "Токоев Омар Булатович",
+    "group": "Экономика ACO25",
+    "course": "2",
+    "curator": "AIZADA OMURKULOVA"
+  },
+  {
+    "name": "Турдуева Ажар Улановна",
+    "group": "Экономика ACO25",
+    "course": "2",
+    "curator": "AIZADA OMURKULOVA"
+  },
+  {
+    "name": "Төрөгелдиева Аймира Талантбековна",
+    "group": "Экономика ACO25",
+    "course": "2",
+    "curator": "AIZADA OMURKULOVA"
+  },
+  {
+    "name": "Усенова Алия Стамбековна",
+    "group": "Экономика ACO25",
+    "course": "2",
+    "curator": "AIZADA OMURKULOVA"
+  },
+  {
+    "name": "Үсөнбекова Үмүт Садырбековна",
+    "group": "Экономика ACO25",
+    "course": "2",
+    "curator": "AIZADA OMURKULOVA"
+  },
+  {
+    "name": "Хасанбаев Сархан Рустамович",
+    "group": "Экономика ACO25",
+    "course": "2",
+    "curator": "AIZADA OMURKULOVA"
+  },
+  {
+    "name": "Шаршенбекова Айжан Жаныбековна",
+    "group": "Экономика ACO25",
+    "course": "2",
+    "curator": "AIZADA OMURKULOVA"
+  },
+  {
+    "name": "Ысакулов Бийтегин Жоодарович",
+    "group": "Экономика ACO25",
+    "course": "2",
+    "curator": "AIZADA OMURKULOVA"
+  },
+  {
+    "name": "Анарбеков Айбек Мыктыбекович",
+    "group": "маркетинг MAR25A",
+    "course": "2",
+    "curator": "NURZADA BAKTYBEKOVA"
+  },
+  {
+    "name": "Асанбекова Сезим Шайлообековна",
+    "group": "маркетинг MAR25A",
+    "course": "2",
+    "curator": "NURZADA BAKTYBEKOVA"
+  },
+  {
+    "name": "Асылбекова Жылдыз Руслановна",
+    "group": "маркетинг MAR25A",
+    "course": "2",
+    "curator": "NURZADA BAKTYBEKOVA"
+  },
+  {
+    "name": "Акжигитов Ислам Замирбекович",
+    "group": "маркетинг MAR25A",
+    "course": "2",
+    "curator": "NURZADA BAKTYBEKOVA"
+  },
+  {
+    "name": "Байтереков Нурбол Кубанычбекович",
+    "group": "маркетинг MAR25A",
+    "course": "2",
+    "curator": "NURZADA BAKTYBEKOVA"
+  },
+  {
+    "name": "Баходирова Саадат Айбековна",
+    "group": "маркетинг MAR25A",
+    "course": "2",
+    "curator": "NURZADA BAKTYBEKOVA"
+  },
+  {
+    "name": "Бекболотова Тамерис Азаматовна",
+    "group": "маркетинг MAR25A",
+    "course": "2",
+    "curator": "NURZADA BAKTYBEKOVA"
+  },
+  {
+    "name": "Жаркынбаева Аэлита Самагановна",
+    "group": "маркетинг MAR25A",
+    "course": "2",
+    "curator": "NURZADA BAKTYBEKOVA"
+  },
+  {
+    "name": "Карабаев Абдулла Эрнисович",
+    "group": "маркетинг MAR25A",
+    "course": "2",
+    "curator": "NURZADA BAKTYBEKOVA"
+  },
+  {
+    "name": "Качиев Алискер",
+    "group": "маркетинг MAR25A",
+    "course": "2",
+    "curator": "NURZADA BAKTYBEKOVA"
+  },
+  {
+    "name": "Кубатов Сардарбек Азаматович",
+    "group": "маркетинг MAR25A",
+    "course": "2",
+    "curator": "NURZADA BAKTYBEKOVA"
+  },
+  {
+    "name": "Маматова Айбике Муратовна",
+    "group": "маркетинг MAR25A",
+    "course": "2",
+    "curator": "NURZADA BAKTYBEKOVA"
+  },
+  {
+    "name": "Русланов Нариман Русланович",
+    "group": "маркетинг MAR25A",
+    "course": "2",
+    "curator": "NURZADA BAKTYBEKOVA"
+  },
+  {
+    "name": "Садыкова Бермет Эмирлановна",
+    "group": "маркетинг MAR25A",
+    "course": "2",
+    "curator": "NURZADA BAKTYBEKOVA"
+  },
+  {
+    "name": "Султанбеков Амантай Султанбекович",
+    "group": "маркетинг MAR25A",
+    "course": "2",
+    "curator": "NURZADA BAKTYBEKOVA"
+  },
+  {
+    "name": "Токтобаева Айгүнсулуу Тимуровна",
+    "group": "маркетинг MAR25A",
+    "course": "2",
+    "curator": "NURZADA BAKTYBEKOVA"
+  },
+  {
+    "name": "Токтогулов Имран Эмильевич",
+    "group": "маркетинг MAR25A",
+    "course": "2",
+    "curator": "NURZADA BAKTYBEKOVA"
+  },
+  {
+    "name": "Тургунбекова Мунира Бийгазиевна",
+    "group": "маркетинг MAR25A",
+    "course": "2",
+    "curator": "NURZADA BAKTYBEKOVA"
+  },
+  {
+    "name": "Уранов Элхан Мирбекович",
+    "group": "маркетинг MAR25A",
+    "course": "2",
+    "curator": "NURZADA BAKTYBEKOVA"
+  },
+  {
+    "name": "Эсенсалитов Атай Кубатбекович",
+    "group": "маркетинг MAR25A",
+    "course": "2",
+    "curator": "NURZADA BAKTYBEKOVA"
+  },
+  {
+    "name": "Шакиров Арслан Мирланович",
+    "group": "маркетинг MAR25A",
+    "course": "2",
+    "curator": "NURZADA BAKTYBEKOVA"
+  },
+  {
+    "name": "Шакиров Мухаммадфотих Шухратиллович",
+    "group": "маркетинг MAR25A",
+    "course": "2",
+    "curator": "NURZADA BAKTYBEKOVA"
+  },
+  {
+    "name": "Сейитбеков Нуртай Роланович",
+    "group": "маркетинг MAR25A",
+    "course": "2",
+    "curator": "NURZADA BAKTYBEKOVA"
+  },
+  {
+    "name": "Эшенкулов Дилмурат Ибраимович",
+    "group": "маркетинг MAR25A",
+    "course": "2",
+    "curator": "NURZADA BAKTYBEKOVA"
+  },
+  {
+    "name": "Абылкасымова Тамара Тойчуевна",
+    "group": "маркетинг MAR25Б",
+    "course": "2",
+    "curator": "ZHYLDYZ INDIGARAEVA"
+  },
+  {
+    "name": "Адилетова Арзу Адилетовна",
+    "group": "маркетинг MAR25Б",
+    "course": "2",
+    "curator": "ZHYLDYZ INDIGARAEVA"
+  },
+  {
+    "name": "Аманов Байтегин Кабаевич",
+    "group": "маркетинг MAR25Б",
+    "course": "2",
+    "curator": "ZHYLDYZ INDIGARAEVA"
+  },
+  {
+    "name": "Асиретжанов Эмирхан Азатбекович",
+    "group": "маркетинг MAR25Б",
+    "course": "2",
+    "curator": "ZHYLDYZ INDIGARAEVA"
+  },
+  {
+    "name": "Асылбеков Иляс Мирланович",
+    "group": "маркетинг MAR25Б",
+    "course": "2",
+    "curator": "ZHYLDYZ INDIGARAEVA"
+  },
+  {
+    "name": "Бактыяров Алидар Уланович",
+    "group": "маркетинг MAR25Б",
+    "course": "2",
+    "curator": "ZHYLDYZ INDIGARAEVA"
+  },
+  {
+    "name": "Жапаралиева Аделя Рысбековна",
+    "group": "маркетинг MAR25Б",
+    "course": "2",
+    "curator": "ZHYLDYZ INDIGARAEVA"
+  },
+  {
+    "name": "Вудуньян Ясмина",
+    "group": "маркетинг MAR25Б",
+    "course": "2",
+    "curator": "ZHYLDYZ INDIGARAEVA"
+  },
+  {
+    "name": "Зулпукоров Жанадиль Бакытович",
+    "group": "маркетинг MAR25Б",
+    "course": "2",
+    "curator": "ZHYLDYZ INDIGARAEVA"
+  },
+  {
+    "name": "Ибрагимова Акылзат Элдосовна",
+    "group": "маркетинг MAR25Б",
+    "course": "2",
+    "curator": "ZHYLDYZ INDIGARAEVA"
+  },
+  {
+    "name": "Каландаров Абдушафи Ахматжанович",
+    "group": "маркетинг MAR25Б",
+    "course": "2",
+    "curator": "ZHYLDYZ INDIGARAEVA"
+  },
+  {
+    "name": "Каптагаева Арууке Кубанычевна",
+    "group": "маркетинг MAR25Б",
+    "course": "2",
+    "curator": "ZHYLDYZ INDIGARAEVA"
+  },
+  {
+    "name": "Карымшакова Айбике Сеитбековна",
+    "group": "маркетинг MAR25Б",
+    "course": "2",
+    "curator": "ZHYLDYZ INDIGARAEVA"
+  },
+  {
+    "name": "Маматбаева Амина Тилековна",
+    "group": "маркетинг MAR25Б",
+    "course": "2",
+    "curator": "ZHYLDYZ INDIGARAEVA"
+  },
+  {
+    "name": "Намазбеков Эмир Алмазбекович",
+    "group": "маркетинг MAR25Б",
+    "course": "2",
+    "curator": "ZHYLDYZ INDIGARAEVA"
+  },
+  {
+    "name": "Ниетбекова Айбийке Айбековна",
+    "group": "маркетинг MAR25Б",
+    "course": "2",
+    "curator": "ZHYLDYZ INDIGARAEVA"
+  },
+  {
+    "name": "Осмонова Тасним Мамбетовна",
+    "group": "маркетинг MAR25Б",
+    "course": "2",
+    "curator": "ZHYLDYZ INDIGARAEVA"
+  },
+  {
+    "name": "Саалиева Айым Мирлановна",
+    "group": "маркетинг MAR25Б",
+    "course": "2",
+    "curator": "ZHYLDYZ INDIGARAEVA"
+  },
+  {
+    "name": "Байышова Бермет",
+    "group": "маркетинг MAR25Б",
+    "course": "2",
+    "curator": "ZHYLDYZ INDIGARAEVA"
+  },
+  {
+    "name": "Суванов Эльдар Эркинович",
+    "group": "маркетинг MAR25Б",
+    "course": "2",
+    "curator": "ZHYLDYZ INDIGARAEVA"
+  },
+  {
+    "name": "Ташбеков Сыргакбек Бексултанович",
+    "group": "маркетинг MAR25Б",
+    "course": "2",
+    "curator": "ZHYLDYZ INDIGARAEVA"
+  },
+  {
+    "name": "Тынчтыков Расул Тынчтыкович",
+    "group": "маркетинг MAR25Б",
+    "course": "2",
+    "curator": "ZHYLDYZ INDIGARAEVA"
+  },
+  {
+    "name": "Туркменов Адилет Нурланович",
+    "group": "маркетинг MAR25Б",
+    "course": "2",
+    "curator": "ZHYLDYZ INDIGARAEVA"
+  },
+  {
+    "name": "Эсенов Алихан Нурдинович",
+    "group": "маркетинг MAR25Б",
+    "course": "2",
+    "curator": "ZHYLDYZ INDIGARAEVA"
+  },
+  {
+    "name": "Абасова Аима Алмазовна",
+    "group": "маркетинг MAR25C",
+    "course": "2",
+    "curator": "ALIA ABDRALIEVA"
+  },
+  {
+    "name": "Акымбекова Бегимай Мирлановна",
+    "group": "маркетинг MAR25C",
+    "course": "2",
+    "curator": "ALIA ABDRALIEVA"
+  },
+  {
+    "name": "Айбек Сафия",
+    "group": "маркетинг MAR25C",
+    "course": "2",
+    "curator": "ALIA ABDRALIEVA"
+  },
+  {
+    "name": "Айтматова Жамиля Уланычбековна",
+    "group": "маркетинг MAR25C",
+    "course": "2",
+    "curator": "ALIA ABDRALIEVA"
+  },
+  {
+    "name": "Асылбеков Султан Нурзатович",
+    "group": "маркетинг MAR25C",
+    "course": "2",
+    "curator": "ALIA ABDRALIEVA"
+  },
+  {
+    "name": "Асыкбеков Али Алмазович",
+    "group": "маркетинг MAR25C",
+    "course": "2",
+    "curator": "ALIA ABDRALIEVA"
+  },
+  {
+    "name": "Бекахмет Аяна Нурлан кызы",
+    "group": "маркетинг MAR25C",
+    "course": "2",
+    "curator": "ALIA ABDRALIEVA"
+  },
+  {
+    "name": "Беккулуев Бакдөөлөт Мелисбекович",
+    "group": "маркетинг MAR25C",
+    "course": "2",
+    "curator": "ALIA ABDRALIEVA"
+  },
+  {
+    "name": "Едилбекова Сумайа Урматовна",
+    "group": "маркетинг MAR25C",
+    "course": "2",
+    "curator": "ALIA ABDRALIEVA"
+  },
+  {
+    "name": "Ильязов Санжар Мирбекович",
+    "group": "маркетинг MAR25C",
+    "course": "2",
+    "curator": "ALIA ABDRALIEVA"
+  },
+  {
+    "name": "Иманалиев Бекзат Таалайбекович",
+    "group": "маркетинг MAR25C",
+    "course": "2",
+    "curator": "ALIA ABDRALIEVA"
+  },
+  {
+    "name": "Калмаматов Зафар Замирович",
+    "group": "маркетинг MAR25C",
+    "course": "2",
+    "curator": "ALIA ABDRALIEVA"
+  },
+  {
+    "name": "Калыков Назар Жаныбекович",
+    "group": "маркетинг MAR25C",
+    "course": "2",
+    "curator": "ALIA ABDRALIEVA"
+  },
+  {
+    "name": "Мамбеталиев Байтур Рафикович",
+    "group": "маркетинг MAR25C",
+    "course": "2",
+    "curator": "ALIA ABDRALIEVA"
+  },
+  {
+    "name": "Маткулова Алина",
+    "group": "маркетинг MAR25C",
+    "course": "2",
+    "curator": "ALIA ABDRALIEVA"
+  },
+  {
+    "name": "Мирланова Маналь Мирлановна",
+    "group": "маркетинг MAR25C",
+    "course": "2",
+    "curator": "ALIA ABDRALIEVA"
+  },
+  {
+    "name": "Морозова Эллада-Беатрис Гиоргевна",
+    "group": "маркетинг MAR25C",
+    "course": "2",
+    "curator": "ALIA ABDRALIEVA"
+  },
+  {
+    "name": "Муратов Бекзат Улукбекович",
+    "group": "маркетинг MAR25C",
+    "course": "2",
+    "curator": "ALIA ABDRALIEVA"
+  },
+  {
+    "name": "Раимкулов Даниэль Байышович",
+    "group": "маркетинг MAR25C",
+    "course": "2",
+    "curator": "ALIA ABDRALIEVA"
+  },
+  {
+    "name": "Салиева Сафия Рустамовна",
+    "group": "маркетинг MAR25C",
+    "course": "2",
+    "curator": "ALIA ABDRALIEVA"
+  },
+  {
+    "name": "Султанов Муслим Медербекович",
+    "group": "маркетинг MAR25C",
+    "course": "2",
+    "curator": "ALIA ABDRALIEVA"
+  },
+  {
+    "name": "Усупова Эркинай Жаныбековна",
+    "group": "маркетинг MAR25C",
+    "course": "2",
+    "curator": "ALIA ABDRALIEVA"
+  },
+  {
+    "name": "Бектуров Адилет Бектурович",
+    "group": "маркетинг MAR25C",
+    "course": "2",
+    "curator": "ALIA ABDRALIEVA"
+  },
+  {
+    "name": "Янг Минхи",
+    "group": "маркетинг MAR25C",
+    "course": "2",
+    "curator": "ALIA ABDRALIEVA"
+  },
+  {
+    "name": "Абдыкадыров Бексултан Нурмукамбедович",
+    "group": "маркетинг MAR25D",
+    "course": "2",
+    "curator": "Aiperi Toktosunova"
+  },
+  {
+    "name": "Абдижалилова Жасмина Белековна",
+    "group": "маркетинг MAR25D",
+    "course": "2",
+    "curator": "Aiperi Toktosunova"
+  },
+  {
+    "name": "Абдиева Айза Таалайбековна",
+    "group": "маркетинг MAR25D",
+    "course": "2",
+    "curator": "Aiperi Toktosunova"
+  },
+  {
+    "name": "Абдыкеева Жанайым Тимуровна",
+    "group": "маркетинг MAR25D",
+    "course": "2",
+    "curator": "Aiperi Toktosunova"
+  },
+  {
+    "name": "Абжапарова Жасмина",
+    "group": "маркетинг MAR25D",
+    "course": "2",
+    "curator": "Aiperi Toktosunova"
+  },
+  {
+    "name": "Акматжанов Эмин Мурадылович",
+    "group": "маркетинг MAR25D",
+    "course": "2",
+    "curator": "Aiperi Toktosunova"
+  },
+  {
+    "name": "Анарбаева Айжан Смаиловна",
+    "group": "маркетинг MAR25D",
+    "course": "2",
+    "curator": "Aiperi Toktosunova"
+  },
+  {
+    "name": "Ашимов Жакшылык Эрболотович",
+    "group": "маркетинг MAR25D",
+    "course": "2",
+    "curator": "Aiperi Toktosunova"
+  },
+  {
+    "name": "Джамгырчиев Байэл Кубанычбекович",
+    "group": "маркетинг MAR25D",
+    "course": "2",
+    "curator": "Aiperi Toktosunova"
+  },
+  {
+    "name": "Жекшалиев Алинур Аманатович",
+    "group": "маркетинг MAR25D",
+    "course": "2",
+    "curator": "Aiperi Toktosunova"
+  },
+  {
+    "name": "Жусупова Бегимай Шайырбекова",
+    "group": "маркетинг MAR25D",
+    "course": "2",
+    "curator": "Aiperi Toktosunova"
+  },
+  {
+    "name": "Исакова Акылай Нурлановна",
+    "group": "маркетинг MAR25D",
+    "course": "2",
+    "curator": "Aiperi Toktosunova"
+  },
+  {
+    "name": "Кырманчиев Алихан Абаевич",
+    "group": "маркетинг MAR25D",
+    "course": "2",
+    "curator": "Aiperi Toktosunova"
+  },
+  {
+    "name": "Кырманчиев Абдурахман Азаматович",
+    "group": "маркетинг MAR25D",
+    "course": "2",
+    "curator": "Aiperi Toktosunova"
+  },
+  {
+    "name": "Муктарбекова Калича Рахатбековна",
+    "group": "маркетинг MAR25D",
+    "course": "2",
+    "curator": "Aiperi Toktosunova"
+  },
+  {
+    "name": "Потапова Валентина Ильинична",
+    "group": "маркетинг MAR25D",
+    "course": "2",
+    "curator": "Aiperi Toktosunova"
+  },
+  {
+    "name": "Рахманбердиева Айсымал Нургазыевна",
+    "group": "маркетинг MAR25D",
+    "course": "2",
+    "curator": "Aiperi Toktosunova"
+  },
+  {
+    "name": "Рахматова Каныкей Бекташевна",
+    "group": "маркетинг MAR25D",
+    "course": "2",
+    "curator": "Aiperi Toktosunova"
+  },
+  {
+    "name": "Рысбекова Айдана Сапарбековна",
+    "group": "маркетинг MAR25D",
+    "course": "2",
+    "curator": "Aiperi Toktosunova"
+  },
+  {
+    "name": "Сагыналиев Абдусамад Уланбекович",
+    "group": "маркетинг MAR25D",
+    "course": "2",
+    "curator": "Aiperi Toktosunova"
+  },
+  {
+    "name": "Улукбек кызы Рабия",
+    "group": "маркетинг MAR25D",
+    "course": "2",
+    "curator": "Aiperi Toktosunova"
+  },
+  {
+    "name": "Ысмаилова Айзирек Алтынбековна",
+    "group": "маркетинг MAR25D",
+    "course": "2",
+    "curator": "Aiperi Toktosunova"
+  },
+  {
+    "name": "Асилова Дильнура Данияровна",
+    "group": "FLET 25A",
+    "course": "2",
+    "curator": "NURZAT USUPOVA"
+  },
+  {
+    "name": "Джакшылыкова Айсель Алмазовна",
+    "group": "FLET 25A",
+    "course": "2",
+    "curator": "NURZAT USUPOVA"
+  },
+  {
+    "name": "Дубашов Эрназар",
+    "group": "FLET 25A",
+    "course": "2",
+    "curator": "NURZAT USUPOVA"
+  },
+  {
+    "name": "Жумаматов Марсель Ильязович",
+    "group": "FLET 25A",
+    "course": "2",
+    "curator": "NURZAT USUPOVA"
+  },
+  {
+    "name": "Исмаилова Эсма Азаматовна",
+    "group": "FLET 25A",
+    "course": "2",
+    "curator": "NURZAT USUPOVA"
+  },
+  {
+    "name": "Каюмова Аэлина Абдуллаевна",
+    "group": "FLET 25A",
+    "course": "2",
+    "curator": "NURZAT USUPOVA"
+  },
+  {
+    "name": "Кубанычбеков Бектур Акылбекович",
+    "group": "FLET 25A",
+    "course": "2",
+    "curator": "NURZAT USUPOVA"
+  },
+  {
+    "name": "Кубатбеков Арафат Канатович",
+    "group": "FLET 25A",
+    "course": "2",
+    "curator": "NURZAT USUPOVA"
+  },
+  {
+    "name": "Кубанычбеков Адамбек Ааламбекович",
+    "group": "FLET 25A",
+    "course": "2",
+    "curator": "NURZAT USUPOVA"
+  },
+  {
+    "name": "Максутов Абдувахид Талгатович",
+    "group": "FLET 25A",
+    "course": "2",
+    "curator": "NURZAT USUPOVA"
+  },
+  {
+    "name": "Рустамова Айдеми Рустамовна",
+    "group": "FLET 25A",
+    "course": "2",
+    "curator": "NURZAT USUPOVA"
+  },
+  {
+    "name": "Сайнидинов Тобокел-Ишенаалы Эмилевич",
+    "group": "FLET 25A",
+    "course": "2",
+    "curator": "NURZAT USUPOVA"
+  },
+  {
+    "name": "Самиева Сезим Арноловна",
+    "group": "FLET 25A",
+    "course": "2",
+    "curator": "NURZAT USUPOVA"
+  },
+  {
+    "name": "Советбеков Данияр Максатович",
+    "group": "FLET 25A",
+    "course": "2",
+    "curator": "NURZAT USUPOVA"
+  },
+  {
+    "name": "Турусбекова Айназик Турусбековна",
+    "group": "FLET 25A",
+    "course": "2",
+    "curator": "NURZAT USUPOVA"
+  },
+  {
+    "name": "Уманова Раяна",
+    "group": "FLET 25A",
+    "course": "2",
+    "curator": "NURZAT USUPOVA"
+  },
+  {
+    "name": "Абдыразакова Айканыш Айбекова",
+    "group": "FLET 25A",
+    "course": "2",
+    "curator": "NURZAT USUPOVA"
+  },
+  {
+    "name": "Токторалиева Айназик",
+    "group": "FLET 25A",
+    "course": "2",
+    "curator": "NURZAT USUPOVA"
+  },
+  {
+    "name": "Эрнисов Келдибек",
+    "group": "FLET 25A",
+    "course": "2",
+    "curator": "NURZAT USUPOVA"
+  },
+  {
+    "name": "Токтогулов Азирет Асатович",
+    "group": "FLET 25B",
+    "course": "2",
+    "curator": "Nurzada Kartaeva"
+  },
+  {
+    "name": "Кабылбеков Бексултан Кайырбекович",
+    "group": "FLET 25B",
+    "course": "2",
+    "curator": "Nurzada Kartaeva"
+  },
+  {
+    "name": "Нуртаева Лаура Ержановна",
+    "group": "FLET 25B",
+    "course": "2",
+    "curator": "Nurzada Kartaeva"
+  },
+  {
+    "name": "Осмонов Эрхан Гулжигитович",
+    "group": "FLET 25B",
+    "course": "2",
+    "curator": "Nurzada Kartaeva"
+  },
+  {
+    "name": "Шаршеева Нурай Кубанычбековна",
+    "group": "FLET 25B",
+    "course": "2",
+    "curator": "Nurzada Kartaeva"
+  },
+  {
+    "name": "Эрланбеков Ислам Эрланбекович",
+    "group": "FLET 25B",
+    "course": "2",
+    "curator": "Nurzada Kartaeva"
+  },
+  {
+    "name": "Кулубаева Эльанора",
+    "group": "FLET 25B",
+    "course": "2",
+    "curator": "Nurzada Kartaeva"
+  },
+  {
+    "name": "Шейшенбеков Мухаммадали Замирович",
+    "group": "FLET 25B",
+    "course": "2",
+    "curator": "Nurzada Kartaeva"
+  },
+  {
+    "name": "Узакбаева Аиша Талантбековна",
+    "group": "FLET 25B",
+    "course": "2",
+    "curator": "Nurzada Kartaeva"
+  },
+  {
+    "name": "Исабеков Альберт Айбекович",
+    "group": "FLET 25B",
+    "course": "2",
+    "curator": "Nurzada Kartaeva"
+  },
+  {
+    "name": "Бейшекеева Айжан Кулматовна",
+    "group": "FLET 25B",
+    "course": "2",
+    "curator": "Nurzada Kartaeva"
+  },
+  {
+    "name": "Досанов Нурислам Муратбекович",
+    "group": "FLET 25B",
+    "course": "2",
+    "curator": "Nurzada Kartaeva"
+  },
+  {
+    "name": "Исмаилова Аделия Альтаировна",
+    "group": "FLET 25B",
+    "course": "2",
+    "curator": "Nurzada Kartaeva"
+  },
+  {
+    "name": "Абдыкеримова Нуржибек",
+    "group": "FLET 25B",
+    "course": "2",
+    "curator": "Nurzada Kartaeva"
+  },
+  {
+    "name": "Абдуманнобов Самандар Сардарбекович",
+    "group": "FLET 25B",
+    "course": "2",
+    "curator": "Nurzada Kartaeva"
+  },
+  {
+    "name": "Джакшилыков Сардар",
+    "group": "FLET 25B",
+    "course": "2",
+    "curator": "Nurzada Kartaeva"
+  },
+  {
+    "name": "Нургазиева Адинай",
+    "group": "FLET 25B",
+    "course": "2",
+    "curator": "Nurzada Kartaeva"
+  },
+  {
+    "name": "Бакай Дуйшенбеков",
+    "group": "FLET 25B",
+    "course": "2",
+    "curator": "Nurzada Kartaeva"
+  },
+  {
+    "name": "Назарбекова Арууке",
+    "group": "FLET 25B",
+    "course": "2",
+    "curator": "Nurzada Kartaeva"
+  },
+  {
+    "name": "Абакиров Алишер Джамбулович",
+    "group": "ПОВТАС SCA24A",
+    "course": "3",
+    "curator": "Женишбек Орозахунов"
+  },
+  {
+    "name": "Абдрасулов Манас Айдинович",
+    "group": "ПОВТАС SCA24A",
+    "course": "3",
+    "curator": "Женишбек Орозахунов"
+  },
+  {
+    "name": "Анарбеков Нуртилек Айбекович",
+    "group": "ПОВТАС SCA24A",
+    "course": "3",
+    "curator": "Женишбек Орозахунов"
+  },
+  {
+    "name": "Арабаев Искак Манасбекович",
+    "group": "ПОВТАС SCA24A",
+    "course": "3",
+    "curator": "Женишбек Орозахунов"
+  },
+  {
+    "name": "Асыкбаев Эрбол Бакытбекович",
+    "group": "ПОВТАС SCA24A",
+    "course": "3",
+    "curator": "Женишбек Орозахунов"
+  },
+  {
+    "name": "Батыров Адилет Азаматович",
+    "group": "ПОВТАС SCA24A",
+    "course": "3",
+    "curator": "Женишбек Орозахунов"
+  },
+  {
+    "name": "Болотбеков Алибек Айбекович",
+    "group": "ПОВТАС SCA24A",
+    "course": "3",
+    "curator": "Женишбек Орозахунов"
+  },
+  {
+    "name": "Именов Шахмухамад Турсунович",
+    "group": "ПОВТАС SCA24A",
+    "course": "3",
+    "curator": "Женишбек Орозахунов"
+  },
+  {
+    "name": "Кабылбаева Аделя Арабидиновна",
+    "group": "ПОВТАС SCA24A",
+    "course": "3",
+    "curator": "Женишбек Орозахунов"
+  },
+  {
+    "name": "Кадырова Диана Уланбековна",
+    "group": "ПОВТАС SCA24A",
+    "course": "3",
+    "curator": "Женишбек Орозахунов"
+  },
+  {
+    "name": "Кенешбеков Узар Нурланович",
+    "group": "ПОВТАС SCA24A",
+    "course": "3",
+    "curator": "Женишбек Орозахунов"
+  },
+  {
+    "name": "Мамутов Даниель Жумабаевич",
+    "group": "ПОВТАС SCA24A",
+    "course": "3",
+    "curator": "Женишбек Орозахунов"
+  },
+  {
+    "name": "Мондошов Азирет Тимурович",
+    "group": "ПОВТАС SCA24A",
+    "course": "3",
+    "curator": "Женишбек Орозахунов"
+  },
+  {
+    "name": "Мягких Алексей Денисович",
+    "group": "ПОВТАС SCA24A",
+    "course": "3",
+    "curator": "Женишбек Орозахунов"
+  },
+  {
+    "name": "Омуркулов Амир Бакытбекович",
+    "group": "ПОВТАС SCA24A",
+    "course": "3",
+    "curator": "Женишбек Орозахунов"
+  },
+  {
+    "name": "Өкүмбекова Марьям Бектуровна",
+    "group": "ПОВТАС SCA24A",
+    "course": "3",
+    "curator": "Женишбек Орозахунов"
+  },
+  {
+    "name": "Паизов Баястан Азаматович",
+    "group": "ПОВТАС SCA24A",
+    "course": "3",
+    "curator": "Женишбек Орозахунов"
+  },
+  {
+    "name": "Самарканова Сезим Айбековна",
+    "group": "ПОВТАС SCA24A",
+    "course": "3",
+    "curator": "Женишбек Орозахунов"
+  },
+  {
+    "name": "Токтогулов Атай Эрчубакович",
+    "group": "ПОВТАС SCA24A",
+    "course": "3",
+    "curator": "Женишбек Орозахунов"
+  },
+  {
+    "name": "Тугөлбаева Айза Кубанычбековна",
+    "group": "ПОВТАС SCA24A",
+    "course": "3",
+    "curator": "Женишбек Орозахунов"
+  },
+  {
+    "name": "Усонкулова Жанель Нурлановна",
+    "group": "ПОВТАС SCA24A",
+    "course": "3",
+    "curator": "Женишбек Орозахунов"
+  },
+  {
+    "name": "Абасканов Искендер Эрмекович",
+    "group": "ПОВТАС SCA 24B",
+    "course": "3",
+    "curator": "Эмилбек Жолдошбеков"
+  },
+  {
+    "name": "Абдраев Иса Болотович",
+    "group": "ПОВТАС SCA 24B",
+    "course": "3",
+    "curator": "Эмилбек Жолдошбеков"
+  },
+  {
+    "name": "Алланбайев Азимжан Акмалжонович",
+    "group": "ПОВТАС SCA 24B",
+    "course": "3",
+    "curator": "Эмилбек Жолдошбеков"
+  },
+  {
+    "name": "Асанбеков Улукбек Кенжебекович",
+    "group": "ПОВТАС SCA 24B",
+    "course": "3",
+    "curator": "Эмилбек Жолдошбеков"
+  },
+  {
+    "name": "Басаров Шамиль Рамазанович",
+    "group": "ПОВТАС SCA 24B",
+    "course": "3",
+    "curator": "Эмилбек Жолдошбеков"
+  },
+  {
+    "name": "Бектенова Беназир Сыргаковна",
+    "group": "ПОВТАС SCA 24B",
+    "course": "3",
+    "curator": "Эмилбек Жолдошбеков"
+  },
+  {
+    "name": "Джаирбеков Чынгыз Нурланович",
+    "group": "ПОВТАС SCA 24B",
+    "course": "3",
+    "curator": "Эмилбек Жолдошбеков"
+  },
+  {
+    "name": "Исмаилахунова Амина Хаджиевна",
+    "group": "ПОВТАС SCA 24B",
+    "course": "3",
+    "curator": "Эмилбек Жолдошбеков"
+  },
+  {
+    "name": "Искендербеков Алихан Бакытович",
+    "group": "ПОВТАС SCA 24B",
+    "course": "3",
+    "curator": "Эмилбек Жолдошбеков"
+  },
+  {
+    "name": "Искендеров Арсен Айбекович",
+    "group": "ПОВТАС SCA 24B",
+    "course": "3",
+    "curator": "Эмилбек Жолдошбеков"
+  },
+  {
+    "name": "Касымов Айкол Эмилбекович",
+    "group": "ПОВТАС SCA 24B",
+    "course": "3",
+    "curator": "Эмилбек Жолдошбеков"
+  },
+  {
+    "name": "Керимбеков Тилек Нурдинович",
+    "group": "ПОВТАС SCA 24B",
+    "course": "3",
+    "curator": "Эмилбек Жолдошбеков"
+  },
+  {
+    "name": "Меденов Азамат Төрөкулович",
+    "group": "ПОВТАС SCA 24B",
+    "course": "3",
+    "curator": "Эмилбек Жолдошбеков"
+  },
+  {
+    "name": "Муканбетов Аликбек Кубанычбекович",
+    "group": "ПОВТАС SCA 24B",
+    "course": "3",
+    "curator": "Эмилбек Жолдошбеков"
+  },
+  {
+    "name": "Омаров Жанболот Жаркынбекович",
+    "group": "ПОВТАС SCA 24B",
+    "course": "3",
+    "curator": "Эмилбек Жолдошбеков"
+  },
+  {
+    "name": "Раимбекова Малика Шүкүрбековна",
+    "group": "ПОВТАС SCA 24B",
+    "course": "3",
+    "curator": "Эмилбек Жолдошбеков"
+  },
+  {
+    "name": "Рахманов Азирет Амантурович",
+    "group": "ПОВТАС SCA 24B",
+    "course": "3",
+    "curator": "Эмилбек Жолдошбеков"
+  },
+  {
+    "name": "Сальмин Абдурахман Наджи Мохаммед Саид",
+    "group": "ПОВТАС SCA 24B",
+    "course": "3",
+    "curator": "Эмилбек Жолдошбеков"
+  },
+  {
+    "name": "Султаналиев Эльдияр Муратбекович",
+    "group": "ПОВТАС SCA 24B",
+    "course": "3",
+    "curator": "Эмилбек Жолдошбеков"
+  },
+  {
+    "name": "Тилебалдиева Алия Майрамбековна",
+    "group": "ПОВТАС SCA 24B",
+    "course": "3",
+    "curator": "Эмилбек Жолдошбеков"
+  },
+  {
+    "name": "Токтогулов Арсен Эрмекович",
+    "group": "ПОВТАС SCA 24B",
+    "course": "3",
+    "curator": "Эмилбек Жолдошбеков"
+  },
+  {
+    "name": "Тюлькиев Ален Асхатович",
+    "group": "ПОВТАС SCA 24B",
+    "course": "3",
+    "curator": "Эмилбек Жолдошбеков"
+  },
+  {
+    "name": "Шаршенбеков Аяз Азаматович",
+    "group": "ПОВТАС SCA 24B",
+    "course": "3",
+    "curator": "Эмилбек Жолдошбеков"
+  },
+  {
+    "name": "Амантаев Эржан Мирбекович",
+    "group": "ПОВТАС SCA 24С",
+    "course": "3",
+    "curator": "Хадижа Хажжаж"
+  },
+  {
+    "name": "Бакаев Бексултан Рахатбекович",
+    "group": "ПОВТАС SCA 24С",
+    "course": "3",
+    "curator": "Хадижа Хажжаж"
+  },
+  {
+    "name": "Бердибеков Нурбол Эрланович",
+    "group": "ПОВТАС SCA 24С",
+    "course": "3",
+    "curator": "Хадижа Хажжаж"
+  },
+  {
+    "name": "Джумашов Миржан Бахтиярович",
+    "group": "ПОВТАС SCA 24С",
+    "course": "3",
+    "curator": "Хадижа Хажжаж"
+  },
+  {
+    "name": "Дүйшөгулов Ашырхан Бакытбекович",
+    "group": "ПОВТАС SCA 24С",
+    "course": "3",
+    "curator": "Хадижа Хажжаж"
+  },
+  {
+    "name": "Жумакадыров Анарбек Азаматович",
+    "group": "ПОВТАС SCA 24С",
+    "course": "3",
+    "curator": "Хадижа Хажжаж"
+  },
+  {
+    "name": "Ибрагимов Руслан Рафигович",
+    "group": "ПОВТАС SCA 24С",
+    "course": "3",
+    "curator": "Хадижа Хажжаж"
+  },
+  {
+    "name": "Исаков Ильгиз Алмасбекович",
+    "group": "ПОВТАС SCA 24С",
+    "course": "3",
+    "curator": "Хадижа Хажжаж"
+  },
+  {
+    "name": "Канатбеков Айдын Алтынбекович",
+    "group": "ПОВТАС SCA 24С",
+    "course": "3",
+    "curator": "Хадижа Хажжаж"
+  },
+  {
+    "name": "Кубанычбеков Оомат Ильясович",
+    "group": "ПОВТАС SCA 24С",
+    "course": "3",
+    "curator": "Хадижа Хажжаж"
+  },
+  {
+    "name": "Киргизбаев Бекнур Омурбекович",
+    "group": "ПОВТАС SCA 24С",
+    "course": "3",
+    "curator": "Хадижа Хажжаж"
+  },
+  {
+    "name": "Молдожанов Эржан Кубанович",
+    "group": "ПОВТАС SCA 24С",
+    "course": "3",
+    "curator": "Хадижа Хажжаж"
+  },
+  {
+    "name": "Оморбеков Эмирлан Эрмекбайевич",
+    "group": "ПОВТАС SCA 24С",
+    "course": "3",
+    "curator": "Хадижа Хажжаж"
+  },
+  {
+    "name": "Омуралиев Санжар Нурбекович",
+    "group": "ПОВТАС SCA 24С",
+    "course": "3",
+    "curator": "Хадижа Хажжаж"
+  },
+  {
+    "name": "Онурова Азалия Самыйбековна",
+    "group": "ПОВТАС SCA 24С",
+    "course": "3",
+    "curator": "Хадижа Хажжаж"
+  },
+  {
+    "name": "Сагынбеков Бекзат Алмазович",
+    "group": "ПОВТАС SCA 24С",
+    "course": "3",
+    "curator": "Хадижа Хажжаж"
+  },
+  {
+    "name": "Саламатов Ахмед Саламатович",
+    "group": "ПОВТАС SCA 24С",
+    "course": "3",
+    "curator": "Хадижа Хажжаж"
+  },
+  {
+    "name": "Сапаралиев Элдар",
+    "group": "ПОВТАС SCA 24С",
+    "course": "3",
+    "curator": "Хадижа Хажжаж"
+  },
+  {
+    "name": "Токтосунов Эльмар Канатбекович",
+    "group": "ПОВТАС SCA 24С",
+    "course": "3",
+    "curator": "Хадижа Хажжаж"
+  },
+  {
+    "name": "Туратбеков Нуртай Мелисович",
+    "group": "ПОВТАС SCA 24С",
+    "course": "3",
+    "curator": "Хадижа Хажжаж"
+  },
+  {
+    "name": "Абдуллаева Асема Алмазбековна",
+    "group": "Комп.сис.и комп.CSC-24",
+    "course": "3",
+    "curator": "Асакеев Айдар"
+  },
+  {
+    "name": "Азизмуратов Эмир Азизмуратович",
+    "group": "Комп.сис.и комп.CSC-24",
+    "course": "3",
+    "curator": "Асакеев Айдар"
+  },
+  {
+    "name": "Алишеров Илим Алишерович",
+    "group": "Комп.сис.и комп.CSC-24",
+    "course": "3",
+    "curator": "Асакеев Айдар"
+  },
+  {
+    "name": "Анышбекова Акбермет Анышбековна",
+    "group": "Комп.сис.и комп.CSC-24",
+    "course": "3",
+    "curator": "Асакеев Айдар"
+  },
+  {
+    "name": "Аскарбеков Нурбол Рустамович",
+    "group": "Комп.сис.и комп.CSC-24",
+    "course": "3",
+    "curator": "Асакеев Айдар"
+  },
+  {
+    "name": "Байышбеков Чынгыз Талайбекович",
+    "group": "Комп.сис.и комп.CSC-24",
+    "course": "3",
+    "curator": "Асакеев Айдар"
+  },
+  {
+    "name": "Жумакматов Суйунбек Кубатович",
+    "group": "Комп.сис.и комп.CSC-24",
+    "course": "3",
+    "curator": "Асакеев Айдар"
+  },
+  {
+    "name": "Жусуев Даниель Рашитович",
+    "group": "Комп.сис.и комп.CSC-24",
+    "course": "3",
+    "curator": "Асакеев Айдар"
+  },
+  {
+    "name": "Замиров Миррад Бактыярович",
+    "group": "Комп.сис.и комп.CSC-24",
+    "course": "3",
+    "curator": "Асакеев Айдар"
+  },
+  {
+    "name": "Зарлыков Эрбешим Миндалыевич",
+    "group": "Комп.сис.и комп.CSC-24",
+    "course": "3",
+    "curator": "Асакеев Айдар"
+  },
+  {
+    "name": "Кудайбергенова  Ариет Алтынбековна",
+    "group": "Комп.сис.и комп.CSC-24",
+    "course": "3",
+    "curator": "Асакеев Айдар"
+  },
+  {
+    "name": "Мамытбеков Айдарбек Талантбекович",
+    "group": "Комп.сис.и комп.CSC-24",
+    "course": "3",
+    "curator": "Асакеев Айдар"
+  },
+  {
+    "name": "Машова Айтурган Талантбековна",
+    "group": "Комп.сис.и комп.CSC-24",
+    "course": "3",
+    "curator": "Асакеев Айдар"
+  },
+  {
+    "name": "Нааматов Эльдияр Эрмекович",
+    "group": "Комп.сис.и комп.CSC-24",
+    "course": "3",
+    "curator": "Асакеев Айдар"
+  },
+  {
+    "name": "Разаков Дамир Разакович",
+    "group": "Комп.сис.и комп.CSC-24",
+    "course": "3",
+    "curator": "Асакеев Айдар"
+  },
+  {
+    "name": "Рахманов Барсбек Джантаевич",
+    "group": "Комп.сис.и комп.CSC-24",
+    "course": "3",
+    "curator": "Асакеев Айдар"
+  },
+  {
+    "name": "Рахманов Эртабылды Шүкүрбекович",
+    "group": "Комп.сис.и комп.CSC-24",
+    "course": "3",
+    "curator": "Асакеев Айдар"
+  },
+  {
+    "name": "Рыскулбеков Нурдин Марлесович",
+    "group": "Комп.сис.и комп.CSC-24",
+    "course": "3",
+    "curator": "Асакеев Айдар"
+  },
+  {
+    "name": "Саатов Жумабек Анаркулович",
+    "group": "Комп.сис.и комп.CSC-24",
+    "course": "3",
+    "curator": "Асакеев Айдар"
+  },
+  {
+    "name": "Сатыбалдиев Алимансур Юрусланбекович",
+    "group": "Комп.сис.и комп.CSC-24",
+    "course": "3",
+    "curator": "Асакеев Айдар"
+  },
+  {
+    "name": "Туголбеков Аман Адилетович",
+    "group": "Комп.сис.и комп.CSC-24",
+    "course": "3",
+    "curator": "Асакеев Айдар"
+  },
+  {
+    "name": "Туголбаев Чингиз Нурдинович",
+    "group": "Комп.сис.и комп.CSC-24",
+    "course": "3",
+    "curator": "Асакеев Айдар"
+  },
+  {
+    "name": "Турдубеков Сардарбек Уланбекович",
+    "group": "Комп.сис.и комп.CSC-24",
+    "course": "3",
+    "curator": "Асакеев Айдар"
+  },
+  {
+    "name": "Абдыкадыров Амантур Мэрланович",
+    "group": "Дизайн DES 24 A",
+    "course": "3",
+    "curator": "Мирлан Нурбеков"
+  },
+  {
+    "name": "Акылбекова Айдана Акылбековна",
+    "group": "Дизайн DES 24 A",
+    "course": "3",
+    "curator": "Мирлан Нурбеков"
+  },
+  {
+    "name": "Алатаев Умар Санатбекович",
+    "group": "Дизайн DES 24 A",
+    "course": "3",
+    "curator": "Мирлан Нурбеков"
+  },
+  {
+    "name": "Анарбекова Арууке Ильгизовна",
+    "group": "Дизайн DES 24 A",
+    "course": "3",
+    "curator": "Мирлан Нурбеков"
+  },
+  {
+    "name": "Байзакова Диана Нурлановна",
+    "group": "Дизайн DES 24 A",
+    "course": "3",
+    "curator": "Мирлан Нурбеков"
+  },
+  {
+    "name": "Бакирова Баянсулуу Алмазовна",
+    "group": "Дизайн DES 24 A",
+    "course": "3",
+    "curator": "Мирлан Нурбеков"
+  },
+  {
+    "name": "Балкабаева Алима Аслановна",
+    "group": "Дизайн DES 24 A",
+    "course": "3",
+    "curator": "Мирлан Нурбеков"
+  },
+  {
+    "name": "Болотбекова София Тимуровна",
+    "group": "Дизайн DES 24 A",
+    "course": "3",
+    "curator": "Мирлан Нурбеков"
+  },
+  {
+    "name": "Джаманкеева Алтынай Абдырашидова",
+    "group": "Дизайн DES 24 A",
+    "course": "3",
+    "curator": "Мирлан Нурбеков"
+  },
+  {
+    "name": "Дуйшеева Дария Алмазбековна",
+    "group": "Дизайн DES 24 A",
+    "course": "3",
+    "curator": "Мирлан Нурбеков"
+  },
+  {
+    "name": "Духанин Егор Евгеньевич",
+    "group": "Дизайн DES 24 A",
+    "course": "3",
+    "curator": "Мирлан Нурбеков"
+  },
+  {
+    "name": "Кадырова Алия Асановна",
+    "group": "Дизайн DES 24 A",
+    "course": "3",
+    "curator": "Мирлан Нурбеков"
+  },
+  {
+    "name": "Какитаева Айдай Азатовна",
+    "group": "Дизайн DES 24 A",
+    "course": "3",
+    "curator": "Мирлан Нурбеков"
+  },
+  {
+    "name": "Камалова Камила Шухратовна",
+    "group": "Дизайн DES 24 A",
+    "course": "3",
+    "curator": "Мирлан Нурбеков"
+  },
+  {
+    "name": "Ким Яна Вячеславовна",
+    "group": "Дизайн DES 24 A",
+    "course": "3",
+    "curator": "Мирлан Нурбеков"
+  },
+  {
+    "name": "Кырманчиева Милана Бакытовна",
+    "group": "Дизайн DES 24 A",
+    "course": "3",
+    "curator": "Мирлан Нурбеков"
+  },
+  {
+    "name": "Мухамедов Султан  Бахтиярович",
+    "group": "Дизайн DES 24 A",
+    "course": "3",
+    "curator": "Мирлан Нурбеков"
+  },
+  {
+    "name": "Нурматов Милан Маратович",
+    "group": "Дизайн DES 24 A",
+    "course": "3",
+    "curator": "Мирлан Нурбеков"
+  },
+  {
+    "name": "Осконбаева Рания Кувандыковна",
+    "group": "Дизайн DES 24 A",
+    "course": "3",
+    "curator": "Мирлан Нурбеков"
+  },
+  {
+    "name": "Саматова Мээрим Айбековна",
+    "group": "Дизайн DES 24 A",
+    "course": "3",
+    "curator": "Мирлан Нурбеков"
+  },
+  {
+    "name": "Токтобекова Алия Данияровна",
+    "group": "Дизайн DES 24 A",
+    "course": "3",
+    "curator": "Мирлан Нурбеков"
+  },
+  {
+    "name": "Турдуходжаева Николь Эриковна",
+    "group": "Дизайн DES 24 A",
+    "course": "3",
+    "curator": "Мирлан Нурбеков"
+  },
+  {
+    "name": "Абдылдаева Аделя",
+    "group": "Дизайн DES 24В",
+    "course": "3",
+    "curator": "Айжамал Иманкулова"
+  },
+  {
+    "name": "Адылбекова Мадина",
+    "group": "Дизайн DES 24В",
+    "course": "3",
+    "curator": "Айжамал Иманкулова"
+  },
+  {
+    "name": "Алишер Акылай",
+    "group": "Дизайн DES 24В",
+    "course": "3",
+    "curator": "Айжамал Иманкулова"
+  },
+  {
+    "name": "Алманбетов Арсен",
+    "group": "Дизайн DES 24В",
+    "course": "3",
+    "curator": "Айжамал Иманкулова"
+  },
+  {
+    "name": "Асанидинова Медина",
+    "group": "Дизайн DES 24В",
+    "course": "3",
+    "curator": "Айжамал Иманкулова"
+  },
+  {
+    "name": "Болотова Амина",
+    "group": "Дизайн DES 24В",
+    "course": "3",
+    "curator": "Айжамал Иманкулова"
+  },
+  {
+    "name": "Жолдошбекова Нурайым",
+    "group": "Дизайн DES 24В",
+    "course": "3",
+    "curator": "Айжамал Иманкулова"
+  },
+  {
+    "name": "Жолдошева Камила",
+    "group": "Дизайн DES 24В",
+    "course": "3",
+    "curator": "Айжамал Иманкулова"
+  },
+  {
+    "name": "Зарылбекова Жаркынай",
+    "group": "Дизайн DES 24В",
+    "course": "3",
+    "curator": "Айжамал Иманкулова"
+  },
+  {
+    "name": "Кубатбеков Эдил",
+    "group": "Дизайн DES 24В",
+    "course": "3",
+    "curator": "Айжамал Иманкулова"
+  },
+  {
+    "name": "Маликова Адеми Медетовна",
+    "group": "Дизайн DES 24В",
+    "course": "3",
+    "curator": "Айжамал Иманкулова"
+  },
+  {
+    "name": "Мамазова Амира",
+    "group": "Дизайн DES 24В",
+    "course": "3",
+    "curator": "Айжамал Иманкулова"
+  },
+  {
+    "name": "Молдобеков Таир",
+    "group": "Дизайн DES 24В",
+    "course": "3",
+    "curator": "Айжамал Иманкулова"
+  },
+  {
+    "name": "Ниязалиева Арууке",
+    "group": "Дизайн DES 24В",
+    "course": "3",
+    "curator": "Айжамал Иманкулова"
+  },
+  {
+    "name": "Омуралиева Айканыш",
+    "group": "Дизайн DES 24В",
+    "course": "3",
+    "curator": "Айжамал Иманкулова"
+  },
+  {
+    "name": "Режепалиева Айкөкүл",
+    "group": "Дизайн DES 24В",
+    "course": "3",
+    "curator": "Айжамал Иманкулова"
+  },
+  {
+    "name": "Саякбаева Дарика",
+    "group": "Дизайн DES 24В",
+    "course": "3",
+    "curator": "Айжамал Иманкулова"
+  },
+  {
+    "name": "Сонунбекова Милагрес",
+    "group": "Дизайн DES 24В",
+    "course": "3",
+    "curator": "Айжамал Иманкулова"
+  },
+  {
+    "name": "Сооронбекова Сагида",
+    "group": "Дизайн DES 24В",
+    "course": "3",
+    "curator": "Айжамал Иманкулова"
+  },
+  {
+    "name": "Таранчиева Амина",
+    "group": "Дизайн DES 24В",
+    "course": "3",
+    "curator": "Айжамал Иманкулова"
+  },
+  {
+    "name": "Ташынова Дениза",
+    "group": "Дизайн DES 24В",
+    "course": "3",
+    "curator": "Айжамал Иманкулова"
+  },
+  {
+    "name": "Токтосунов Бекхан",
+    "group": "Дизайн DES 24В",
+    "course": "3",
+    "curator": "Айжамал Иманкулова"
+  },
+  {
+    "name": "Абасова Валида Рафиковна",
+    "group": "Экономика ACO-24",
+    "course": "3",
+    "curator": "Жайгуль Сейталиева"
+  },
+  {
+    "name": "Абдылдабекова Бермет Жанарбековна",
+    "group": "Экономика ACO-24",
+    "course": "3",
+    "curator": "Жайгуль Сейталиева"
+  },
+  {
+    "name": "Абдышова Айчурок Алмазбековна",
+    "group": "Экономика ACO-24",
+    "course": "3",
+    "curator": "Жайгуль Сейталиева"
+  },
+  {
+    "name": "Аземова Адель",
+    "group": "Экономика ACO-24",
+    "course": "3",
+    "curator": "Жайгуль Сейталиева"
+  },
+  {
+    "name": "Алымканов Саидрахман Нурбекович",
+    "group": "Экономика ACO-24",
+    "course": "3",
+    "curator": "Жайгуль Сейталиева"
+  },
+  {
+    "name": "Байышова Айканыш Мирлановна",
+    "group": "Экономика ACO-24",
+    "course": "3",
+    "curator": "Жайгуль Сейталиева"
+  },
+  {
+    "name": "Балтабаева Айназик Балтабаевна",
+    "group": "Экономика ACO-24",
+    "course": "3",
+    "curator": "Жайгуль Сейталиева"
+  },
+  {
+    "name": "Болотов Алибек Нурбекович",
+    "group": "Экономика ACO-24",
+    "course": "3",
+    "curator": "Жайгуль Сейталиева"
+  },
+  {
+    "name": "Джумаев Тимур Камилевич",
+    "group": "Экономика ACO-24",
+    "course": "3",
+    "curator": "Жайгуль Сейталиева"
+  },
+  {
+    "name": "Жумашова Нигора Мадияровна",
+    "group": "Экономика ACO-24",
+    "course": "3",
+    "curator": "Жайгуль Сейталиева"
+  },
+  {
+    "name": "Зарипбеков Улукбек Муктарбекович",
+    "group": "Экономика ACO-24",
+    "course": "3",
+    "curator": "Жайгуль Сейталиева"
+  },
+  {
+    "name": "Каимова Алтынай Мухтаржановна",
+    "group": "Экономика ACO-24",
+    "course": "3",
+    "curator": "Жайгуль Сейталиева"
+  },
+  {
+    "name": "Кубанычбекова Ширин Илгизовна",
+    "group": "Экономика ACO-24",
+    "course": "3",
+    "curator": "Жайгуль Сейталиева"
+  },
+  {
+    "name": "Мамасидиков Умар Ахлидинович",
+    "group": "Экономика ACO-24",
+    "course": "3",
+    "curator": "Жайгуль Сейталиева"
+  },
+  {
+    "name": "Маликова Мадина Маликовна",
+    "group": "Экономика ACO-24",
+    "course": "3",
+    "curator": "Жайгуль Сейталиева"
+  },
+  {
+    "name": "Октяброва Аделя Алишеровна",
+    "group": "Экономика ACO-24",
+    "course": "3",
+    "curator": "Жайгуль Сейталиева"
+  },
+  {
+    "name": "Садырбаев Азирет Азизович",
+    "group": "Экономика ACO-24",
+    "course": "3",
+    "curator": "Жайгуль Сейталиева"
+  },
+  {
+    "name": "Сооронбаев Иман",
+    "group": "Экономика ACO-24",
+    "course": "3",
+    "curator": "Жайгуль Сейталиева"
+  },
+  {
+    "name": "Туркменов Нурсултан Торобекович",
+    "group": "Экономика ACO-24",
+    "course": "3",
+    "curator": "Жайгуль Сейталиева"
+  },
+  {
+    "name": "Турусбеков Нурдоолот",
+    "group": "Экономика ACO-24",
+    "course": "3",
+    "curator": "Жайгуль Сейталиева"
+  },
+  {
+    "name": "Тугелов Акбар",
+    "group": "Экономика ACO-24",
+    "course": "3",
+    "curator": "Жайгуль Сейталиева"
+  },
+  {
+    "name": "Эргешбекова Аэлита Максатбековна",
+    "group": "Экономика ACO-24",
+    "course": "3",
+    "curator": "Жайгуль Сейталиева"
+  },
+  {
+    "name": "Эргешева Айбике Сыргаковна",
+    "group": "Экономика ACO-24",
+    "course": "3",
+    "curator": "Жайгуль Сейталиева"
+  },
+  {
+    "name": "Эрмухамед Эркайым",
+    "group": "Экономика ACO-24",
+    "course": "3",
+    "curator": "Жайгуль Сейталиева"
+  },
+  {
+    "name": "Абдулказиева Айтурган Мелисовна",
+    "group": "маркетинг MAR24A",
+    "course": "3",
+    "curator": "Гүлшайыр Саматова"
+  },
+  {
+    "name": "Абдыраева Марва Бакытбековна",
+    "group": "маркетинг MAR24A",
+    "course": "3",
+    "curator": "Гүлшайыр Саматова"
+  },
+  {
+    "name": "Абдылдаев Жантай Бактыбекович",
+    "group": "маркетинг MAR24A",
+    "course": "3",
+    "curator": "Гүлшайыр Саматова"
+  },
+  {
+    "name": "Адильханов Азирет Максатович",
+    "group": "маркетинг MAR24A",
+    "course": "3",
+    "curator": "Гүлшайыр Саматова"
+  },
+  {
+    "name": "Амантуров Ислам Амантурович",
+    "group": "маркетинг MAR24A",
+    "course": "3",
+    "curator": "Гүлшайыр Саматова"
+  },
+  {
+    "name": "Ахматалиева Аиза Мамытовна",
+    "group": "маркетинг MAR24C",
+    "course": "3",
+    "curator": "Гүлшайыр Саматова"
+  },
+  {
+    "name": "Бекбаев Амир Эдильевич",
+    "group": "маркетинг MAR24A",
+    "course": "3",
+    "curator": "Гүлшайыр Саматова"
+  },
+  {
+    "name": "Болотбеков Касым Даниярович",
+    "group": "маркетинг MAR24A",
+    "course": "3",
+    "curator": "Гүлшайыр Саматова"
+  },
+  {
+    "name": "Дуйшембеков Даниэль Нурланович",
+    "group": "маркетинг MAR24A",
+    "course": "3",
+    "curator": "Гүлшайыр Саматова"
+  },
+  {
+    "name": "Жумабаева Арууке Алмазбековна",
+    "group": "маркетинг MAR24A",
+    "course": "3",
+    "curator": "Гүлшайыр Саматова"
+  },
+  {
+    "name": "Жумакеев Ынтымак Кубанычович",
+    "group": "маркетинг MAR24A",
+    "course": "3",
+    "curator": "Гүлшайыр Саматова"
+  },
+  {
+    "name": "Маматова Ализа Мирлановна",
+    "group": "маркетинг MAR24A",
+    "course": "3",
+    "curator": "Гүлшайыр Саматова"
+  },
+  {
+    "name": "Муратова Элина Мирбековна",
+    "group": "маркетинг MAR24A",
+    "course": "3",
+    "curator": "Гүлшайыр Саматова"
+  },
+  {
+    "name": "Нурлан Алим",
+    "group": "маркетинг MAR24A",
+    "course": "3",
+    "curator": "Гүлшайыр Саматова"
+  },
+  {
+    "name": "Насирдинов Умар Айбекович",
+    "group": "маркетинг MAR24A",
+    "course": "3",
+    "curator": "Гүлшайыр Саматова"
+  },
+  {
+    "name": "Орозбаева Аделя",
+    "group": "маркетинг MAR24A",
+    "course": "3",
+    "curator": "Гүлшайыр Саматова"
+  },
+  {
+    "name": "Сапарбекова Элина Амантуровна",
+    "group": "маркетинг MAR24A",
+    "course": "3",
+    "curator": "Гүлшайыр Саматова"
+  },
+  {
+    "name": "Суйунбаева Хадиче Зарипбековна",
+    "group": "маркетинг MAR24A",
+    "course": "3",
+    "curator": "Гүлшайыр Саматова"
+  },
+  {
+    "name": "Тагаев Чынгыз Таттубекович",
+    "group": "маркетинг MAR24A",
+    "course": "3",
+    "curator": "Гүлшайыр Саматова"
+  },
+  {
+    "name": "Тойчубеков Хамза Уланбекович",
+    "group": "маркетинг MAR24A",
+    "course": "3",
+    "curator": "Гүлшайыр Саматова"
+  },
+  {
+    "name": "Узенов Айдар Талантович",
+    "group": "маркетинг MAR24A",
+    "course": "3",
+    "curator": "Гүлшайыр Саматова"
+  },
+  {
+    "name": "Чоткараева Алия Мелисовна",
+    "group": "маркетинг MAR24A",
+    "course": "3",
+    "curator": "Гүлшайыр Саматова"
+  },
+  {
+    "name": "Шайбеков Салахиддин Аширалиевич",
+    "group": "маркетинг MAR24A",
+    "course": "3",
+    "curator": "Гүлшайыр Саматова"
+  },
+  {
+    "name": "Абдылдаева Адеми Маратовна",
+    "group": "маркетинг MAR24Б",
+    "course": "3",
+    "curator": "Aida Abdyrazak"
+  },
+  {
+    "name": "Алимбекова Хадича Данияровна",
+    "group": "маркетинг MAR24Б",
+    "course": "3",
+    "curator": "Aida Abdyrazak"
+  },
+  {
+    "name": "Амиров Арсен Ильязович",
+    "group": "маркетинг MAR24Б",
+    "course": "3",
+    "curator": "Aida Abdyrazak"
+  },
+  {
+    "name": "Асанов Атилла Арстанбекович",
+    "group": "маркетинг MAR24Б",
+    "course": "3",
+    "curator": "Aida Abdyrazak"
+  },
+  {
+    "name": "Гульжигитов Урмат Нурдинович",
+    "group": "маркетинг MAR24Б",
+    "course": "3",
+    "curator": "Aida Abdyrazak"
+  },
+  {
+    "name": "Давутов Атай Шамильевич",
+    "group": "маркетинг MAR24Б",
+    "course": "3",
+    "curator": "Aida Abdyrazak"
+  },
+  {
+    "name": "Добушбекова Нурбийке Добушбековна",
+    "group": "маркетинг MAR24Б",
+    "course": "3",
+    "curator": "Aida Abdyrazak"
+  },
+  {
+    "name": "Джолдошбаев Алибек Фархадович",
+    "group": "маркетинг MAR24Б",
+    "course": "3",
+    "curator": "Aida Abdyrazak"
+  },
+  {
+    "name": "Керимкулова Айжана Жылдызбековна",
+    "group": "маркетинг MAR24Б",
+    "course": "3",
+    "curator": "Aida Abdyrazak"
+  },
+  {
+    "name": "Ибрагимов Ясин Султанович",
+    "group": "маркетинг MAR24Б",
+    "course": "3",
+    "curator": "Aida Abdyrazak"
+  },
+  {
+    "name": "Кабаева Альбина Чынгызовна",
+    "group": "маркетинг MAR24Б",
+    "course": "3",
+    "curator": "Aida Abdyrazak"
+  },
+  {
+    "name": "Бакиров Урмат",
+    "group": "маркетинг MAR24Б",
+    "course": "3",
+    "curator": "Aida Abdyrazak"
+  },
+  {
+    "name": "Камчыбеков Эрбол Мирланович",
+    "group": "маркетинг MAR24Б",
+    "course": "3",
+    "curator": "Aida Abdyrazak"
+  },
+  {
+    "name": "Картанова Айчурок Кылычбековна",
+    "group": "маркетинг MAR24Б",
+    "course": "3",
+    "curator": "Aida Abdyrazak"
+  },
+  {
+    "name": "Маматов Илимбек Маматович",
+    "group": "маркетинг MAR24Б",
+    "course": "3",
+    "curator": "Aida Abdyrazak"
+  },
+  {
+    "name": "Набидинова Ракыя Аззамжановна",
+    "group": "маркетинг MAR24Б",
+    "course": "3",
+    "curator": "Aida Abdyrazak"
+  },
+  {
+    "name": "Омурзакова Мырзаайым Канатбековна",
+    "group": "маркетинг MAR24Б",
+    "course": "3",
+    "curator": "Aida Abdyrazak"
+  },
+  {
+    "name": "Рысбаев Нурбол Адилович",
+    "group": "маркетинг MAR24Б",
+    "course": "3",
+    "curator": "Aida Abdyrazak"
+  },
+  {
+    "name": "Салаватов Амир Салаватович",
+    "group": "маркетинг MAR24Б",
+    "course": "3",
+    "curator": "Aida Abdyrazak"
+  },
+  {
+    "name": "Тойгонова Бактыгуль Омурбековна",
+    "group": "маркетинг MAR24Б",
+    "course": "3",
+    "curator": "Aida Abdyrazak"
+  },
+  {
+    "name": "Эркинбеков Умар Эркинбекович",
+    "group": "маркетинг MAR24Б",
+    "course": "3",
+    "curator": "Aida Abdyrazak"
+  },
+  {
+    "name": "Эркинбекова Элима Эркинбековна",
+    "group": "маркетинг MAR24Б",
+    "course": "3",
+    "curator": "Aida Abdyrazak"
+  },
+  {
+    "name": "Абдымомунов Султан Эрнисович",
+    "group": "маркетинг MAR24C",
+    "course": "3",
+    "curator": "Гульнура Дыйканбаева"
+  },
+  {
+    "name": "Айтбаев Улукбек Канатбекович",
+    "group": "маркетинг MAR24C",
+    "course": "3",
+    "curator": "Гульнура Дыйканбаева"
+  },
+  {
+    "name": "Ажимаматов Алимуслим Кадырбекович",
+    "group": "маркетинг MAR24C",
+    "course": "3",
+    "curator": "Гульнура Дыйканбаева"
+  },
+  {
+    "name": "Акжигитов Нурдөөлөт Замирбекович",
+    "group": "маркетинг MAR24C",
+    "course": "3",
+    "curator": "Гульнура Дыйканбаева"
+  },
+  {
+    "name": "Акматова Зайнаб Сталбековна",
+    "group": "маркетинг MAR24C",
+    "course": "3",
+    "curator": "Гульнура Дыйканбаева"
+  },
+  {
+    "name": "Аскеров Баймырза Айбекович",
+    "group": "маркетинг MAR24C",
+    "course": "3",
+    "curator": "Гульнура Дыйканбаева"
+  },
+  {
+    "name": "Ачилов Канымет Жаныбекович",
+    "group": "маркетинг MAR24C",
+    "course": "3",
+    "curator": "Гульнура Дыйканбаева"
+  },
+  {
+    "name": "Ахметова Айбике",
+    "group": "маркетинг MAR24C",
+    "course": "3",
+    "curator": "Гульнура Дыйканбаева"
+  },
+  {
+    "name": "Ахунбаева Фатима Токтосуновна",
+    "group": "маркетинг MAR24C",
+    "course": "3",
+    "curator": "Гульнура Дыйканбаева"
+  },
+  {
+    "name": "Бектурганова Медина Данияровна",
+    "group": "маркетинг MAR24C",
+    "course": "3",
+    "curator": "Гульнура Дыйканбаева"
+  },
+  {
+    "name": "Кастаев Бакай Бактыбекович",
+    "group": "маркетинг MAR24C",
+    "course": "3",
+    "curator": "Гульнура Дыйканбаева"
+  },
+  {
+    "name": "Кененсариева Жамиля Мелисовна",
+    "group": "маркетинг MAR24C",
+    "course": "3",
+    "curator": "Гульнура Дыйканбаева"
+  },
+  {
+    "name": "Котов Илья Михайлович",
+    "group": "маркетинг MAR24C",
+    "course": "3",
+    "curator": "Гульнура Дыйканбаева"
+  },
+  {
+    "name": "Маматкалыкова Асель Жумабековна",
+    "group": "маркетинг MAR24C",
+    "course": "3",
+    "curator": "Гульнура Дыйканбаева"
+  },
+  {
+    "name": "Махмудова Согдиёна Дониёровна",
+    "group": "маркетинг MAR24C",
+    "course": "3",
+    "curator": "Гульнура Дыйканбаева"
+  },
+  {
+    "name": "Мукашова Дениза Бактыбековна",
+    "group": "маркетинг MAR24C",
+    "course": "3",
+    "curator": "Гульнура Дыйканбаева"
+  },
+  {
+    "name": "Назиров Мухаммедумар Канатбекович",
+    "group": "маркетинг MAR24C",
+    "course": "3",
+    "curator": "Гульнура Дыйканбаева"
+  },
+  {
+    "name": "Осмонов Руслан Максатович",
+    "group": "маркетинг MAR24C",
+    "course": "3",
+    "curator": "Гульнура Дыйканбаева"
+  },
+  {
+    "name": "Сатыбаева Асема Жунусалиевна",
+    "group": "маркетинг MAR24C",
+    "course": "3",
+    "curator": "Гульнура Дыйканбаева"
+  },
+  {
+    "name": "Сматов Байэл",
+    "group": "маркетинг MAR24C",
+    "course": "3",
+    "curator": "Гульнура Дыйканбаева"
+  },
+  {
+    "name": "Талантбеков Адилет Талантбекович",
+    "group": "маркетинг MAR24C",
+    "course": "3",
+    "curator": "Гульнура Дыйканбаева"
+  },
+  {
+    "name": "Токтобекова Бегаим Нурдиновна",
+    "group": "маркетинг MAR24C",
+    "course": "3",
+    "curator": "Гульнура Дыйканбаева"
+  },
+  {
+    "name": "Юсупов Ильмар Тахирович",
+    "group": "маркетинг MAR24C",
+    "course": "3",
+    "curator": "Гульнура Дыйканбаева"
+  }
+]
