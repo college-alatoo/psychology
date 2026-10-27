@@ -1,219 +1,202 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Учёт согласий родителей — IT & Business College</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Учёт согласий родителей — IT & Business College</title>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans min-h-screen flex flex-col">
+<body class="bg-slate-50 text-slate-800 min-h-screen">
+<header class="bg-indigo-700 text-white shadow">
+  <div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between gap-3">
+    <div><h1 class="text-xl font-bold">Учёт согласий 2026</h1><p class="text-sm text-indigo-100">IT & Business College · Ala-Too</p></div>
+    <button id="logoutBtn" class="hidden bg-indigo-900 hover:bg-indigo-950 px-3 py-2 rounded-lg text-sm">Выйти</button>
+  </div>
+</header>
+<main class="max-w-5xl mx-auto p-4">
+  <section id="loginPanel" class="bg-white rounded-2xl shadow-sm border p-6 max-w-md mx-auto mt-8">
+    <h2 class="text-lg font-semibold mb-2">Вход куратора</h2>
+    <p class="text-sm text-slate-600 mb-4">Войдите с учётной записью, созданной администрацией Supabase. Отметки будут синхронизироваться между компьютерами.</p>
+    <form id="loginForm" class="space-y-3">
+      <label class="block text-sm">Электронная почта<input id="email" type="email" autocomplete="username" required class="mt-1 w-full border rounded-lg p-3" /></label>
+      <label class="block text-sm">Пароль<input id="password" type="password" autocomplete="current-password" required class="mt-1 w-full border rounded-lg p-3" /></label>
+      <button id="loginBtn" class="w-full bg-indigo-700 hover:bg-indigo-800 text-white rounded-lg p-3 font-medium">Войти</button>
+    </form>
+    <p id="loginMessage" role="status" class="text-sm mt-3 text-rose-700"></p>
+  </section>
 
-    <!-- Шапка -->
-    <header class="bg-indigo-700 text-white shadow-md py-4 px-6">
-        <div class="max-w-4xl mx-auto flex justify-between items-center">
-            <h1 class="text-xl font-bold flex items-center gap-2">
-                <i class="fa-solid fa-file-signature"></i> Учёт согласий 2026
-            </h1>
-            <button onclick="toggleAdmin()" id="adminBtn" class="bg-indigo-800 hover:bg-indigo-900 text-sm px-3 py-1.5 rounded-lg transition">
-                <i class="fa-solid fa-lock"></i> Админ
-            </button>
-        </div>
-    </header>
+  <section id="appPanel" class="hidden">
+    <div class="bg-white rounded-2xl shadow-sm border p-5 mb-5">
+      <div class="flex flex-col sm:flex-row sm:items-end gap-3">
+        <label class="block text-sm flex-1">Группа
+          <select id="groupSelect" class="mt-1 w-full border rounded-lg p-3"></select>
+        </label>
+        <label class="block text-sm flex-1">Поиск по ФИО
+          <input id="searchInput" type="search" placeholder="Введите фамилию или имя" class="mt-1 w-full border rounded-lg p-3" />
+        </label>
+      </div>
+      <p id="statusMessage" role="status" class="text-sm mt-3 text-slate-600">Загрузка…</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-5">
+      <div class="bg-white border rounded-xl p-4"><p class="text-xs uppercase text-slate-500">Всего студентов</p><p id="totalCount" class="text-2xl font-bold">0</p></div>
+      <div class="bg-white border rounded-xl p-4"><p class="text-xs uppercase text-green-700">Согласие есть</p><p id="yesCount" class="text-2xl font-bold text-green-700">0</p></div>
+      <div class="bg-white border rounded-xl p-4"><p class="text-xs uppercase text-rose-700">Согласия нет</p><p id="noCount" class="text-2xl font-bold text-rose-700">0</p></div>
+    </div>
+    <section class="bg-white rounded-2xl shadow-sm border p-3">
+      <div id="studentsList" class="divide-y max-h-[65vh] overflow-y-auto"></div>
+    </section>
+  </section>
+</main>
+<footer class="text-center text-xs text-slate-400 py-6">Ala-Too IT & Business College © 2026</footer>
+<script>
+const SUPABASE_URL = 'https://sjydvsyazfzzovexuyr.supabase.co';
+const SUPABASE_KEY = 'sb_publishable_-festeUT3kAEXR0x_nJ02Q_YaxYmnxx';
+const db = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+let currentUser = null;
+let students = [];
+let statuses = {};
+const $ = id => document.getElementById(id);
+const groupSelect = $('groupSelect');
+const searchInput = $('searchInput');
 
-    <!-- Основной контент -->
-    <main class="max-w-4xl mx-auto p-4 w-full flex-grow">
-        
-        <!-- Секция поиска студента -->
-        <div id="studentSection" class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 mb-6">
-            <h2 class="text-lg font-semibold mb-4 text-gray-700">Согласие родителей на психологическое сопровождение</h2>
-            
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-                <div>
-                    <label class="block text-sm font-medium text-gray-600 mb-1">Выберите группу:</label>
-                    <select id="groupSelect" class="w-full border border-gray-300 rounded-lg p-2.5 focus:ring-2 focus:ring-indigo-500 outline-none">
-                        <option value="ACO-26">ACO-26 (Куратор: Nurzhan Nazarkulova)</option>
-                        <option value="SCA-26A">SCA-26A (Куратор: Dosbol Aliev)</option>
-                    </select>
-                </div>
-                <div>
-                    <label class="block text-sm font-medium text-gray-600 mb-1">Поиск студента по ФИО или ID:</label>
-                    <input type="text" id="searchInput" placeholder="Введите фамилию или ID студента" class="w-full border border-gray-300 rounded-lg p-2.5 focus:ring-2 focus:ring-indigo-500 outline-none">
-                </div>
-            </div>
-
-            <!-- Список студентов -->
-            <div id="studentsList" class="divide-y divide-gray-100 max-h-96 overflow-y-auto border border-gray-100 rounded-xl p-2">
-                <!-- Заполняется через JS -->
-            </div>
-        </div>
-
-        <!-- Панель Администратора (скрыта по умолчанию) -->
-        <div id="adminPanel" class="hidden bg-white p-6 rounded-2xl shadow-sm border border-gray-100 mb-6">
-            <div class="flex justify-between items-center mb-4">
-                <h2 class="text-lg font-semibold text-gray-700"><i class="fa-solid fa-chart-pie text-indigo-600"></i> Статистика и отчеты</h2>
-                <button onclick="resetData()" class="text-red-600 hover:text-red-800 text-sm font-medium">Сбросить все отметки</button>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
-                <div class="bg-indigo-50 p-4 rounded-xl border border-indigo-100">
-                    <p class="text-xs text-indigo-500 font-semibold uppercase">Всего студентов</p>
-                    <p id="totalCount" class="text-2xl font-bold text-indigo-700">0</p>
-                </div>
-                <div class="bg-green-50 p-4 rounded-xl border border-green-100">
-                    <p class="text-xs text-green-500 font-semibold uppercase">Согласие есть</p>
-                    <p id="passedCount" class="text-2xl font-bold text-green-700">0</p>
-                </div>
-                <div class="bg-orange-50 p-4 rounded-xl border border-orange-100">
-                    <p class="text-xs text-orange-500 font-semibold uppercase">Согласия нет</p>
-                    <p id="leftCount" class="text-2xl font-bold text-orange-700">0</p>
-                </div>
-            </div>
-
-            <!-- Прогресс бар -->
-            <div class="w-full bg-gray-200 rounded-full h-4 mb-2 overflow-hidden">
-                <div id="progressBar" class="bg-green-600 h-4 transition-all duration-500" style="width: 0%"></div>
-            </div>
-            <p id="progressText" class="text-sm text-gray-500 text-right">0% согласий</p>
-        </div>
-
-    </main>
-
-    <!-- Подвал -->
-    <footer class="text-center py-4 text-xs text-gray-400">
-        Ala-Too IT & Business College &copy; 2026
-    </footer>
-
-    <script>
-        // Данные студентов на основе таблицы
-        let studentsData = []; // Загружается из students.json в GitHub
-
-        // Временное локальное хранение статусов сохраняется до подключения Supabase.
-        let savedStatuses = JSON.parse(localStorage.getItem('consent_statuses')) || {};
-
-        const groupSelect = document.getElementById('groupSelect');
-        const searchInput = document.getElementById('searchInput');
-        const studentsList = document.getElementById('studentsList');
-
-        function renderStudents() {
-            const selectedGroup = groupSelect.value;
-            const query = searchInput.value.toLowerCase().trim();
-
-            studentsList.innerHTML = '';
-
-            const filtered = studentsData.filter(s => {
-                const matchGroup = s.group === selectedGroup;
-                const matchQuery = s.name.toLowerCase().includes(query);
-                return matchGroup && matchQuery;
-            });
-
-            if (filtered.length === 0) {
-                studentsList.innerHTML = '<p class="text-center text-gray-400 py-4">Студенты не найдены в выбранной группе</p>';
-                return;
-            }
-
-            filtered.forEach(student => {
-                const div = document.createElement('div');
-                div.className = "flex flex-col sm:flex-row sm:items-center justify-between gap-3 py-3 px-2 hover:bg-gray-50 rounded-lg transition";
-                div.innerHTML = `
-                    <div>
-                        <p class="font-medium text-gray-800">${student.name}</p>
-                        <p class="text-xs text-gray-400">Группа: ${student.group}</p>
-                    </div>
-                    <div class="flex flex-wrap gap-2">
-                        <button onclick="setConsent('${student.key}', true)" class="px-3 py-1.5 rounded-lg text-sm font-medium transition ${student.consent === true ? 'bg-green-100 text-green-700 ring-2 ring-green-500' : 'bg-gray-100 text-gray-600 hover:bg-green-50'}">✓ Согласие есть</button>
-                        <button onclick="setConsent('${student.key}', false)" class="px-3 py-1.5 rounded-lg text-sm font-medium transition ${student.consent === false ? 'bg-red-100 text-red-700 ring-2 ring-red-500' : 'bg-gray-100 text-gray-600 hover:bg-red-50'}">✕ Согласия нет</button>
-                    </div>
-                `;
-                studentsList.appendChild(div);
-            });
-
-            updateAdminStats();
-        }
-
-        function setConsent(id, value) {
-            const student = studentsData.find(s => s.key === id);
-            if (!student) return;
-            student.consent = value;
-            savedStatuses[student.key] = value;
-            localStorage.setItem('consent_statuses', JSON.stringify(savedStatuses));
-            renderStudents();
-        }
-
-        function updateAdminStats() {
-            const total = studentsData.length;
-            const passed = studentsData.filter(s => s.consent === true).length;
-            const left = studentsData.filter(s => s.consent === false).length;
-            const percent = total > 0 ? Math.round((passed / total) * 100) : 0;
-
-            document.getElementById('totalCount').innerText = total;
-            document.getElementById('passedCount').innerText = passed;
-            document.getElementById('leftCount').innerText = left;
-            document.getElementById('progressBar').style.width = percent + '%';
-            document.getElementById('progressText').innerText = percent + '% согласий';
-        }
-
-        function toggleAdmin() {
-            const panel = document.getElementById('adminPanel');
-            if (panel.classList.contains('hidden')) {
-                const password = prompt('Введите пароль администратора (по умолчанию: 123):');
-                if (password === '123' || password === 'admin') {
-                    panel.classList.remove('hidden');
-                } else if (password !== null) {
-                    alert('Неверный пароль!');
-                }
-            } else {
-                panel.classList.add('hidden');
-            }
-        }
-
-        function resetData() {
-            if (confirm('Вы уверены, что хотите сбросить все отметки согласия?')) {
-                localStorage.removeItem('consent_statuses');
-                studentsData.forEach(s => s.consent = null);
-                savedStatuses = {};
-                renderStudents();
-            }
-        }
-
-        groupSelect.addEventListener('change', renderStudents);
-        searchInput.addEventListener('input', renderStudents);
-
-        // Загружаем список студентов из отдельного файла в GitHub Pages.
-        async function loadStudents() {
-            studentsList.innerHTML = '<p class="text-center text-gray-400 py-4">Загрузка студентов…</p>';
-            try {
-                const response = await fetch('./students.json', { cache: 'no-store' });
-                if (!response.ok) throw new Error('Не удалось загрузить students.json (' + response.status + ')');
-                const rows = await response.json();
-                if (!Array.isArray(rows)) throw new Error('Файл students.json имеет неверный формат');
-                studentsData = rows.map(s => ({
-                    name: String(s.name ?? ''),
-                    group: String(s.group ?? ''),
-                    course: String(s.course ?? ''),
-                    curator: String(s.curator ?? ''),
-                    key: String(s.group ?? '') + '::' + String(s.name ?? ''),
-                    consent: Object.prototype.hasOwnProperty.call(savedStatuses, String(s.group ?? '') + '::' + String(s.name ?? '')) ? savedStatuses[String(s.group ?? '') + '::' + String(s.name ?? '')] : null
-                }));
-                const groups = [...new Set(studentsData.map(s => s.group).filter(Boolean))];
-                const previousGroup = groupSelect.value;
-                groupSelect.replaceChildren();
-                groups.forEach(group => {
-                    const option = document.createElement('option');
-                    option.value = group;
-                    option.textContent = group;
-                    groupSelect.appendChild(option);
-                });
-                if (groups.includes(previousGroup)) groupSelect.value = previousGroup;
-                renderStudents();
-            } catch (error) {
-                console.error('Ошибка загрузки списка студентов:', error);
-                studentsList.innerHTML = '<p class="text-center text-red-600 py-4">Не удалось загрузить список студентов. Проверьте файл students.json в GitHub.</p>';
-            }
-        }
-
-        // Первый запуск
-        loadStudents();
-    </script>
+function safeText(tag, text, className) {
+  const el = document.createElement(tag);
+  el.textContent = text ?? '';
+  if (className) el.className = className;
+  return el;
+}
+function studentKey(s) {
+  // Deterministic technical key; no student ID is required.
+  return (s.group.trim() + '::' + s.name.trim()).toLocaleLowerCase('ru');
+}
+function showLoggedIn(loggedIn) {
+  $('loginPanel').classList.toggle('hidden', loggedIn);
+  $('appPanel').classList.toggle('hidden', !loggedIn);
+  $('logoutBtn').classList.toggle('hidden', !loggedIn);
+}
+function updateStats() {
+  $('totalCount').textContent = students.length;
+  $('yesCount').textContent = students.filter(s => statuses[s.key] === true).length;
+  $('noCount').textContent = students.filter(s => statuses[s.key] === false).length;
+}
+function renderStudents() {
+  const selectedGroup = groupSelect.value;
+  const q = searchInput.value.trim().toLocaleLowerCase('ru');
+  const list = $('studentsList');
+  list.replaceChildren();
+  const filtered = students.filter(s => (!selectedGroup || s.group === selectedGroup) && s.name.toLocaleLowerCase('ru').includes(q));
+  if (!filtered.length) {
+    list.appendChild(safeText('p', 'В этой группе студенты не найдены.', 'text-center text-slate-500 p-6'));
+  }
+  for (const s of filtered) {
+    const row = document.createElement('div');
+    row.className = 'flex flex-col sm:flex-row sm:items-center justify-between gap-3 py-3 px-2';
+    const info = document.createElement('div');
+    info.appendChild(safeText('p', s.name, 'font-medium'));
+    info.appendChild(safeText('p', [s.group, s.course ? 'Курс ' + s.course : '', s.curator ? 'Куратор: ' + s.curator : ''].filter(Boolean).join(' · '), 'text-xs text-slate-500 mt-1'));
+    const actions = document.createElement('div');
+    actions.className = 'flex gap-2 flex-wrap';
+    const yes = document.createElement('button');
+    yes.type = 'button';
+    yes.textContent = '✓ Согласие есть';
+    yes.className = 'rounded-lg px-3 py-2 text-sm font-medium ' + (statuses[s.key] === true ? 'bg-green-100 text-green-800 ring-2 ring-green-500' : 'bg-slate-100 hover:bg-green-50');
+    yes.disabled = !currentUser;
+    yes.addEventListener('click', () => setConsent(s, true));
+    const no = document.createElement('button');
+    no.type = 'button';
+    no.textContent = '✕ Согласия нет';
+    no.className = 'rounded-lg px-3 py-2 text-sm font-medium ' + (statuses[s.key] === false ? 'bg-rose-100 text-rose-800 ring-2 ring-rose-500' : 'bg-slate-100 hover:bg-rose-50');
+    no.disabled = !currentUser;
+    no.addEventListener('click', () => setConsent(s, false));
+    actions.append(yes, no);
+    row.append(info, actions);
+    list.appendChild(row);
+  }
+  updateStats();
+}
+async function loadStatuses() {
+  const { data, error } = await db.from('consent_statuses').select('student_key,consent,updated_at');
+  if (error) throw error;
+  statuses = {};
+  for (const r of data || []) statuses[r.student_key] = r.consent;
+}
+async function setConsent(student, value) {
+  $('statusMessage').textContent = 'Сохраняю отметку…';
+  const { error } = await db.from('consent_statuses').upsert({
+    student_key: student.key,
+    consent: value,
+    updated_at: new Date().toISOString(),
+    updated_by: currentUser.id
+  }, { onConflict: 'student_key' });
+  if (error) {
+    $('statusMessage').textContent = 'Не удалось сохранить: ' + error.message;
+    return;
+  }
+  statuses[student.key] = value;
+  renderStudents();
+  $('statusMessage').textContent = 'Отметка сохранена и будет доступна на других компьютерах.';
+}
+async function loadRoster() {
+  $('statusMessage').textContent = 'Загружаю список студентов из GitHub…';
+  const response = await fetch('./students.json', { cache: 'no-store' });
+  if (!response.ok) throw new Error('Не удалось загрузить students.json (' + response.status + ')');
+  const rows = await response.json();
+  if (!Array.isArray(rows)) throw new Error('students.json имеет неверный формат');
+  students = rows.map(s => {
+    const student = { name: String(s.name || '').trim(), group: String(s.group || '').trim(), course: String(s.course || '').trim(), curator: String(s.curator || '').trim() };
+    student.key = studentKey(student);
+    return student;
+  }).filter(s => s.name);
+  const groups = [...new Set(students.map(s => s.group).filter(Boolean))].sort((a,b) => a.localeCompare(b, 'ru'));
+  groupSelect.replaceChildren();
+  for (const group of groups) groupSelect.appendChild(new Option(group, group));
+  $('statusMessage').textContent = 'Загружено студентов: ' + students.length + '. Загружаю отметки…';
+}
+async function openApp(user) {
+  currentUser = user;
+  showLoggedIn(true);
+  try {
+    await loadRoster();
+    await loadStatuses();
+    renderStudents();
+    $('statusMessage').textContent = 'Синхронизация включена. Последняя проверка: ' + new Date().toLocaleTimeString('ru-RU');
+  } catch (e) {
+    $('statusMessage').textContent = 'Ошибка загрузки: ' + (e.message || e);
+  }
+}
+$('loginForm').addEventListener('submit', async e => {
+  e.preventDefault();
+  $('loginBtn').disabled = true;
+  $('loginMessage').textContent = 'Выполняю вход…';
+  const { data, error } = await db.auth.signInWithPassword({ email: $('email').value.trim(), password: $('password').value });
+  $('loginBtn').disabled = false;
+  if (error) { $('loginMessage').textContent = 'Ошибка входа: ' + error.message; return; }
+  $('loginMessage').textContent = '';
+  await openApp(data.user);
+});
+$('logoutBtn').addEventListener('click', async () => {
+  await db.auth.signOut();
+  currentUser = null; students = []; statuses = {};
+  showLoggedIn(false);
+  $('loginMessage').textContent = 'Вы вышли из системы.';
+});
+groupSelect.addEventListener('change', renderStudents);
+searchInput.addEventListener('input', renderStudents);
+db.auth.getSession().then(async ({ data, error }) => {
+  if (error) { $('loginMessage').textContent = error.message; return; }
+  if (data.session) await openApp(data.session.user);
+});
+setInterval(async () => {
+  if (!currentUser || document.hidden) return;
+  try {
+    await loadStatuses();
+    renderStudents();
+    $('statusMessage').textContent = 'Синхронизация активна · ' + new Date().toLocaleTimeString('ru-RU');
+  } catch (e) {
+    $('statusMessage').textContent = 'Не удалось обновить отметки: ' + (e.message || e);
+  }
+}, 10000);
+</script>
 </body>
 </html>
